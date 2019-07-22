@@ -1,6 +1,6 @@
 @import 'Pagepane';
 
-.tripPage.pagePaneContainer {
+.outcomePage.pagePaneContainer {
   .titleSlide .pagePaneContent {
     .section1 {
       background: $outcomeColor;
@@ -11,7 +11,7 @@
       }
 
       .sep {
-        background: $outcomeColor;
+        background: #ffffff;
       }
 
       img {
@@ -23,6 +23,9 @@
       background: #ffffff;
       p {
         color: $outcomeColor;
+      }
+      button {
+        background: $outcomeColor;
       }
     }
   }

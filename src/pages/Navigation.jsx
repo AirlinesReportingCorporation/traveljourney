@@ -57,7 +57,6 @@ class Navigation extends React.Component {
           <Link to="/">Wrap-up</Link>
         </div>
       </div>
-      <Slidenav/>
     </div>);
   }
 }

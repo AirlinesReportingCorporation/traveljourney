@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import {MemoryRouter as Router, Route, Link} from "react-router-dom";
-import './Pagepane.scss';
+import './Inspire.scss';
 import Slider from '../components/Pageslide.jsx';
 import Slidenav from '../components/Slidenav.jsx';
 import Pageslide from '../components/Pageslide.jsx';
@@ -22,7 +22,8 @@ class Inspire extends React.Component {
               <div className="stepNumber">Step 1</div>
               <h1>Inspire.</h1>
               <div className="sep"></div>
-              <p>The traveler is inspired <br/>to take a trip.</p>
+              <p>The traveler is inspired
+                <br/>to take a trip.</p>
               <img src="img/inspire1.png"/>
             </div>
             <div className="section2">
@@ -67,7 +68,6 @@ class Inspire extends React.Component {
         </div>
 
       </Pageslide>
-      <Slidenav/>
     </div>);
   }
 }

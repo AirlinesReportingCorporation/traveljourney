@@ -61,4 +61,13 @@ h1 {
 .pagePaneContainer {
   position: relative;
   font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
+  width: 1080px;
+}
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  position: absolute;
 }

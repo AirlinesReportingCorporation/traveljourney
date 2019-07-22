@@ -22,7 +22,7 @@ class Offer extends React.Component {
               <div className="stepNumber">Step 2b</div>
               <h1>Offer.</h1>
               <div className="sep"></div>
-              <p>The traveler searches for a flight <br/>within their desired parameters.</p>
+              <p>After the traveler searches for a flight, <br/>the industry responds with an offer.</p>
               <img src="img/Offer.png"/>
             </div>
             <div className="section2">
@@ -67,7 +67,6 @@ class Offer extends React.Component {
         </div>
 
       </Pageslide>
-      <Slidenav/>
     </div>);
   }
 }

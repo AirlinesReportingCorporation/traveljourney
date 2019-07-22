@@ -67,7 +67,6 @@ class Purchase extends React.Component {
         </div>
 
       </Pageslide>
-      <Slidenav/>
     </div>);
   }
 }
