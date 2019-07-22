@@ -1,0 +1,33 @@
+@import 'Pagepane';
+
+.purchasePage.pagePaneContainer {
+  .titleSlide .pagePaneContent {
+    .section1 {
+      background: $purchaseColor;
+
+      h1 {
+        background: #ffffff;
+        color: $purchaseColor;
+      }
+
+      .sep {
+        background: $purchaseColor;
+      }
+
+      img {
+        bottom: -63px;
+      }
+    }
+
+    .section2 {
+      background: #ffffff;
+      p {
+        color: $purchaseColor;
+      }
+    }
+  }
+
+  .bulletSlide {}
+
+  .quoteSlide {}
+}

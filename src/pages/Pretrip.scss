@@ -1,0 +1,33 @@
+@import 'Pagepane';
+
+.pretripPage.pagePaneContainer {
+  .titleSlide .pagePaneContent {
+    .section1 {
+      background: $pretripColor;
+
+      h1 {
+        background: #ffffff;
+        color: $pretripColor;
+      }
+
+      .sep {
+        background: $pretripColor;
+      }
+
+      img {
+        bottom: -63px;
+      }
+    }
+
+    .section2 {
+      background: #ffffff;
+      p {
+        color: $pretripColor;
+      }
+    }
+  }
+
+  .bulletSlide {}
+
+  .quoteSlide {}
+}

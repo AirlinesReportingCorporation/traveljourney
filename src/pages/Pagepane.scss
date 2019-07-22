@@ -1,0 +1,131 @@
+@import '../partials/colors';
+
+.pagePaneContainer {
+  .titleSlide {
+    background: #ffffff;
+    height: 100%;
+
+    .pagePaneContent {
+      background: $inspireColor;
+      height: 100%;
+
+      .section1 {
+        position: relative;
+        height: 1480px;
+        border-bottom: 4px solid #000000;
+
+        .stepNumber {
+          color: #ffffff;
+          font-family: "Amatic SC", helvetica, arial, sans-serif;
+          font-size: 60px;
+          margin-left: 160px;
+          padding-top: 80px;
+          padding-bottom: 80px;
+        }
+
+        h1 {
+          display: inline-block;
+          background: #ffffff;
+          color: $inspireColor;
+          margin-left: 80px;
+          padding: 20px 80px;
+          font-size: 110px;
+          line-height: 110px;
+          margin-bottom: 0;
+        }
+
+        .sep {
+          background: #ffffff;
+          height: 8px;
+          width: 80px;
+          margin-left: 160px;
+          margin-top: 40px;
+          margin-bottom: 80px;
+        }
+
+        img {
+          position: absolute;
+          bottom: -58px;
+          left: 120px;
+          height: 800px;
+        }
+
+        p {
+          color: #ffffff;
+          font-family: SourceSansPro-Semibold, helvetica, arial, sans-serif;
+          margin-left: 160px;
+          font-size: 50px;
+        }
+      }
+
+      .section2 {
+        background: #ffffff;
+        height: 440px;
+
+        p {
+          color: $inspireColor;
+          text-align: center;
+          font-size: 36px;
+          padding-top: 120px;
+          margin-bottom: 80px;
+        }
+      }
+    }
+  }
+
+  .bulletSlide {
+    padding: 160px 0;
+
+    h1 {
+      margin-left: 120px;
+      font-size: 110px;
+    }
+  }
+
+  .quoteSlide {
+
+    padding-top: 120px;
+    height: 100%;
+    background: #02e3a8;
+    background: -webkit-linear-gradient(to bottom left, #02e3a8 25%, #78e283 50%, #a3e175 75%);
+    background: -o-linear-gradient(to bottom left, #02e3a8 25%, #78e283 50%, #a3e175 75%);
+    background: -moz-linear-gradient(to bottom left, #02e3a8 25%, #78e283 50%, #a3e175 75%);
+    background: linear-gradient(to bottom left, #02e3a8 25%, #78e283 50%, #a3e175 75%);
+
+    .quotePhoto {
+      margin-left: 120px;
+      padding: 80px 0 0 50px;
+      position: relative;
+
+      &:before {
+        background: url("/img/quote.png?1") center center no-repeat;
+        background-size: contain;
+        content: '';
+        height: 170px;
+        width: 170px;
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .quoteText {
+      color: #ffffff;
+      margin-left: 160px;
+      margin-top: 160px;
+      font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
+      font-size: 64px;
+      line-height: 80px;
+    }
+
+    .quoteMeta {
+      color: #ffffff;
+      padding-top: 80px;
+      margin-left: 160px;
+      font-family: SourceSansPro-Semibold, helvetica, arial, sans-serif;
+      font-size: 36px;
+    }
+  }
+
+}

@@ -1,0 +1,33 @@
+@import 'Pagepane';
+
+.offerPage.pagePaneContainer {
+  .titleSlide .pagePaneContent {
+    .section1 {
+      background: $offerColor;
+
+      h1 {
+        background: #ffffff;
+        color: $offerColor;
+      }
+
+      .sep {
+        background: $offerColor;
+      }
+
+      img {
+        bottom: -63px;
+      }
+    }
+
+    .section2 {
+      background: #ffffff;
+      p {
+        color: $offerColor;
+      }
+    }
+  }
+
+  .bulletSlide {}
+
+  .quoteSlide {}
+}

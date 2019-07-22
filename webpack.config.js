@@ -41,7 +41,6 @@ module.exports = [{
   },
   resolve: {
     alias: {
-      'react-dom': '@hot-loader/react-dom',
       'vue': 'vue/dist/vue.js'
     },
     extensions: ['*', '.js', '.jsx']

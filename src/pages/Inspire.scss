@@ -1,0 +1,96 @@
+@import '../partials/colors';
+
+.inspirePage {
+  .slide1 {
+    background: $inspireColor;
+    height: 100%;
+
+    .pagePaneContent {
+      background: #ffffff;
+      height: 100%;
+
+      button {
+        background: $inspireColor;
+      }
+
+      .section1 {
+        position: relative;
+        height: 1480px;
+        border-bottom: 4px solid #000000;
+
+        .stepNumber {
+          font-family: "Amatic SC", helvetica, arial, sans-serif;
+          font-size: 60px;
+          margin-left: 160px;
+          padding-top: 80px;
+          padding-bottom: 80px;
+        }
+
+        h1 {
+          display: inline-block;
+          background: $inspireColor;
+          color: #ffffff;
+          margin-left: 80px;
+          padding: 20px 80px;
+          font-size: 110px;
+          line-height: 110px;
+          margin-bottom: 0;
+        }
+
+        .sep {
+          background: $inspireColor;
+          height: 8px;
+          width: 80px;
+          margin-left: 160px;
+          margin-top: 40px;
+          margin-bottom: 80px;
+        }
+
+        img {
+          position: absolute;
+          bottom: -58px;
+          left: 120px;
+          height: 800px;
+        }
+
+        p {
+          font-family: SourceSansPro-Semibold, helvetica, arial, sans-serif;
+          margin-left: 160px;
+          font-size: 50px;
+        }
+      }
+
+      .section2 {
+        background: $inspireColor;
+        height: 440px;
+
+        p {
+          color: #ffffff;
+          text-align: center;
+          font-size: 36px;
+          padding-top: 120px;
+          margin-bottom: 80px;
+        }
+      }
+    }
+  }
+
+  .slide2 {
+    padding: 160px 0;
+
+    h1 {
+      margin-left: 120px;
+      font-size: 110px;
+    }
+  }
+
+  .slide3 {
+    padding-top: 120px;
+    height: 100%;
+    background: #02e3a8;
+    background: -webkit-linear-gradient(to bottom left, #02e3a8 25%, #78e283 50%, #a3e175 75%);
+    background: -o-linear-gradient(to bottom left, #02e3a8 25%, #78e283 50%, #a3e175 75%);
+    background: -moz-linear-gradient(to bottom left, #02e3a8 25%, #78e283 50%, #a3e175 75%);
+    background: linear-gradient(to bottom left, #02e3a8 25%, #78e283 50%, #a3e175 75%);
+  }
+}

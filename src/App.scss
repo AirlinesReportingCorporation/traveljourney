@@ -1,31 +1,64 @@
 //dependencies
 @import 'partials/normalize';
+@import 'partials/animate';
 @import 'partials/fonts';
+@import 'partials/colors';
 @import '../node_modules/antd/dist/antd.css';
 
 body {
   font-family: "Source Sans Pro", arial, sans-serif;
   font-size: 20px;
-
   //remove ability to highlight text
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
 
-#app h1 {
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-family: SourceSansPro-Black, helvetica, arial, sans-serif;
   font-size: 180px;
   color: #212226;
   font-weight: 200;
   opacity: 1;
   line-height: 1;
-  margin-top:0;
+  margin-top: 0;
 }
 
-::-webkit-scrollbar {
-  display: none;
+.pagePaneContent {
+  position: relative;
+
+  h1 {
+    font-size: 110px;
+  }
+
+  button {
+    display: block;
+    background: $inspireColor;
+    color: #ffffff;
+    padding: 40px 140px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+.pagePaneContainer {
+  position: relative;
+  font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
 }

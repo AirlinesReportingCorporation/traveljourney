@@ -1,0 +1,33 @@
+@import 'Pagepane';
+
+.shopPage.pagePaneContainer {
+  .titleSlide .pagePaneContent{
+    .section1 {
+      background: $shopColor;
+
+      h1 {
+        background: #ffffff;
+        color: $shopColor;
+      }
+
+      .sep {
+        background: $shopColor;
+      }
+
+      img {
+        bottom: -63px;
+      }
+    }
+
+    .section2 {
+      background: #ffffff;
+      p {
+        color: $shopColor;
+      }
+    }
+  }
+
+  .bulletSlide {}
+
+  .quoteSlide {}
+}

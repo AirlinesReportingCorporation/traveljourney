@@ -1,16 +1,17 @@
 .navigationPane {
-  margin-top: 200px;
+  padding-top: 200px;
   margin-left: 120px;
   font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
+  position: relative;
 
   .navigationLink {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 
     a {
       color: #000000;
       font-family: SourceSansPro-Black, helvetica, arial, sans-serif;
       font-size: 90px;
-      line-height: 1;
+      line-height: 0.7;
     }
 
     .navStep {

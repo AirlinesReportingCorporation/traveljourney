@@ -1,0 +1,33 @@
+@import 'Pagepane';
+
+.tripPage.pagePaneContainer {
+  .titleSlide .pagePaneContent {
+    .section1 {
+      background: $tripColor;
+
+      h1 {
+        background: #ffffff;
+        color: $tripColor;
+      }
+
+      .sep {
+        background: $tripColor;
+      }
+
+      img {
+        bottom: -63px;
+      }
+    }
+
+    .section2 {
+      background: #ffffff;
+      p {
+        color: $tripColor;
+      }
+    }
+  }
+
+  .bulletSlide {}
+
+  .quoteSlide {}
+}
