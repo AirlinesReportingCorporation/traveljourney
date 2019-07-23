@@ -12,9 +12,13 @@ class Outcome extends React.Component {
     this.state = {};
   }
 
+  componentDidMount() {
+    this.props.routeUpdate(this.props.location.pathname, this.slideMenu.children.length );
+  }
+
   render() {
 
-    return (<div className="outcomePage pagePaneContainer">
+    return (<div className="outcomePage pagePaneContainer" ref={(e) => this.slideMenu = e}>
       <Pageslide>
         <div className="titleSlide">
           <div className="pagePaneContent">
@@ -22,7 +26,8 @@ class Outcome extends React.Component {
               <div className="stepNumber">Step 3</div>
               <h1>Outcome.</h1>
               <div className="sep"></div>
-              <p>The traveler searches for a flight <br/>within their desired parameters.</p>
+              <p>The traveler searches for a flight
+                <br/>within their desired parameters.</p>
               <img src="img/Outcome.png"/>
             </div>
             <div className="section2">
@@ -34,7 +39,12 @@ class Outcome extends React.Component {
       </Pageslide>
       <Pageslide>
         <div className="bulletSlide">
-          <h1>The shop-and<br/>-offer cycle is <br/>like a <br/>conversation <br/>between the traveler <br/> and the seller.</h1>
+          <h1>The shop-and<br/>-offer cycle is
+            <br/>like a
+            <br/>conversation
+            <br/>between the traveler
+            <br/>
+            and the seller.</h1>
         </div>
       </Pageslide>
       <Pageslide>

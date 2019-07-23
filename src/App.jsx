@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {MemoryRouter as Router, Route, Link} from "react-router-dom";
+import {withRouter} from "react-router";
 import {version, Button, Drawer} from "antd";
 import {AnimatedSwitch} from 'react-router-transition';
 import {Motion, spring} from 'react-motion';
@@ -39,25 +40,72 @@ const pageTransitions = {
   }
 };
 
+function mapStyles(styles) {
+  return {transform: `translateX(${styles.offset}%)`};
+}
+
 class App extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      routePath: "test",
+      showSlideCtrls: true,
+      slideCount: 1,
+      slideDirection: "vertical"
+    };
+
+    this.getRoute = this.getRoute.bind(this);
+  }
+
+  //getRoute on route Navigation
+  //update state for slide controls on navigation if needed
+  getRoute(rPath, sCount) {
+    this.setState({routePath: rPath});
+    if (rPath.indexOf("navigation") > -1) {
+      this.setState({showSlideCtrls: false});
+    } else {
+      this.setState({showSlideCtrls: true});
+    }
+
+    this.setState({slideCount: sCount});
+
+  }
+
   render() {
+
+    var showSlideCtrls = (this.state.showSlideCtrls)
+      ? '1'
+      : '0';
+
     return (<div>
       <Router>
+        <div className="logVars">
+          <strong>React App State</strong>
+          | &nbsp; Path:
+          <span>{this.state.routePath}</span>
+          &mdash; Show Ctrls:
+          <span>{showSlideCtrls}</span>Slide Count:
+          <span>{this.state.slideCount}</span>
+          Slide Dir:
+          <span>{this.state.slideDirection}</span>
+        </div>
         <div>
-          <AnimatedSwitch {...pageTransitions} mapStyles={styles => ({transform: `translateX(${styles.offset}%)`})} className="switch-wrapper">
-            <Route path="/" exact="exact" component={Navigation}/>
-            <Route path="/navigation" exact="exact" component={Navigation}/>
-            <Route path="/about/" component={Samplepage}/>
-            <Route path="/inspire/" component={Inspire}/>
-            <Route path="/shop/" component={Shop}/>
-            <Route path="/offer/" component={Offer}/>
-            <Route path="/purchase/" component={Purchase}/>
-            <Route path="/pretrip/" component={Pretrip}/>
-            <Route path="/trip/" component={Trip}/>
-            <Route path="/outcome/" component={Outcome}/>
+          <AnimatedSwitch {...pageTransitions} mapStyles={mapStyles} className="switch-wrapper">
+            <Route path="/" exact="exact" render={(props) => <Navigation {...props} routeUpdate={this.getRoute}/>}/>
+            <Route path="/navigation/" render={(props) => <Navigation {...props} routeUpdate={this.getRoute}/>}/>
+            <Route path="/about/" render={(props) => <Samplepage {...props} routeUpdate={this.getRoute}/>}/>
+            <Route path="/inspire/" render={(props) => <Inspire {...props} routeUpdate={this.getRoute}/>}/>
+            <Route path="/shop/" render={(props) => <Shop {...props} routeUpdate={this.getRoute}/>}/>
+            <Route path="/offer/" render={(props) => <Offer {...props} routeUpdate={this.getRoute}/>}/>
+            <Route path="/purchase/" render={(props) => <Purchase {...props} routeUpdate={this.getRoute}/>}/>
+            <Route path="/pretrip/" render={(props) => <Pretrip {...props} routeUpdate={this.getRoute}/>}/>
+            <Route path="/trip/" render={(props) => <Trip {...props} routeUpdate={this.getRoute}/>}/>
+            <Route path="/outcome/" render={(props) => <Outcome {...props} routeUpdate={this.getRoute}/>}/>
           </AnimatedSwitch>
-          <Slidenav/>
+
+          <Slidenav display={this.state.showSlideCtrls}/>
+
         </div>
 
       </Router>

@@ -12,9 +12,13 @@ class Shop extends React.Component {
     this.state = {};
   }
 
+  componentDidMount() {
+    this.props.routeUpdate(this.props.location.pathname, this.slideMenu.children.length );
+  }
+
   render() {
 
-    return (<div className="shopPage pagePaneContainer">
+    return (<div className="shopPage pagePaneContainer" ref={(e) => this.slideMenu = e}>
       <Pageslide>
         <div className="titleSlide">
           <div className="pagePaneContent">

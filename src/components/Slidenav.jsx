@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import ReactDOM from "react-dom";
 import './Slidenav.scss';
+import Customlink from './Customlink.jsx';
 
 class Slidenav extends React.Component {
   constructor(props) {
@@ -15,6 +16,18 @@ class Slidenav extends React.Component {
   }
 
   render() {
+    const showSlideCtrls = this.props.display;
+
+    let controls;
+    if (showSlideCtrls) {
+      controls = <div className="slideBtnContainer">
+        <div className="arrow1"><img src="" alt=""/></div>
+        <div className="arrow2"><img src="" alt=""/></div>
+      </div>;
+    }
+
+    console.log(React.Children.count(this.props.children));
+
     return (<div className="slideControls">
 
       <Link to="/navigation/">
@@ -23,11 +36,13 @@ class Slidenav extends React.Component {
         </div>
       </Link>
 
-      <Link to="/navigation/">
+      <Customlink to="/navigation/">
         <div className="navBtn">
           <img src="img/homeIcon.png" alt="Home Icon"/>
         </div>
-      </Link>
+      </Customlink>
+
+      {controls}
 
       <Link to="/navigation/">
         <div className="navBtn">

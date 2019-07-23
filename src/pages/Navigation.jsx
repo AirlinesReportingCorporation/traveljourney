@@ -3,12 +3,16 @@ import ReactDOM from "react-dom";
 import {MemoryRouter as Router, Route, Link} from "react-router-dom";
 import './Navigation.scss';
 import Slidenav from '../components/Slidenav.jsx';
+import Customlink from '../components/Customlink.jsx';
 import Inspire from './Inspire.jsx';
 
 class Navigation extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+  }
+
+  componentDidMount() {
+    this.props.routeUpdate(this.props.location.pathname, 0);
   }
 
   render() {
@@ -20,7 +24,7 @@ class Navigation extends React.Component {
         </div>
         <div className="navigationLink">
           <div className="navStep">Step 1</div>
-          <Link to="/inspire">Inspire</Link>
+          <Customlink to="/inspire">Inspire</Customlink>
 
         </div>
         <div className="navigationLink">

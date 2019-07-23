@@ -71,3 +71,17 @@ h1 {
 .switch-wrapper > div {
   position: absolute;
 }
+
+.logVars {
+  background: rgba(0,0,0, 0.8);
+  color: #00FF00;
+  position: absolute;
+  z-index: 9999;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  font-family: helvetica, arial, sans-serif;
+  span {
+    color: #ffffff;
+  }
+}

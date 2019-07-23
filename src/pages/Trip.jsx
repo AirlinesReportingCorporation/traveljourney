@@ -12,9 +12,13 @@ class Trip extends React.Component {
     this.state = {};
   }
 
+  componentDidMount() {
+    this.props.routeUpdate(this.props.location.pathname, this.slideMenu.children.length );
+  }
+
   render() {
 
-    return (<div className="tripPage pagePaneContainer">
+    return (<div className="tripPage pagePaneContainer" ref={(e) => this.slideMenu = e}>
       <Pageslide>
         <div className="titleSlide">
           <div className="pagePaneContent">

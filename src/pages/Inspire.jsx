@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import {MemoryRouter as Router, Route, Link} from "react-router-dom";
+import {withRouter} from "react-router";
 import './Inspire.scss';
 import Slider from '../components/Pageslide.jsx';
 import Slidenav from '../components/Slidenav.jsx';
@@ -9,12 +10,15 @@ import Pageslide from '../components/Pageslide.jsx';
 class Inspire extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+  }
+
+  componentDidMount() {
+    this.props.routeUpdate(this.props.location.pathname, this.slideMenu.children.length );
   }
 
   render() {
 
-    return (<div className="inspirePage pagePaneContainer">
+    return (<div className="inspirePage pagePaneContainer" ref={(e) => this.slideMenu = e}>
       <Pageslide>
         <div className="titleSlide">
           <div className="pagePaneContent">
