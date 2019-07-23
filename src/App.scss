@@ -5,6 +5,10 @@
 @import 'partials/colors';
 @import '../node_modules/antd/dist/antd.css';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Source Sans Pro", arial, sans-serif;
   font-size: 20px;
@@ -75,7 +79,7 @@ h1 {
 .logVars {
   background: rgba(0,0,0, 0.8);
   color: #00FF00;
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   top: 10px;
   right: 10px;

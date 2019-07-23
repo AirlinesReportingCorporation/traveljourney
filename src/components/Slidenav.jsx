@@ -8,11 +8,40 @@ class Slidenav extends React.Component {
   constructor(props) {
     super(props);
 
-    this.homeClick = this.homeClick.bind(this);
+    this.arrowClick = this.arrowClick.bind(this);
   }
 
   homeClick() {
     console.log("clicky-click");
+  }
+
+  arrowClick(direction) {
+    var slideHeight = 1920;
+    var slideCount = this.props.slideCount;
+    var curPos = document.documentElement.scrollTop;
+
+    var min = 0;
+    var max = slideCount * slideHeight;
+    var closest = 0;
+
+    if (direction == "up") {
+      if (curPos >= slideHeight) {
+        var rem = Math.ceil(curPos / slideHeight);
+        closest = (rem - 1) * slideHeight;
+      } else {
+        closest = 0;
+      }
+    } else if (direction == "down") {
+      if (curPos <= ((slideCount - 1) * slideHeight)) {
+        var rem = Math.round(curPos / slideHeight);
+        closest = (rem + 1) * slideHeight;
+      } else {
+        closest = (slideCount - 1) * slideHeight;
+      }
+    }
+
+    window.scroll({top: closest, left: 0, behavior: 'smooth'});
+
   }
 
   render() {
@@ -21,8 +50,8 @@ class Slidenav extends React.Component {
     let controls;
     if (showSlideCtrls) {
       controls = <div className="slideBtnContainer">
-        <div className="arrow1"><img src="" alt=""/></div>
-        <div className="arrow2"><img src="" alt=""/></div>
+        <div onClick={() => this.arrowClick('up')} className="slideArrow slideArrow1"><img src="img/slideArrow.png" alt=""/></div>
+        <div onClick={() => this.arrowClick('down')} className="slideArrow slideArrow2"><img src="img/slideArrow.png" alt=""/></div>
       </div>;
     }
 
@@ -36,23 +65,19 @@ class Slidenav extends React.Component {
         </div>
       </Link>
 
-      <Customlink to="/navigation/">
+      <Link to="/">
         <div className="navBtn">
           <img src="img/homeIcon.png" alt="Home Icon"/>
         </div>
-      </Customlink>
+      </Link>
 
       {controls}
 
-      <Link to="/navigation/">
+      <Customlink to="/navigation/">
         <div className="navBtn">
           <img src="img/ellipsisIcon.png" alt="More"/>
         </div>
-      </Link>
-
-      <button onClick={this.homeClick}>
-        test
-      </button>
+      </Customlink>
 
     </div>);
   }

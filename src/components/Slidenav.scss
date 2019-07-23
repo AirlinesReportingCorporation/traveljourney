@@ -35,4 +35,22 @@
   height: 170px;
   width: 85px;
   margin-bottom: 40px;
+  text-align: center;
+}
+
+.slideArrow {
+  height: 85px;
+  cursor: pointer;
+
+  &.slideArrow1 {
+    img {
+      transform: rotate(270deg);
+    };
+  }
+
+  &.slideArrow2 {
+    img {
+      transform: rotate(90deg);
+    };
+  }
 }

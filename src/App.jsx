@@ -92,7 +92,7 @@ class App extends Component {
         </div>
         <div>
           <AnimatedSwitch {...pageTransitions} mapStyles={mapStyles} className="switch-wrapper">
-            <Route path="/" exact="exact" render={(props) => <Navigation {...props} routeUpdate={this.getRoute}/>}/>
+            <Route path="/" exact="exact" render={(props) => <Startpage {...props} routeUpdate={this.getRoute}/>}/>
             <Route path="/navigation/" render={(props) => <Navigation {...props} routeUpdate={this.getRoute}/>}/>
             <Route path="/about/" render={(props) => <Samplepage {...props} routeUpdate={this.getRoute}/>}/>
             <Route path="/inspire/" render={(props) => <Inspire {...props} routeUpdate={this.getRoute}/>}/>
@@ -104,7 +104,7 @@ class App extends Component {
             <Route path="/outcome/" render={(props) => <Outcome {...props} routeUpdate={this.getRoute}/>}/>
           </AnimatedSwitch>
 
-          <Slidenav display={this.state.showSlideCtrls}/>
+          <Slidenav display={this.state.showSlideCtrls} slideCount={this.state.slideCount}/>
 
         </div>
 

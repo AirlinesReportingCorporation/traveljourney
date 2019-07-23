@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import {withRouter} from 'react-router-dom';
 import ReactDOM from "react-dom";
 
-
-
 class Customlink extends React.Component {
   constructor(props) {
     super(props);
@@ -11,7 +9,8 @@ class Customlink extends React.Component {
   }
 
   handleClick() {
-    setTimeout(function(){ window.scrollTo(0, 0); }, 100);
+    window.scrollTo(0, 0);
+    setTimeout(function(){}, 1000);
     this.props.history.push(this.props.to);
   }
 

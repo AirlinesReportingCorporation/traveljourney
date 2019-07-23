@@ -20,7 +20,7 @@ class Navigation extends React.Component {
     return (<div className="navigationPane">
       <div>
         <div className="navigationLink">
-          <Link to="/about">Intro</Link>
+          <Link to="/">Intro</Link>
         </div>
         <div className="navigationLink">
           <div className="navStep">Step 1</div>
