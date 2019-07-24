@@ -2,18 +2,23 @@
 $screenWidth: 1080px;
 
 .startPage.pagePaneContainer {
-  width: $screenWidth * 3;
+  width: $screenWidth * 4;
   height: 1920px;
   max-height: 1920px;
   overflow: hidden;
 
   .pageSlide {
+    display: inline-block;
     width: $screenWidth;
     max-width: $screenWidth;
+    vertical-align: top;
+  }
+
+  .verticalSlide {
+    height: 100%;
   }
 
   .slide1 {
-    height: 100%;
     background: url('../img/startpage1.png') bottom center no-repeat;
     background-size: contain;
 
@@ -29,6 +34,29 @@ $screenWidth: 1080px;
       font-size: 50px;
       padding-left: 50px;
       font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
+    }
+  }
+
+  .textSlide {
+    background: #222222;
+    h1 {
+      color: #ffffff;
+      font-size: 110px;
+      padding-left: 120px;
+      padding-top: 160px;
+      line-height: 120px;
+    }
+
+    &.textSlide1 {
+      background: #222222;
+    }
+
+    &.textSlide2 {
+      background: #777777;
+    }
+
+    &.textSlide3 {
+      background: #bbbbbb;
     }
   }
 }

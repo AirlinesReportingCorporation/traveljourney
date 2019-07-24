@@ -10,7 +10,7 @@ class Customlink extends React.Component {
 
   handleClick() {
     window.scrollTo(0, 0);
-    setTimeout(function(){}, 1000);
+    setTimeout(function(){}, 2000);
     this.props.history.push(this.props.to);
   }
 

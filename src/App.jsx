@@ -49,10 +49,10 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      routePath: "test",
+      routePath: "/",
       showSlideCtrls: true,
       slideCount: 1,
-      slideDirection: "vertical"
+      slideDirection: "horizontal"
     };
 
     this.getRoute = this.getRoute.bind(this);
@@ -70,6 +70,12 @@ class App extends Component {
 
     this.setState({slideCount: sCount});
 
+    if(rPath == "/") {
+      this.setState({slideDirection: "horizontal"});
+    }
+    else {
+      this.setState({slideDirection: "vertical"});
+    }
   }
 
   render() {
@@ -104,7 +110,7 @@ class App extends Component {
             <Route path="/outcome/" render={(props) => <Outcome {...props} routeUpdate={this.getRoute}/>}/>
           </AnimatedSwitch>
 
-          <Slidenav display={this.state.showSlideCtrls} slideCount={this.state.slideCount}/>
+          <Slidenav display={this.state.showSlideCtrls} slideCount={this.state.slideCount} slideDirection={this.state.slideDirection} />
 
         </div>
 

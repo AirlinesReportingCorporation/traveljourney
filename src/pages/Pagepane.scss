@@ -84,7 +84,6 @@
   }
 
   .quoteSlide {
-
     padding-top: 120px;
     height: 100%;
     background: #02e3a8;
@@ -129,4 +128,112 @@
     }
   }
 
+  .owl-carousel {
+    padding: 40px 0;
+
+    .owl-item {
+      img {
+        padding-top: 40px;
+        display: inline-block;
+        width: auto;
+      }
+    }
+
+    .owl-stage-outer {
+      overflow: visible;
+    }
+
+    .sliderContent {
+      box-shadow: rgba(0, 0, 0, 0.5) 0 20px 60px -10px;
+      height: 720px;
+      width: 720px;
+      text-align: center;
+
+      h2 {
+        color: #ffffff;
+        padding-top: 80px;
+        font-size: 64px;
+        line-height: 70px;
+      }
+
+      .touchText {
+        display: block;
+        position: absolute;
+        bottom: 40px;
+        text-transform: uppercase;
+        font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
+        font-size: 24px;
+        text-align: center;
+        width: 720px;
+        color: #ffffff;
+      }
+
+      &.backSide {
+        color: #ffffff;
+        font-family: SourceSansPro-Semibold, helvetica, arial, sans-serif;
+        font-size: 32px;
+        line-height: 45px;
+        padding: 80px 120px 40px;
+        text-align: left;
+      }
+
+      .touchBackBtnContainer {
+        position: absolute;
+        bottom: 80px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .touchBackBtn {
+        display: inline-block;
+        padding: 30px;
+        font-size: 24px;
+        text-transform: uppercase;
+        border: 1px solid #ffffff;
+        background: rgba(0,0,0,.2);
+        color: #ffffff;
+      }
+
+      &.sliderGradientBlue {
+        background: #1a9bd1;
+        background: -webkit-linear-gradient(to bottom, #1a9bd1 25%, #26b4e6 50%, #2cc1f1 75%);
+        background: -o-linear-gradient(to bottom, #1a9bd1 25%, #26b4e6 50%, #2cc1f1 75%);
+        background: -moz-linear-gradient(to bottom, #1a9bd1 25%, #26b4e6 50%, #2cc1f1 75%);
+        background: linear-gradient(to bottom, #1a9bd1 25%, #26b4e6 50%, #2cc1f1 75%);
+      }
+
+      &.sliderGradientGreen {
+        background: #1a9bd1;
+        background: -webkit-linear-gradient(to bottom, #02e3a7 25%, #6de286 50%, #a3e175 75%);
+        background: -o-linear-gradient(to bottom, #02e3a7 25%, #6de286 50%, #a3e175 75%);
+        background: -moz-linear-gradient(to bottom, #02e3a7 25%, #6de286 50%, #a3e175 75%);
+        background: linear-gradient(to bottom, #02e3a7 25%, #6de286 50%, #a3e175 75%);
+      }
+
+      &.sliderGradientPurple {
+        background: #1a9bd1;
+        background: -webkit-linear-gradient(to bottom, #e24cac 25%, #e86690 50%, #f4965d 75%);
+        background: -o-linear-gradient(to bottom, #e24cac 25%, #e86690 50%, #f4965d 75%);
+        background: -moz-linear-gradient(to bottom, #e24cac 25%, #e86690 50%, #f4965d 75%);
+        background: linear-gradient(to bottom, #e24cac 25%, #e86690 50%, #f4965d 75%);
+      }
+    }
+  }
+
+  .endSlide {
+    background: #222222;
+    height: 100%;
+
+    h2 {
+      display: block;
+      color: #ffffff;
+      font-family: SourceSansPro-Regular, arial, sans-serif;
+      padding-top: 440px;
+      padding-left: 120px;
+      padding-bottom: 80px;
+      font-size: 72px;
+      line-height: 90px;
+    }
+  }
 }

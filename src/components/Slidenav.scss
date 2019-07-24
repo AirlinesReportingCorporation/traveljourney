@@ -53,4 +53,14 @@
       transform: rotate(90deg);
     };
   }
+
+  &.slideArrow3 {
+    img {
+      transform: rotate(180deg);
+    };
+  }
+
+  &.slideArrow4 {
+    img {};
+  }
 }
