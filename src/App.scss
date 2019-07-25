@@ -6,7 +6,6 @@
 @import '../node_modules/owl.carousel/dist/assets/owl.carousel.min.css';
 @import '../node_modules/antd/dist/antd.css';
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -87,7 +86,52 @@ h1 {
   right: 10px;
   padding: 10px;
   font-family: helvetica, arial, sans-serif;
+
   span {
     color: #ffffff;
   }
+}
+
+.infoDrawer {
+  padding: 80px;
+  color: #000000;
+  position: relative;
+
+  .drawerTitle {
+    color: #000000;
+    font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
+    font-size: 110px;
+  }
+
+  p {
+    color: #000000;
+    font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  img {
+    position: absolute;
+    top: 918px;
+    left: -80px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+  }
+}
+
+.ant-drawer.ant-drawer-open .ant-drawer-mask {
+  opacity: 1;
+}
+
+.ant-drawer-right.ant-drawer-open .ant-drawer-content-wrapper {
+  box-shadow: none;
+}
+
+.ant-drawer .ant-drawer-content {
+  margin-left: 80px !important;
+}
+
+.ant-drawer-wrapper-body {
+  overflow: visible !important;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 20px 60px -10px;
 }

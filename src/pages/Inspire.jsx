@@ -4,17 +4,25 @@ import {MemoryRouter as Router, Route, Link} from "react-router-dom";
 import {withRouter} from "react-router";
 import $ from 'jquery';
 import owlCarousel from "owl.carousel";
+import {Drawer} from 'antd';
 
 import './Inspire.scss';
 import Slider from '../components/Pageslide.jsx';
 import Slidenav from '../components/Slidenav.jsx';
 import Pageslide from '../components/Pageslide.jsx';
 import Flipslide from '../components/Flipslide.jsx';
+import Todaytomorrow from '../components/Todaytomorrow.jsx';
 
 class Inspire extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      visible: false,
+      drawerContent: " "
+    };
 
+    this.showDrawer = this.showDrawer.bind(this);
+    this.onClose = this.onClose.bind(this);
     this.exploreClick = this.exploreClick.bind(this);
     this.flipClick = this.flipClick.bind(this);
   }
@@ -26,6 +34,16 @@ class Inspire extends React.Component {
   flipClick() {
     console.log("flipClick");
   }
+
+  showDrawer(content) {
+    this.setState({drawerContent: content});
+    this.setState({visible: true});
+    console.log(content);
+  };
+
+  onClose() {
+    this.setState({visible: false});
+  };
 
   componentDidMount() {
     this.props.routeUpdate(this.props.location.pathname, this.slideMenu.children.length);
@@ -61,6 +79,25 @@ class Inspire extends React.Component {
       }
     });
 
+    let drawerContent = this.state.drawerContent;
+
+    if (drawerContent == "NDC") {
+      drawerContent = <div>
+        <div className="drawerTitle">NDC</div>
+        <p>New Distribution Capability (NDC) is a schema — a means of communicating information. Today, airlines and travel agencies are limited in the information they can send and receive regarding airline tickets. This is because they use a legacy schema built on the traditional, 1950s-era handwritten airline ticket. It’s been adapted slightly over the years, but it provides very little flexibility.</p>
+        <p>Air travel retailing has significantly advanced, and it has become far more customizable. The NDC schema enables airlines and travel agencies to communicate with far more flexibility, including with photos, customized bundles and/or personalized offers.
+        </p>
+      </div>;
+
+    } else if (drawerContent == "oneorder") {
+      drawerContent = <div>
+        <div className="drawerTitle">One Order</div>
+        <p>Today, air travel purchases in the agency channel are fragmented. The airline ticket transaction is separate from baggage fees, in-flight wi-fi, lounge access and other ancillary purchases — all of which are systematically treated as individual tickets. ONE Order will create a consolidated order structure that brings together disparate purchase data in a centralized location. In the future, tickets will be replaced by orders, which can contain any number of service items: tickets for multiple people, airline ancillary purchases, and presumably third-party products (e.g., rideshare credits).
+        </p>
+      </div>;
+
+    }
+
     return (<div className="inspirePage pagePaneContainer" ref={(e) => this.slideMenu = e}>
       <Pageslide>
         <div className="titleSlide">
@@ -87,13 +124,13 @@ class Inspire extends React.Component {
             <Flipslide frontSide={<div > <h2>Business Trip</h2>
               <img src="img/businessTrip.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
-            </div>} backSide={<div > <div>Corporate travelers often have urgent business needs that result in last - minute air bookings, but analysis from ARC and Egencia shows that companies can save big by booking 22 days in advance.</div> < div className = "touchBackBtnContainer" > <div className="touchBackBtn">Touch to go back</div>
+            </div>} backSide={<div > <div>Corporate travelers often have urgent business needs that result in last-minute air bookings, but analysis from ARC and Egencia shows that companies can save big by booking 22 days in advance.</div> < div className = "touchBackBtnContainer" > <div className="touchBackBtn">Touch to go back</div>
             </div>
           </div>} colorClass="sliderGradientBlue"></Flipslide>
             <Flipslide frontSide={<div > <h2>Family Vacation</h2>
               <img src="img/familyVacation.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
-            </div>} backSide={<div > <div>The 2019 Virtuoso Luxe Report identified multigenerational travel as the year’s top vacation trend.In particular, service - oriented travel, genealogy trips and family-friendly cruises are gaining popularity.
+            </div>} backSide={<div > <div>The 2019 Virtuoso Luxe Report identified multigenerational travel as the year’s top vacation trend.In particular, service-oriented travel, genealogy trips and family-friendly cruises are gaining popularity.
                 <div className="touchBackBtnContainer">
                   <div className="touchBackBtn">Touch to go back</div>
                 </div>
@@ -103,7 +140,7 @@ class Inspire extends React.Component {
                 <br/>Getaway</h2>
               <img src="img/getaway.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
-            </div>} backSide={<div > <div>Travel agencies specializing in luxury travel are on the rise.More than half of agency respondents in a recent Phocuswright study, co - sponsored by ARC, indicated that they specialize in river cruises, and 16 % specialize in selling bespoke, a highly customized segment of luxury travel.<div className="touchBackBtnContainer">
+            </div>} backSide={<div > <div>Travel agencies specializing in luxury travel are on the rise. More than half of agency respondents in a recent Phocuswright study, co-sponsored by ARC, indicated that they specialize in river cruises, and 16 % specialize in selling bespoke, a highly customized segment of luxury travel.<div className="touchBackBtnContainer">
                   <div className="touchBackBtn">Touch to go back</div>
                 </div>
               </div>
@@ -142,10 +179,33 @@ class Inspire extends React.Component {
 
       </Pageslide>
       <Pageslide>
+        <div className="todayTomorrowSlide">
+          <h2>How can we get
+            <br/>&mdash; and maintain &mdash;<br/>
+            the traveler's
+            <br/>
+            attention?</h2>
+          <Todaytomorrow today={<div> By analyzing travel data and identifying traveler trends,
+            travel brands can create targeted promotions that break through the noise,
+            ultimately inspiring active travel planning.</div>} tomorrow={<div> Industry initiatives like < span onClick = {
+              this.showDrawer.bind(this, 'NDC')
+            } > NDC</span> and < span onClick = {
+              this.showDrawer.bind(this, 'oneorder')
+            } > ONE Order</span> will generate richer data for <strong>smarter marketing</strong>.By leveraging historical purchase data,
+            travel brands will be able to create more meaningful personalization.</div>}></Todaytomorrow>
+        </div>
+      </Pageslide>
+      <Pageslide>
         <div className="endSlide">
           <h2>What Can Data Tell Us?</h2>
         </div>
       </Pageslide>
+      <Drawer placement="right" width="960px" closable={true} onClose={this.onClose} visible={this.state.visible}>
+        <div className="infoDrawer">
+          {drawerContent}
+          <img onClick={this.onClose} src="img/closeIcon.png" alt="Close"/>
+        </div>
+      </Drawer>
     </div>);
   }
 }
