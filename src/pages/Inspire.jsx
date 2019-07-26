@@ -24,15 +24,10 @@ class Inspire extends React.Component {
     this.showDrawer = this.showDrawer.bind(this);
     this.onClose = this.onClose.bind(this);
     this.exploreClick = this.exploreClick.bind(this);
-    this.flipClick = this.flipClick.bind(this);
   }
 
   exploreClick() {
     window.scroll({top: 1920, left: 0, behavior: 'smooth'});
-  }
-
-  flipClick() {
-    console.log("flipClick");
   }
 
   showDrawer(content) {
@@ -62,9 +57,9 @@ class Inspire extends React.Component {
       smartSpeed: 700,
       URLhashListener: true,
       autoplayHoverPause: true,
-      stagePadding: 120,
+      stagePadding: 160,
       navText: [
-        '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowLeft.png">', '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowRight.png">'
+        '<img src="https://www2.arccorp.com/globalassets/homepage/redesign/latestArrowLeft.png">', '<div class="swipeLeft"><img src="img/whiteSlideArrow.png"> Swipe</div>'
       ],
       responsive: {
         0: {

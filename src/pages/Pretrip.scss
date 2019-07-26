@@ -16,21 +16,48 @@
 
       img {
         bottom: -63px;
+        left: 280px;
       }
     }
 
     .section2 {
       background: #ffffff;
+
       p {
         color: $pretripColor;
       }
+
       button {
         background: $pretripColor;
       }
     }
   }
 
-  .bulletSlide {}
+  .bulletSlide {
+    h1 {
+      font-size: 70px;
+      margin-right: 160px;
+    }
+
+    .bulletSub {
+      padding-left: 120px;
+      padding-right: 160px;
+      font-size: 45px;
+    }
+  }
 
   .quoteSlide {}
+
+  .owl-carousel {
+    .sliderContent {
+      height: 800px;
+      &.backSide {
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+    }
+    .owl-item img {
+      padding-top: 65px;
+    }
+  }
 }
