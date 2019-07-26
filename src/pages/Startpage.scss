@@ -2,7 +2,7 @@
 $screenWidth: 1080px;
 
 .startPage.pagePaneContainer {
-  width: $screenWidth * 4;
+  width: $screenWidth * 11;
   height: 1920px;
   max-height: 1920px;
   overflow: hidden;
@@ -19,7 +19,7 @@ $screenWidth: 1080px;
   }
 
   .slide1 {
-    background: url('../img/startpage1.png') bottom center no-repeat;
+    background: url("../img/startpage1.png") bottom center no-repeat;
     background-size: contain;
 
     h1 {
@@ -29,16 +29,25 @@ $screenWidth: 1080px;
     }
 
     p {
+      vertical-align: top;
+      padding-top: 80px;
       color: #000000;
       display: inline-block;
       font-size: 50px;
       padding-left: 50px;
       font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
     }
+
+    .startPageArrow {
+      vertical-align: top;
+      padding-left: 40px;
+      padding-top: 95px;
+    }
   }
 
   .textSlide {
     background: #222222;
+
     h1 {
       color: #ffffff;
       font-size: 110px;
@@ -48,15 +57,263 @@ $screenWidth: 1080px;
     }
 
     &.textSlide1 {
-      background: #222222;
+      background: #222222 url("../img/startpage2.png") center center no-repeat;
+      background-size: cover;
     }
 
     &.textSlide2 {
-      background: #777777;
+      background: #222222 url("../img/startpage3.png") center center no-repeat;
+      background-size: cover;
+
+      h1 {
+        padding-top: 80px;
+      }
+
+      img {
+        padding-top: 300px;
+      }
     }
 
     &.textSlide3 {
-      background: #bbbbbb;
+      background: #bbbbbb url("../img/startPage4.png") top center no-repeat;
+      background-size: contain;
+
+      button {
+        display: block;
+        background: $shopColor;
+        color: #ffffff;
+        padding: 40px 140px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 25px;
+        font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
+        text-transform: uppercase;
+      }
+
+      .textSlideTop {
+        height: 1440px;
+      }
+
+      .textSlideBottom {
+        background: #ffffff;
+        height: 480px;
+        color: $shopColor;
+      }
+
+      p {
+        color: $shopColor;
+        text-align: center;
+        font-size: 36px;
+        padding-top: 120px;
+        margin-bottom: 80px;
+      }
+
+      h1 {
+        margin-bottom: 0;
+      }
+
+      img {
+        padding: 0;
+      }
+    }
+  }
+
+  .shopPage.titleSlide {
+    .section1 {
+      background: $shopColor;
+
+      h1 {
+        background: #ffffff;
+        color: $shopColor;
+      }
+
+      .sep {
+        background: #ffffff;
+      }
+
+      img {
+        bottom: -63px;
+      }
+
+      p {
+        font-size: 45px;
+      }
+    }
+
+    .section2 {
+      background: #ffffff;
+      p {
+        color: $shopColor;
+      }
+      button {
+        background: $shopColor;
+      }
+    }
+  }
+
+  .offerPage.titleSlide {
+    .section1 {
+      background: $offerColor;
+
+      h1 {
+        background: #ffffff;
+        color: $offerColor;
+      }
+
+      .sep {
+        background: #ffffff;
+      }
+
+      img {
+        bottom: -63px;
+      }
+
+      p {
+        font-size: 45px;
+      }
+    }
+
+    .section2 {
+      background: #ffffff;
+      p {
+        color: $offerColor;
+      }
+      button {
+        background: $offerColor;
+      }
+    }
+  }
+
+  .purchasePage.titleSlide {
+    .section1 {
+      background: $purchaseColor;
+
+      h1 {
+        background: #ffffff;
+        color: $purchaseColor;
+      }
+
+      .sep {
+        background: #ffffff;
+      }
+
+      img {
+        bottom: -63px;
+      }
+
+      p {
+        font-size: 45px;
+      }
+    }
+
+    .section2 {
+      background: #ffffff;
+      p {
+        color: $purchaseColor;
+      }
+      button {
+        background: $purchaseColor;
+      }
+    }
+  }
+
+  .pretripPage.titleSlide {
+    .section1 {
+      background: $pretripColor;
+
+      h1 {
+        background: #ffffff;
+        color: $pretripColor;
+      }
+
+      .sep {
+        background: #ffffff;
+      }
+
+      img {
+        bottom: -63px;
+      }
+
+      p {
+        font-size: 45px;
+      }
+    }
+
+    .section2 {
+      background: #ffffff;
+      p {
+        color: $pretripColor;
+      }
+      button {
+        background: $pretripColor;
+      }
+    }
+  }
+
+  .tripPage.titleSlide {
+    .section1 {
+      background: $tripColor;
+
+      h1 {
+        background: #ffffff;
+        color: $tripColor;
+      }
+
+      .sep {
+        background: #ffffff;
+      }
+
+      img {
+        left: 40px;
+        bottom: -63px;
+      }
+
+      p {
+        font-size: 45px;
+      }
+    }
+
+    .section2 {
+      background: #ffffff;
+      p {
+        color: $tripColor;
+      }
+      button {
+        background: $tripColor;
+      }
+    }
+  }
+
+  .outcomePage.titleSlide {
+    .section1 {
+      background: $outcomeColor;
+
+      h1 {
+        background: #ffffff;
+        color: $outcomeColor;
+      }
+
+      .sep {
+        background: #ffffff;
+      }
+
+      img {
+        bottom: -63px;
+      }
+
+      p {
+        font-size: 45px;
+      }
+    }
+
+    .section2 {
+      background: #ffffff;
+      p {
+        color: $outcomeColor;
+      }
+      button {
+        background: $outcomeColor;
+      }
     }
   }
 }

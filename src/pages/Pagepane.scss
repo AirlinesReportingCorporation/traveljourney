@@ -258,6 +258,10 @@
         color: #ffffff;
       }
 
+      &.slideTransparent {
+        background: rgba(0,0,0,.35);
+      }
+
       &.sliderGradientDarkblue {
         background: #0c537c;
         background: -webkit-linear-gradient(to bottom, #0c537c 25%, #0a6e8b 50%, #05aaae 75%);
@@ -351,7 +355,7 @@
       }
 
       .todayTomorrowSecondary {
-        background: #222222 url("img/tomorrowSecondary.png") center center no-repeat;
+        background: #222222 url("/img/tomorrowSecondary.png") center center no-repeat;
         background-size: cover;
         color: #ffffff;
         width: 400px;
