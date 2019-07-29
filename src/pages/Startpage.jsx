@@ -93,14 +93,14 @@ class Startpage extends React.Component {
           marginLeft: marginl
         }} ref={(e) => this.slideMenu = e}>
         <Pageslide>
-          <div className="verticalSlide slide1">
+          <div className="verticalSlide slide1 ">
             <span onClick={this.tapBegin}>
-              <h1>The
+              <h1 className="animated slideInLeft delay-1s">The
                 <br/>Travel
                 <br/>Journey</h1>
-              <img className="animated tada" src="img/startPageIcon1.png" alt=""/>
+              <img className="animated tada delay-1s" src="img/startPageIcon1.png" alt=""/>
               <p>Tap Here to Begin</p>
-              <img className="startPageArrow" src="img/startPageArrow.png" alt=""/></span>
+              <img className="startPageArrow animated shake slowest infinite" src="img/startPageArrow.png" alt=""/></span>
           </div>
         </Pageslide>
         <Pageslide>
@@ -162,7 +162,7 @@ class Startpage extends React.Component {
                 <img src="img/inspire1.png"/>
               </div>
               <div className="section2">
-                <p>See how to spark some inspiration.</p>
+                <p>See how travel brands can spark inspiration.</p>
                 <Link to="/inspire/">
                   <button className="animated pulse slower infinite">Explore</button>
                 </Link>
@@ -177,12 +177,12 @@ class Startpage extends React.Component {
                 <div className="stepNumber">Step 2a</div>
                 <h1>Shop.</h1>
                 <div className="sep"></div>
-                <p>The traveler searches for a flight
-                  <br/>within their desired parameters.</p>
+                <p>The traveler provides the
+                  <br/>parameters for their desired trip.</p>
                 <img src="img/Shop.png"/>
               </div>
               <div className="section2">
-                <p>See how to spark some inspiration.</p>
+                <p>Learn how the shopping experience shapes the trip.</p>
                 <Link to="/shop/">
                   <button className="animated pulse slower infinite">Explore</button>
                 </Link>
@@ -198,11 +198,11 @@ class Startpage extends React.Component {
                 <h1>Offer.</h1>
                 <div className="sep"></div>
                 <p>After the traveler searches for a flight,
-                  <br/>the industry responds with an offer.</p>
+                  <br/>they recieve a variety of offers.</p>
                 <img src="img/Offer.png"/>
               </div>
               <div className="section2">
-                <p>See how to spark some inspiration.</p>
+                <p>See how those offers are generated.</p>
                 <Link to="/offer/">
                   <button className="animated pulse slower infinite">Explore</button>
                 </Link>
@@ -217,12 +217,12 @@ class Startpage extends React.Component {
                 <div className="stepNumber">Step 3</div>
                 <h1>Purchase.</h1>
                 <div className="sep"></div>
-                <p>The traveler searches for a flight
-                  <br/>within their desired parameters.</p>
+                <p>The traveler purchases their airline tickets
+                  <br/>(through a process that’s more complex than you might expect).</p>
                 <img src="img/Purchase.png"/>
               </div>
               <div className="section2">
-                <p>See how to spark some inspiration.</p>
+                <p>Learn how the purchase works, <br/>and how we can enhance it. </p>
                 <Link to="/purchase/">
                   <button className="animated pulse slower infinite">Explore</button>
                 </Link>
@@ -242,7 +242,7 @@ class Startpage extends React.Component {
                 <img src="img/Pretrip.png"/>
               </div>
               <div className="section2">
-                <p>See how to spark some inspiration.</p>
+                <p>See why this step of the travel journey <br/>is often underestimated.</p>
                 <Link to="/pretrip/">
                   <button className="animated pulse slower infinite">Explore</button>
                 </Link>
@@ -257,12 +257,11 @@ class Startpage extends React.Component {
                 <div className="stepNumber">Step 5</div>
                 <h1>Trip.</h1>
                 <div className="sep"></div>
-                <p>The traveler searches for a flight
-                  <br/>within their desired parameters.</p>
+                <p>The traveler embarks on their journey. </p>
                 <img src="img/Trip.png"/>
               </div>
               <div className="section2">
-                <p>See how to spark some inspiration.</p>
+                <p>With dozens of touch points on the day of travel, <br/>brands have many opportunities to reduce friction.</p>
                 <Link to="/trip/">
                   <button className="animated pulse slower infinite">Explore</button>
                 </Link>
@@ -277,12 +276,11 @@ class Startpage extends React.Component {
                 <div className="stepNumber">Step 6</div>
                 <h1>Outcome.</h1>
                 <div className="sep"></div>
-                <p>The traveler searches for a flight
-                  <br/>within their desired parameters.</p>
+                <p>The traveler's experience — positive, neutral or negative — informs their own future decisions, as well as those of friends, family, colleagues and social media connections with whom they share their experiences.</p>
                 <img src="img/Outcome.png"/>
               </div>
               <div className="section2">
-                <p>See how to spark some inspiration.</p>
+                <p>See how the traveler’s experience creates a ripple effect. </p>
                 <Link to="/outcome/">
                   <button className="animated pulse slower infinite">Explore</button>
                 </Link>

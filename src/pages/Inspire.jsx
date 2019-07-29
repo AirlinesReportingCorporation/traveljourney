@@ -78,7 +78,7 @@ class Inspire extends React.Component {
 
     if (drawerContent == "NDC") {
       drawerContent = <div>
-        <div className="drawerTitle">NDC</div>
+        <div className="drawerTitle ndc">NDC</div>
         <p>New Distribution Capability (NDC) is a schema — a means of communicating information. Today, airlines and travel agencies are limited in the information they can send and receive regarding airline tickets. This is because they use a legacy schema built on the traditional, 1950s-era handwritten airline ticket. It’s been adapted slightly over the years, but it provides very little flexibility.</p>
         <p>Air travel retailing has significantly advanced, and it has become far more customizable. The NDC schema enables airlines and travel agencies to communicate with far more flexibility, including with photos, customized bundles and/or personalized offers.
         </p>
@@ -86,9 +86,10 @@ class Inspire extends React.Component {
 
     } else if (drawerContent == "oneorder") {
       drawerContent = <div>
-        <div className="drawerTitle">One Order</div>
-        <p>Today, air travel purchases in the agency channel are fragmented. The airline ticket transaction is separate from baggage fees, in-flight wi-fi, lounge access and other ancillary purchases — all of which are systematically treated as individual tickets. ONE Order will create a consolidated order structure that brings together disparate purchase data in a centralized location. In the future, tickets will be replaced by orders, which can contain any number of service items: tickets for multiple people, airline ancillary purchases, and presumably third-party products (e.g., rideshare credits).
+        <div className="drawerTitle oneorder">ONE Order</div>
+        <p>Today, air travel purchases in the agency channel are fragmented. The airline ticket transaction is separate from baggage fees, in-flight wi-fi, lounge access and other ancillary purchases — all of which are systematically treated as individual tickets. ONE Order will create a consolidated order structure that brings together disparate purchase data in a centralized location.
         </p>
+        <p>In the future, tickets will be replaced by orders, which can contain any number of service items: tickets for multiple people, airline ancillary purchases, and presumably third-party products (e.g., rideshare credits).</p>
       </div>;
 
     }
@@ -158,7 +159,7 @@ class Inspire extends React.Component {
       <Pageslide>
         <div className="todayTomorrowSlide">
           <h2>How can we get
-            <br/>&mdash; and maintain &mdash;<br/>
+            <br/>and maintain<br/>
             the traveler's
             <br/>
             attention?</h2>

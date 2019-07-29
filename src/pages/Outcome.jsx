@@ -64,7 +64,7 @@ class Outcome extends React.Component {
           <div className="owl-carousel owl-theme">
             <Flipslide frontSide={<div > <h2>Sharing the
                 <br/>Experience</h2>
-              <img src="img/businessTrip.png" alt="Business Trip"/>
+              <img src="img/sharingTheExperience.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
             </div>} backSide={<div > <div>Tweets. Snaps. Instagram photos. Recounting the trip to family members. Making recommendations to a colleague in the breakroom. Travelers share their experiences in all kinds of ways, potentially shifting others’ perceptions of certain brands or destinations.
               </div> < div className = "touchBackBtnContainer" > <div className="touchBackBtn">Touch to go back</div>
@@ -72,7 +72,7 @@ class Outcome extends React.Component {
           </div>} colorClass="sliderGradientBlue"></Flipslide>
             <Flipslide frontSide={<div > <h2>Repairing the
                 <br/>Relationship</h2>
-              <img src="img/familyVacation.png" alt="Business Trip"/>
+              <img src="img/repairingTheRelationship.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
             </div>} backSide={<div > <div>Sometimes, trips don’t go according to plan. But travel brands still have an opportunity to make things right. Quickly and tactfully following up with an acknowledgement, apology or incentive can go a long way in repairing the traveler’s relationship with the brand.
                 <div className="touchBackBtnContainer">
@@ -81,7 +81,7 @@ class Outcome extends React.Component {
               </div>
             </div>} colorClass="sliderGradientGreen"></Flipslide>
             <Flipslide frontSide={<div > <h2>Building Loyalty</h2>
-              <img src="img/longAwaitedGetaway.png" alt="Business Trip"/>
+              <img src="img/buildingLoyalty.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
             </div>} backSide={<div > <div>The travel journey repeats itself, and every trip impacts the traveler’s perception of your brand. Make that impression last by following up and inspiring new travel, continuing the momentum. Smart personalization can make these follow-ups even more powerful.<div className="touchBackBtnContainer">
                   <div className="touchBackBtn">Touch to go back</div>
