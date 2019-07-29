@@ -147,6 +147,38 @@
     background: -moz-linear-gradient(to bottom, #00e3a8 25%, #66e288 50%, #a1e176 75%);
     background: linear-gradient(to bottom, #00e3a8 25%, #66e288 50%, #a1e176 75%);
 
+    &.GradientDarkblue {
+      background: #0c537c;
+      background: -webkit-linear-gradient(to bottom, #0c537c 25%, #0a6e8b 50%, #05aaae 75%);
+      background: -o-linear-gradient(to bottom, #0c537c 25%, #0a6e8b 50%, #05aaae 75%);
+      background: -moz-linear-gradient(to bottom, #0c537c 25%, #0a6e8b 50%, #05aaae 75%);
+      background: linear-gradient(to bottom, #0c537c 25%, #0a6e8b 50%, #05aaae 75%);
+    }
+
+    &.GradientBlue {
+      background: #1a9bd1;
+      background: -webkit-linear-gradient(to bottom, #1a9bd1 25%, #26b4e6 50%, #2cc1f1 75%);
+      background: -o-linear-gradient(to bottom, #1a9bd1 25%, #26b4e6 50%, #2cc1f1 75%);
+      background: -moz-linear-gradient(to bottom, #1a9bd1 25%, #26b4e6 50%, #2cc1f1 75%);
+      background: linear-gradient(to bottom, #1a9bd1 25%, #26b4e6 50%, #2cc1f1 75%);
+    }
+
+    &.GradientGreen {
+      background: #1a9bd1;
+      background: -webkit-linear-gradient(to bottom, #02e3a7 25%, #6de286 50%, #a3e175 75%);
+      background: -o-linear-gradient(to bottom, #02e3a7 25%, #6de286 50%, #a3e175 75%);
+      background: -moz-linear-gradient(to bottom, #02e3a7 25%, #6de286 50%, #a3e175 75%);
+      background: linear-gradient(to bottom, #02e3a7 25%, #6de286 50%, #a3e175 75%);
+    }
+
+    &.GradientPurple {
+      background: #1a9bd1;
+      background: -webkit-linear-gradient(to bottom, #e24cac 25%, #e86690 50%, #f4965d 75%);
+      background: -o-linear-gradient(to bottom, #e24cac 25%, #e86690 50%, #f4965d 75%);
+      background: -moz-linear-gradient(to bottom, #e24cac 25%, #e86690 50%, #f4965d 75%);
+      background: linear-gradient(to bottom, #e24cac 25%, #e86690 50%, #f4965d 75%);
+    }
+
     img {
       padding-left: 80px;
       padding-top: 120px;

@@ -27,11 +27,13 @@ class Trip extends React.Component {
 
     return (<div className="tripPage pagePaneContainer" ref={(e) => this.slideMenu = e}>
       <Pageslide>
-        <div className="textSlide">
-          <img src="img/quote.png" alt="quote"/>
+        <div className="textSlide GradientGreen">
+
           <div className="textSlideContent">
             The trip experience begins with mobile check-in 24 hours in advance and spans the traveler’s journey to and through the airport, as well as boarding, flight and transport to their destination.
+
           </div>
+          <img src="img/allcopyTrip.png" alt=""/>
         </div>
       </Pageslide>
       <Pageslide>

@@ -101,7 +101,7 @@ class Pretrip extends React.Component {
       <Pageslide>
         <div className="quoteSlide">
           <div className="quotePhoto">
-            <img src="img/lauriQuote.png" alt="Lauri Reishus"/>
+            <img src="img/mikeQuote.png" alt="Mike Premo"/>
           </div>
           <div className="quoteText">
             Placeholder quote from Mike on Pre-trip

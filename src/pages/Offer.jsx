@@ -68,14 +68,15 @@ class Offer extends React.Component {
 
     return (<div className="offerPage pagePaneContainer" ref={(e) => this.slideMenu = e}>
       <Pageslide>
-        <div className="textSlide">
-          <img src="img/quote.png" alt="quote"/>
+        <div className="textSlide GradientDarkblue">
           <div className="textSlideContent">
             After the traveler submits a shopping request, the industry&nbsp;
             <span onClick={this.showDrawer.bind(this, 'makeOffer')}>makes an offer</span>
             &mdash; or, more likely, many offers from many airlines.
             <br/><br/>New technology infrastructure and distribution strategies are&nbsp;
             <span onClick={this.showDrawer.bind(this, 'shakeOffer')}>shaking up the offer</span>, which has the potential to include more than just an airline ticket.
+
+            <img src="img/allcopyOfferTOP.png" alt=""/>
           </div>
         </div>
       </Pageslide>
@@ -117,11 +118,12 @@ class Offer extends React.Component {
         </div>
       </Pageslide>
       <Pageslide>
-        <div className="textSlide">
-          <img src="img/quote.png" alt="quote"/>
+        <div className="textSlide GradientPurple">
+
           <div className="textSlideContent">
             While NDC presents vast opportunities, it will take a few years to fully come to fruition at scale. In the meantime, we are living in a hybrid environment, where existing processes need to reliably function in tandem with new capabilities.<br/><br/>
             Ultimately, an evolved retailing environment will deliver the right content to the right person at the right time.
+            <img src="img/allcopyOfferBOTTOM.png" alt=""/>
 
           </div>
         </div>

@@ -73,4 +73,13 @@
       background: $outcomeColor;
     }
   }
+
+  .textSlide {
+    height: 1920px;
+    overflow:  hidden;
+
+    .textSlideContent {
+      padding-top: 120px;
+    }
+  }
 }
