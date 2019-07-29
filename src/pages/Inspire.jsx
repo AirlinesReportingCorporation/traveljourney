@@ -173,8 +173,21 @@ class Inspire extends React.Component {
         </div>
       </Pageslide>
       <Pageslide>
-        <div className="endSlide">
+        <div className="dataSlide">
           <h2>What Can Data Tell Us?</h2>
+        </div>
+      </Pageslide>
+      <Pageslide>
+        <div className="endSlide">
+          <h2>After much anticipation,
+            <br/>the traveler is about to
+            <br/>embark on their trip...</h2>
+          <Link to={{
+              pathname: '/',
+              anchor: 'shop'
+            }}>
+            <button className="animated pulse slower infinite">Next Step: Shop</button>
+          </Link>
         </div>
       </Pageslide>
       <Drawer placement="right" width="960px" closable={true} onClose={this.onClose} visible={this.state.visible}>

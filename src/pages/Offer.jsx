@@ -100,7 +100,7 @@ class Offer extends React.Component {
             schedules and fares.While offers can fluctuate depending on those factors,
             they’re not customizable to the agency or traveler.</div>} tomorrow={<div> NDC creates the possibility of < strong > dynamic offers</strong>,
             which can be customized based on agency - airline relationship,
-            loyalty or established traveler preferences.This will make it easier for the traveler to view content that is likely to be the best fit &mdash; and enables agencies to receive rates based on partnership agreements.</div>}></Todaytomorrow>
+            loyalty or established traveler preferences.This will make it easier for the traveler to view content that is likely to be the best fit & mdash; and enables agencies to receive rates based on partnership agreements.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>
@@ -111,7 +111,8 @@ class Offer extends React.Component {
             a headache?
           </h2>
           <Todaytomorrow today={<div> The terms of corporate contracts are generally applied manually,
-            after the transaction &mdash; which creates room for error.</div>} tomorrow={<div> < strong > Smart contracts</strong> will integrate contract terms up front,
+            after the transaction & mdash;
+            which creates room for error.</div>} tomorrow={<div> < strong > Smart contracts</strong> will integrate contract terms up front,
             increasing accuracy and alignment while reducing room for error.This could also extend to corporate program policies, which could filter offers to display only those within corporate policy.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
@@ -119,9 +120,21 @@ class Offer extends React.Component {
         <div className="textSlide">
           <img src="img/quote.png" alt="quote"/>
           <div className="textSlideContent">
-            While NDC presents vast opportunities, it will take a few years to fully come to fruition at scale. In the meantime, we are living in a hybrid environment, where existing processes need to reliably function in tandem with new capabilities.<br/><br/> Ultimately, an evolved retailing environment will deliver the right content to the right person at the right time.
+            While NDC presents vast opportunities, it will take a few years to fully come to fruition at scale. In the meantime, we are living in a hybrid environment, where existing processes need to reliably function in tandem with new capabilities.<br/><br/>
+            Ultimately, an evolved retailing environment will deliver the right content to the right person at the right time.
 
           </div>
+        </div>
+      </Pageslide>
+      <Pageslide>
+        <div className="endSlide">
+          <h2>When the traveler is presented with great offers that match their parameters and preferences, they’re ready to buy.</h2>
+          <Link to={{
+              pathname: '/',
+              anchor: 'purchase'
+            }}>
+            <button className="animated pulse slower infinite">Next Step: Purchase</button>
+          </Link>
         </div>
       </Pageslide>
       <Drawer placement="right" width="960px" closable={true} onClose={this.onClose} visible={this.state.visible}>

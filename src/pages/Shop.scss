@@ -33,4 +33,17 @@
   .bulletSlide {}
 
   .quoteSlide {}
+
+  .endSlide {
+    background: url('../img/shopEND.jpg') top center no-repeat;
+    background-size: contain;
+    h2 {
+      font-size: 48px;
+      line-height: 50px;
+    }
+    button {
+      background: $offerColor;
+    }
+
+  }
 }

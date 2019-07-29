@@ -90,7 +90,8 @@ class Shop extends React.Component {
             <Flipslide frontSide={<div > <h2>What They Shop For</h2>
               <img src="img/whatTheyShopFor.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
-            </div>} backSide={<div > <div>Travelers’ search parameters can be incredibly detailed — factoring in dates, cost, routes, connections, timing and brand loyalty. Business travelers also need to consider their corporate travel policy. </div> < div className = "touchBackBtnContainer" > <div className="touchBackBtn">Touch to go back</div>
+            </div>} backSide={<div > <div>Travelers’ search parameters can be incredibly detailed — factoring in dates, cost, routes, connections, timing and brand loyalty. Business travelers also need to consider their corporate travel policy.
+              </div> < div className = "touchBackBtnContainer" > <div className="touchBackBtn">Touch to go back</div>
             </div>
           </div>} colorClass="sliderGradientBlue"></Flipslide>
             <Flipslide frontSide={<div > <h2>Where They Shop</h2>
@@ -145,14 +146,34 @@ class Shop extends React.Component {
       </Pageslide>
       <Pageslide>
         <div className="todayTomorrowSlide">
-          <h2>What products <br/>&mdash; are  available to &mdash; <br/>the traveler? </h2>
-          <Todaytomorrow today={<div> Different products are available in different purchase channels. Travelers may not have access to the same products through their agency or TMC as they would through the airline website. </div>} tomorrow={<div> Rich airline content, available in every sales channel, creates a <strong>consistent brand experience</strong>. Travelers have access to the same high-quality products, no matter where they buy.</div>}></Todaytomorrow>
+          <h2>What products
+            <br/>&mdash; are available to &mdash;
+            <br/>the traveler?
+          </h2>
+          <Todaytomorrow today={<div> Different products are available in different purchase channels.Travelers may not have access to the same products through their agency or TMC as they would through the airline website.</div>} tomorrow={<div> Rich airline content,
+            available in every sales channel,
+            creates a < strong > consistent brand experience</strong>.Travelers have access to the same high - quality products,
+            no matter where they buy.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>
         <div className="todayTomorrowSlide">
-          <h2>How can we <br/>&mdash; make shopping &mdash;<br/>easier? </h2>
-          <Todaytomorrow today={<div> A lack of transparency makes it challenging for travelers to accurately compare fares. Some fares may include a checked bag or reserved seat, whereas others may upcharge for these amenities. </div>} tomorrow={<div> With NDC, the traveler has <strong>increased transparency</strong> and knows exactly what they’re getting for the price, which enables them to make more informed decisions about their purchase.</div>}></Todaytomorrow>
+          <h2>How can we
+            <br/>&mdash; make shopping &mdash;<br/>easier?
+          </h2>
+          <Todaytomorrow today={<div> A lack of transparency makes it challenging for travelers to accurately compare fares.Some fares may include a checked bag or reserved seat, whereas others may upcharge for these amenities.</div>} tomorrow={<div> With NDC,
+            the traveler has < strong > increased transparency</strong> and knows exactly what they’re getting for the price, which enables them to make more informed decisions about their purchase.</div>}></Todaytomorrow>
+        </div>
+      </Pageslide>
+      <Pageslide>
+        <div className="endSlide">
+          <h2>The customer's shopping parameters are just half of the shop-offer cycle. <br/><br/>See what's involved in creating the offers that are returned to the customer. </h2>
+          <Link to={{
+              pathname: '/',
+              anchor: 'offer'
+            }}>
+            <button className="animated pulse slower infinite">Next Step: Offer</button>
+          </Link>
         </div>
       </Pageslide>
     </div>);

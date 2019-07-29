@@ -146,7 +146,7 @@ class Startpage extends React.Component {
             </div>
             <div className="textSlideBottom">
               <p>Explore the Travel Journey.</p>
-              <button class="animated pulse slower infinite" onClick={this.tapGo}>Let's Go</button>
+              <button className="animated pulse slower infinite" onClick={this.tapGo}>Let's Go</button>
             </div>
           </div>
         </Pageslide>
@@ -164,7 +164,7 @@ class Startpage extends React.Component {
               <div className="section2">
                 <p>See how to spark some inspiration.</p>
                 <Link to="/inspire/">
-                  <button class="animated pulse slower infinite">Explore</button>
+                  <button className="animated pulse slower infinite">Explore</button>
                 </Link>
               </div>
             </div>
@@ -184,7 +184,7 @@ class Startpage extends React.Component {
               <div className="section2">
                 <p>See how to spark some inspiration.</p>
                 <Link to="/shop/">
-                  <button class="animated pulse slower infinite">Explore</button>
+                  <button className="animated pulse slower infinite">Explore</button>
                 </Link>
               </div>
             </div>
@@ -204,7 +204,7 @@ class Startpage extends React.Component {
               <div className="section2">
                 <p>See how to spark some inspiration.</p>
                 <Link to="/offer/">
-                  <button class="animated pulse slower infinite">Explore</button>
+                  <button className="animated pulse slower infinite">Explore</button>
                 </Link>
               </div>
             </div>
@@ -224,7 +224,7 @@ class Startpage extends React.Component {
               <div className="section2">
                 <p>See how to spark some inspiration.</p>
                 <Link to="/purchase/">
-                  <button class="animated pulse slower infinite">Explore</button>
+                  <button className="animated pulse slower infinite">Explore</button>
                 </Link>
               </div>
             </div>
@@ -244,7 +244,7 @@ class Startpage extends React.Component {
               <div className="section2">
                 <p>See how to spark some inspiration.</p>
                 <Link to="/pretrip/">
-                  <button class="animated pulse slower infinite">Explore</button>
+                  <button className="animated pulse slower infinite">Explore</button>
                 </Link>
               </div>
             </div>
@@ -254,7 +254,7 @@ class Startpage extends React.Component {
           <div className="tripPage verticalSlide titleSlide">
             <div className="pagePaneContent">
               <div className="section1">
-                <div className="stepNumber">Step 3</div>
+                <div className="stepNumber">Step 5</div>
                 <h1>Trip.</h1>
                 <div className="sep"></div>
                 <p>The traveler searches for a flight
@@ -264,7 +264,7 @@ class Startpage extends React.Component {
               <div className="section2">
                 <p>See how to spark some inspiration.</p>
                 <Link to="/trip/">
-                  <button class="animated pulse slower infinite">Explore</button>
+                  <button className="animated pulse slower infinite">Explore</button>
                 </Link>
               </div>
             </div>
@@ -274,7 +274,7 @@ class Startpage extends React.Component {
           <div className="outcomePage titleSlide">
             <div className="pagePaneContent">
               <div className="section1">
-                <div className="stepNumber">Step 3</div>
+                <div className="stepNumber">Step 6</div>
                 <h1>Outcome.</h1>
                 <div className="sep"></div>
                 <p>The traveler searches for a flight
@@ -284,7 +284,7 @@ class Startpage extends React.Component {
               <div className="section2">
                 <p>See how to spark some inspiration.</p>
                 <Link to="/outcome/">
-                  <button class="animated pulse slower infinite">Explore</button>
+                  <button className="animated pulse slower infinite">Explore</button>
                 </Link>
               </div>
             </div>

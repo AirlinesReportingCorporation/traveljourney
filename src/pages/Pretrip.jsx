@@ -56,11 +56,11 @@ class Pretrip extends React.Component {
       <Pageslide>
         <div className="bulletSlide">
           <h1>The timeframe between purchase and travel is the pre-trip window. (of opportunity)</h1>
-          <p className="bulletSub">The traveler’s attention is drawn to the trip, making this a perfect time to offer additional amenities that will create a more positive travel experience.</p>
+          <p className="bulletSub"></p>
           <div className="owl-carousel owl-theme">
-            <Flipslide frontSide={<div className = "firstFlipSlide" > Given the variables in the following scenarios,
-              solve for X.</div>} backSide={<div className = "firstFlipSlide" > Given the variables in the following scenarios,
-              solve for X.</div>} colorClass="slideTransparent"></Flipslide>
+            <Flipslide frontSide={<div className = "firstFlipSlide" > The traveler’s attention is drawn to the trip,
+              making this a perfect time to offer additional amenities that will create a more positive travel experience.</div>} backSide={<div className = "firstFlipSlide" > The traveler’s attention is drawn to the trip,
+              making this a perfect time to offer additional amenities that will create a more positive travel experience.</div>} colorClass="slideTransparent"></Flipslide>
             <Flipslide frontSide={<div > <h2>The Road Warrior</h2>
               <img src="img/roadWarrior.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
@@ -115,20 +115,52 @@ class Pretrip extends React.Component {
       </Pageslide>
       <Pageslide>
         <div className="todayTomorrowSlide">
-          <h2>What kinds of <br/>&mdash; pre-trip offers &mdash; <br/>are most effective? </h2>
-          <Todaytomorrow today={<div> Data is the best source of intelligence for effective offers — by examining the timing and types of offers presented to different customer segments, travel brands can identify their best upsell opportunities.  </div>} tomorrow={<div> Through intelligent retail initiatives, travel brands can <strong>equip the traveler</strong> with personalized add-on offers. As travel retailing advances, brands will be able to identify travelers’ previous ancillary purchases, enable travelers to log their preferences, and factor business travel policies into offers. </div>}></Todaytomorrow>
+          <h2>What kinds of
+            <br/>&mdash; pre-trip offers &mdash;
+            <br/>are most effective?
+          </h2>
+          <Todaytomorrow today={<div> Data is the best source of intelligence for effective offers — by examining the timing and types of offers presented to different customer segments, travel brands can identify their best upsell opportunities.</div>} tomorrow={<div> Through intelligent retail initiatives,
+            travel brands can < strong > equip the traveler</strong> with personalized add - on offers.As travel retailing advances,
+            brands will be able to identify travelers’ previous ancillary purchases,
+            enable travelers to log their preferences,
+            and factor business travel policies into offers.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>
         <div className="todayTomorrowSlide">
-          <h2>How can travel brands <br/>&mdash; better analyze &mdash; <br/>their data? </h2>
-          <Todaytomorrow today={<div> Managing traveler data can be a challenge in today’s landscape, where ancillary purchases are often disconnected from the traveler’s ticket, and the amount of usable data varies depending on the purchase channel. Airline loyalty programs, travel agencies and TMCs’ managed corporate travel programs are likely to have the most holistic insights into traveler trends.   </div>} tomorrow={<div> With NDC data, travel brands can more easily <strong>identify patterns</strong> from the traveler’s previous trips — and perhaps leverage broader travel trends to identify the most effective offers for certain destinations. </div>}></Todaytomorrow>
+          <h2>How can travel brands
+            <br/>&mdash; better analyze &mdash;
+            <br/>their data?
+          </h2>
+          <Todaytomorrow today={<div> Managing traveler data can be a challenge in today’s landscape,
+            where ancillary purchases are often disconnected from the traveler’s ticket,
+            and the amount of usable data varies depending on the purchase channel.Airline loyalty programs,
+            travel agencies and TMCs’ managed corporate travel programs are likely to have the most holistic insights into traveler trends.</div>} tomorrow={<div> With NDC data,
+            travel brands can more easily < strong > identify patterns</strong> from the traveler’s previous trips — and perhaps leverage broader travel trends to identify the most effective offers for certain destinations.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>
         <div className="todayTomorrowSlide">
-          <h2>What happens in <br/>&mdash; the days leading &mdash; <br/>up to the trip? </h2>
-          <Todaytomorrow today={<div> Some travel brands send email offers to travelers in the days leading up to their trip. Generally speaking, these emails are broad, not tailored to the traveler’s preferences or specific plans.  </div>} tomorrow={<div> In the days leading up to the trip, strong communication from the airline and agency creates a positive brand experience and a chance to present the most meaningful, relevant upgrade options to travelers as they <strong>prepare for departure</strong>.</div>}></Todaytomorrow>
+          <h2>What happens in
+            <br/>&mdash; the days leading &mdash;
+            <br/>up to the trip?
+          </h2>
+          <Todaytomorrow today={<div> Some travel brands send email offers to travelers in the days leading up to their trip.Generally speaking,
+            these emails are broad,
+            not tailored to the traveler’s preferences or specific plans.</div>} tomorrow={<div> In the days leading up to the trip,
+            strong communication from the airline and agency creates a positive brand experience and a chance to present the most meaningful,
+            relevant upgrade options to travelers as they < strong > prepare for departure</strong>.</div>}></Todaytomorrow>
+        </div>
+      </Pageslide>
+      <Pageslide>
+        <div className="endSlide">
+          <h2>After much anticipation, the traveler is about to embark on their trip. </h2>
+          <Link to={{
+              pathname: '/',
+              anchor: 'trip'
+            }}>
+            <button className="animated pulse slower infinite">Next Step: Trip</button>
+          </Link>
         </div>
       </Pageslide>
     </div>);

@@ -57,4 +57,18 @@
       padding-right: 160px;
     }
   }
+
+  .endSlide {
+    background: url("../img/TripEND.jpg") top center no-repeat;
+    background-size: contain;
+
+    h2 {
+      font-size: 45px;
+      line-height: 55px;
+    }
+
+    button {
+      background: $outcomeColor;
+    }
+  }
 }

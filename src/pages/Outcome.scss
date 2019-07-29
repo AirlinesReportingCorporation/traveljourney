@@ -47,4 +47,18 @@
       font-size: 58px;
     }
   }
+
+  .endSlide {
+    background: url("../img/outcomeEND.jpg") top center no-repeat;
+    background-size: contain;
+
+    h2 {
+      font-size: 45px;
+      line-height: 50px;
+    }
+
+    button {
+      background: $purchaseColor;
+    }
+  }
 }

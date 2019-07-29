@@ -25,18 +25,8 @@ class Purchase extends React.Component {
     return (<div className="purchasePage pagePaneContainer" ref={(e) => this.slideMenu = e}>
       <Pageslide>
         <div className="quoteSlide">
-          <div className="quotePhoto">
-            <img src="img/lauriQuote.png" alt="Lauri Reishus"/>
-          </div>
           <div className="quoteText">
-            "Purchasing an airline ticket is simple and nearly instantaneous."
-            <br/>
-            <div className="quoteMetaSeperate">&mdash; The Traveler</div>
-            <br/>
-            "LOL"
-            <br/>
-            <div className="quoteMetaSeperate">&mdash; The Travel Industry</div>
-            <br/>
+            <img src="img/wordBubbles.png" alt=""/>
             <div className="quoteNew">When you buy an airline ticket from a travel agency or TMC, a series of complex, behind-the-scenes processes begins.</div>
           </div>
         </div>
@@ -88,6 +78,18 @@ class Purchase extends React.Component {
           <Todaytomorrow today={<div> Entities throughout the industry are closely connected through a variety of technology platforms, critical file exchanges and detailed processes that take place every second, at a massive scale. The global travel community recognizes a need to transform its technology infrastructure to create a more flexible future — but this evolution takes some time, and it requires close collaboration with industry partners. </div>} tomorrow={<div> ARC and its industry partners are researching and piloting <strong>emerging technology</strong>, such as blockchain, to determine how it could transform today's industry processes. ARC is working closely with United Airlines to determine whether blockchain technology could create increased transparency and efficiency in corporate travel. ARC has also invested in travel blockchain developer Blockskye, signaling its commitment to creating innovative solutions that move the industry forward. </div>}></Todaytomorrow>
         </div>
       </Pageslide>
+      <Pageslide>
+        <div className="endSlide">
+          <h2>Now that the traveler has purchased their tickets, we enter a glorious window of opportunity. </h2>
+          <Link to={{
+              pathname: '/',
+              anchor: 'pretrip'
+            }}>
+            <button className="animated pulse slower infinite">Next Step: Pre-trip</button>
+          </Link>
+        </div>
+      </Pageslide>
+
     </div>);
   }
 }

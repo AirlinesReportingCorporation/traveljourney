@@ -27,24 +27,6 @@ class Trip extends React.Component {
 
     return (<div className="tripPage pagePaneContainer" ref={(e) => this.slideMenu = e}>
       <Pageslide>
-        <div className="titleSlide">
-          <div className="pagePaneContent">
-            <div className="section1">
-              <div className="stepNumber">Step 3</div>
-              <h1>Trip.</h1>
-              <div className="sep"></div>
-              <p>The traveler searches for a flight
-                <br/>within their desired parameters.</p>
-              <img src="img/Trip.png"/>
-            </div>
-            <div className="section2">
-              <p>See how to spark some inspiration.</p>
-              <button>Explore</button>
-            </div>
-          </div>
-        </div>
-      </Pageslide>
-      <Pageslide>
         <div className="textSlide">
           <img src="img/quote.png" alt="quote"/>
           <div className="textSlideContent">
@@ -62,6 +44,18 @@ class Trip extends React.Component {
         <div className="todayTomorrowSlide tts2 big">
           <h2>What happens if the flight is cancelled or delayed, and there’s a missed connection? </h2>
           <Todaytomorrow today={<div> In cases of irregular operations (such as inclement weather, delays and cancellations), a traveler’s options for changing their ticket vary depending on where they purchased their ticket. If they purchased through a travel agency or TMC, either that agency or the airline may make changes to the ticket. If they purchased through the airline, a travel agency or TMC is not able to service the ticket. </div>} tomorrow={<div><strong>Channel-agnostic service</strong> will enable TMCs to service all their clients’ airline tickets, regardless of the purchase channel. This will require efficient, real-time transmission of data. Opening up customer service opportunities to agencies in a channel-agnostic servicing environment alleviates strain for the airline, and it creates a more positive experience for the customer. Leveraging technologies like AI and mobile can also help speed resolution.  </div>}></Todaytomorrow>
+        </div>
+      </Pageslide>
+
+      <Pageslide>
+        <div className="endSlide">
+          <h2>Fast forward. The traveler has happily made it to their destination. <br/><br/>After enjoying their trip, the traveler ventures back home. (But the journey’s not over yet!) </h2>
+          <Link to={{
+              pathname: '/',
+              anchor: 'outcome'
+            }}>
+            <button className="animated pulse slower infinite">Next Step: Outcome</button>
+          </Link>
         </div>
       </Pageslide>
     </div>);
