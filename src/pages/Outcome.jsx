@@ -54,25 +54,7 @@ class Outcome extends React.Component {
     });
 
     return (<div className="outcomePage pagePaneContainer" ref={(e) => this.slideMenu = e}>
-      <Pageslide>
-        <div className="titleSlide">
-          <div className="pagePaneContent">
-            <div className="section1">
-              <div className="stepNumber">Step 3</div>
-              <h1>Outcome.</h1>
-              <div className="sep"></div>
-              <p>The trip may be over, but
-                <br/>its impact is just beginning.
-              </p>
-              <img src="img/Outcome.png"/>
-            </div>
-            <div className="section2">
-              <p>See how to spark some inspiration.</p>
-              <button>Explore</button>
-            </div>
-          </div>
-        </div>
-      </Pageslide>
+
       <Pageslide>
         <div className="bulletSlide">
           <h1>The trip may be

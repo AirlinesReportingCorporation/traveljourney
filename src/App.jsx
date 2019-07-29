@@ -5,7 +5,6 @@ import {version, Button, Drawer} from "antd";
 import {AnimatedSwitch} from 'react-router-transition';
 import {Motion, spring} from 'react-motion';
 import {hot} from 'react-hot-loader';
-import Samplepage from './pages/Samplepage.jsx';
 import Startpage from './pages/Startpage.jsx';
 import Slidenav from './components/Slidenav.jsx';
 
@@ -100,7 +99,6 @@ class App extends Component {
           <AnimatedSwitch {...pageTransitions} mapStyles={mapStyles} className="switch-wrapper">
             <Route path="/" exact="exact" render={(props) => <Startpage {...props} routeUpdate={this.getRoute}/>}/>
             <Route path="/navigation/" render={(props) => <Navigation {...props} routeUpdate={this.getRoute}/>}/>
-            <Route path="/about/" render={(props) => <Samplepage {...props} routeUpdate={this.getRoute}/>}/>
             <Route path="/inspire/" render={(props) => <Inspire {...props} routeUpdate={this.getRoute}/>}/>
             <Route path="/shop/" render={(props) => <Shop {...props} routeUpdate={this.getRoute}/>}/>
             <Route path="/offer/" render={(props) => <Offer {...props} routeUpdate={this.getRoute}/>}/>

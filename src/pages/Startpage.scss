@@ -1,6 +1,11 @@
 @import 'Pagepane';
 $screenWidth: 1080px;
 
+.sliderContainer {
+  width: $screenWidth;
+  overflow: hidden;
+}
+
 .startPage.pagePaneContainer {
   width: $screenWidth * 11;
   height: 1920px;
@@ -142,9 +147,11 @@ $screenWidth: 1080px;
 
     .section2 {
       background: #ffffff;
+
       p {
         color: $shopColor;
       }
+
       button {
         background: $shopColor;
       }
@@ -175,9 +182,11 @@ $screenWidth: 1080px;
 
     .section2 {
       background: #ffffff;
+
       p {
         color: $offerColor;
       }
+
       button {
         background: $offerColor;
       }
@@ -208,9 +217,11 @@ $screenWidth: 1080px;
 
     .section2 {
       background: #ffffff;
+
       p {
         color: $purchaseColor;
       }
+
       button {
         background: $purchaseColor;
       }
@@ -241,9 +252,11 @@ $screenWidth: 1080px;
 
     .section2 {
       background: #ffffff;
+
       p {
         color: $pretripColor;
       }
+
       button {
         background: $pretripColor;
       }
@@ -275,9 +288,11 @@ $screenWidth: 1080px;
 
     .section2 {
       background: #ffffff;
+
       p {
         color: $tripColor;
       }
+
       button {
         background: $tripColor;
       }
@@ -308,9 +323,11 @@ $screenWidth: 1080px;
 
     .section2 {
       background: #ffffff;
+
       p {
         color: $outcomeColor;
       }
+
       button {
         background: $outcomeColor;
       }

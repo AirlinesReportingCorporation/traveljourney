@@ -79,24 +79,6 @@ class Shop extends React.Component {
 
     return (<div className="shopPage pagePaneContainer" ref={(e) => this.slideMenu = e}>
       <Pageslide>
-        <div className="titleSlide">
-          <div className="pagePaneContent">
-            <div className="section1">
-              <div className="stepNumber">Step 2a</div>
-              <h1>Shop.</h1>
-              <div className="sep"></div>
-              <p>The traveler searches for a flight
-                <br/>within their desired parameters.</p>
-              <img src="img/Shop.png"/>
-            </div>
-            <div className="section2">
-              <p>See how to spark some inspiration.</p>
-              <button>Explore</button>
-            </div>
-          </div>
-        </div>
-      </Pageslide>
-      <Pageslide>
         <div className="bulletSlide">
           <h1>The shop-and<br/>-offer cycle
             <br/>is like a

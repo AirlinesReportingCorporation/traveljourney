@@ -20,7 +20,8 @@ class Slidenav extends React.Component {
     var slideWidth = 1080;
     var slideCount = this.props.slideCount;
     var curPosTop = document.documentElement.scrollTop;
-    var curPosLeft = document.documentElement.scrollLeft;
+    var curPosLeft = $('.startPage').css("margin-left");
+    curPosLeft = parseInt(curPosLeft) * -1;
 
     var min = 0;
     var max = slideCount * slideHeight;
@@ -34,6 +35,7 @@ class Slidenav extends React.Component {
       } else {
         closestTop = 0;
       }
+      window.scroll({top: closestTop, left: closestLeft, behavior: 'smooth'});
     } else if (direction == "down") {
       if (curPosTop <= ((slideCount - 1) * slideHeight)) {
         var rem = Math.round(curPosTop / slideHeight);
@@ -41,6 +43,7 @@ class Slidenav extends React.Component {
       } else {
         closestTop = (slideCount - 1) * slideHeight;
       }
+      window.scroll({top: closestTop, left: closestLeft, behavior: 'smooth'});
     } else if (direction == "right") {
       if (curPosLeft <= ((slideCount - 1) * slideWidth)) {
         var rem = Math.round(curPosLeft / slideWidth);
@@ -48,16 +51,22 @@ class Slidenav extends React.Component {
       } else {
         closestLeft = (slideCount - 1) * slideWidth;
       }
+      $('.startPage').animate({
+        marginLeft: closestLeft * -1 + 'px'
+      }, 400, "linear");
     } else if (direction == "left") {
+
       if (curPosLeft >= slideWidth) {
         var rem = Math.ceil(curPosLeft / slideWidth);
         closestLeft = (rem - 1) * slideWidth;
+        console.log(closestLeft);
       } else {
         closestLeft = 0;
       }
+      $('.startPage').animate({
+        marginLeft: closestLeft * -1 + 'px'
+      }, 400, "linear");
     }
-
-    window.scroll({top: closestTop, left: closestLeft, behavior: 'smooth'});
 
   }
 

@@ -24,41 +24,65 @@ class Navigation extends React.Component {
         </div>
         <div className="navigationLink">
           <div className="navStep">Step 1</div>
-          <Customlink to="/inspire">Inspire</Customlink>
+          <Link to={{
+              pathname: '/',
+              anchor: 'inspire'
+            }}>Inspire</Link>
 
         </div>
         <div className="navigationLink">
           <div className="navStep">Step 2a</div>
-          <Link to="/shop">Shop</Link>
-
+          <Link to={{
+              pathname: '/',
+              anchor: 'shop'
+            }}>Shop</Link>
         </div>
         <div className="navigationLink">
           <div className="navStep">Step 2b</div>
-          <Link to="/offer">Offer</Link>
+          <Link to={{
+              pathname: '/',
+              anchor: 'offer'
+            }}>
+            Offer</Link>
 
         </div>
         <div className="navigationLink">
           <div className="navStep">Step 3</div>
-          <Link to="/purchase">Purchase</Link>
+          <Link to={{
+              pathname: '/',
+              anchor: 'purchase'
+            }}>Purchase</Link>
 
         </div>
         <div className="navigationLink">
           <div className="navStep">Step 4</div>
-          <Link to="/pretrip">Pre-Trip</Link>
+          <Link to={{
+              pathname: '/',
+              anchor: 'pretrip'
+            }}>Pre-trip</Link>
 
         </div>
         <div className="navigationLink">
           <div className="navStep">Step 5</div>
-          <Link to="/trip">Trip</Link>
+          <Link to={{
+              pathname: '/',
+              anchor: 'trip'
+            }}>Trip</Link>
 
         </div>
         <div className="navigationLink">
           <div className="navStep">Step 6</div>
-          <Link to="/outcome">Outcome</Link>
+            <Link to={{
+                pathname: '/',
+                anchor: 'outcome'
+              }}>Outcome</Link>
 
         </div>
         <div className="navigationLink">
-          <Link to="/">Wrap-up</Link>
+          <Link to={{
+              pathname: '/',
+              anchor: 'offer'
+            }}>Wrap-up</Link>
         </div>
       </div>
     </div>);

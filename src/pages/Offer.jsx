@@ -68,24 +68,6 @@ class Offer extends React.Component {
 
     return (<div className="offerPage pagePaneContainer" ref={(e) => this.slideMenu = e}>
       <Pageslide>
-        <div className="titleSlide">
-          <div className="pagePaneContent">
-            <div className="section1">
-              <div className="stepNumber">Step 2b</div>
-              <h1>Offer.</h1>
-              <div className="sep"></div>
-              <p>After the traveler searches for a flight,
-                <br/>the industry responds with an offer.</p>
-              <img src="img/Offer.png"/>
-            </div>
-            <div className="section2">
-              <p>See how to spark some inspiration.</p>
-              <button>Explore</button>
-            </div>
-          </div>
-        </div>
-      </Pageslide>
-      <Pageslide>
         <div className="textSlide">
           <img src="img/quote.png" alt="quote"/>
           <div className="textSlideContent">

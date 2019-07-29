@@ -24,24 +24,6 @@ class Purchase extends React.Component {
 
     return (<div className="purchasePage pagePaneContainer" ref={(e) => this.slideMenu = e}>
       <Pageslide>
-        <div className="titleSlide">
-          <div className="pagePaneContent">
-            <div className="section1">
-              <div className="stepNumber">Step 3</div>
-              <h1>Purchase.</h1>
-              <div className="sep"></div>
-              <p>The traveler searches for a flight
-                <br/>within their desired parameters.</p>
-              <img src="img/Purchase.png"/>
-            </div>
-            <div className="section2">
-              <p>See how to spark some inspiration.</p>
-              <button>Explore</button>
-            </div>
-          </div>
-        </div>
-      </Pageslide>
-      <Pageslide>
         <div className="quoteSlide">
           <div className="quotePhoto">
             <img src="img/lauriQuote.png" alt="Lauri Reishus"/>

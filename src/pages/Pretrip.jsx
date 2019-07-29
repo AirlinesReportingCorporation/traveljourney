@@ -54,24 +54,6 @@ class Pretrip extends React.Component {
 
     return (<div className="pretripPage pagePaneContainer" ref={(e) => this.slideMenu = e}>
       <Pageslide>
-        <div className="titleSlide">
-          <div className="pagePaneContent">
-            <div className="section1">
-              <div className="stepNumber">Step 4</div>
-              <h1>Pre-Trip.</h1>
-              <div className="sep"></div>
-              <p>The traveler actively prepares
-                <br/>for their trip.</p>
-              <img src="img/Pretrip.png"/>
-            </div>
-            <div className="section2">
-              <p>See how to spark some inspiration.</p>
-              <button>Explore</button>
-            </div>
-          </div>
-        </div>
-      </Pageslide>
-      <Pageslide>
         <div className="bulletSlide">
           <h1>The timeframe between purchase and travel is the pre-trip window. (of opportunity)</h1>
           <p className="bulletSub">The traveler’s attention is drawn to the trip, making this a perfect time to offer additional amenities that will create a more positive travel experience.</p>
