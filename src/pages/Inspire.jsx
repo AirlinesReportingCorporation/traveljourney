@@ -93,25 +93,7 @@ class Inspire extends React.Component {
 
     }
 
-    return (<div className="inspirePage pagePaneContainer" ref={(e) => this.slideMenu = e}>
-      <Pageslide>
-        <div className="titleSlide">
-          <div className="pagePaneContent">
-            <div className="section1">
-              <div className="stepNumber">Step 1</div>
-              <h1>Inspire.</h1>
-              <div className="sep"></div>
-              <p>The traveler is inspired
-                <br/>to take a trip.</p>
-              <img src="img/inspire1.png"/>
-            </div>
-            <div className="section2">
-              <p>See how to spark some inspiration.</p>
-              <button onClick={this.exploreClick}>Explore</button>
-            </div>
-          </div>
-        </div>
-      </Pageslide>
+    return (<div className="inspirePage pagePaneContainer animated fadeIn" ref={(e) => this.slideMenu = e}>
       <Pageslide>
         <div className="bulletSlide">
           <h1>The inspiration<br/>to travel is<br/>everywhere,<br/>and it can come<br/>from a number<br/>of sources.</h1>
@@ -133,7 +115,7 @@ class Inspire extends React.Component {
             </div>} colorClass="sliderGradientGreen"></Flipslide>
             <Flipslide frontSide={<div > <h2>Long-Awaited
                 <br/>Getaway</h2>
-              <img src="img/getaway.png" alt="Business Trip"/>
+              <img src="img/longAwaitedGetaway.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
             </div>} backSide={<div > <div>Travel agencies specializing in luxury travel are on the rise. More than half of agency respondents in a recent Phocuswright study, co-sponsored by ARC, indicated that they specialize in river cruises, and 16 % specialize in selling bespoke, a highly customized segment of luxury travel.<div className="touchBackBtnContainer">
                   <div className="touchBackBtn">Touch to go back</div>

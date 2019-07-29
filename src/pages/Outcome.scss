@@ -21,9 +21,11 @@
 
     .section2 {
       background: #ffffff;
+
       p {
         color: $outcomeColor;
       }
+
       button {
         background: $outcomeColor;
       }
@@ -33,4 +35,16 @@
   .bulletSlide {}
 
   .quoteSlide {}
+
+  .todayTomorrowSlide {
+    .todayTomorrowContainer {
+      height: 1180px;
+    }
+  }
+
+  .textSlide {
+    .textSlideContent {
+      font-size: 58px;
+    }
+  }
 }

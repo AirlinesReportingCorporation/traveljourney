@@ -76,6 +76,8 @@
 
   .bulletSlide {
     padding: 160px 0;
+    width: 1080px;
+    overflow: hidden;
 
     h1 {
       margin-left: 120px;
@@ -175,6 +177,7 @@
       font-size: 24px;
       color: #ffffff;
       font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
+
       img {
         padding-right: 20px;
       }
@@ -196,7 +199,7 @@
 
     .owl-item {
       img {
-        padding-top: 40px;
+        padding-top: 0;
         display: inline-block;
         width: auto;
       }
@@ -297,6 +300,24 @@
   }
 
   .todayTomorrowSlide {
+    &.big {
+      h2 {
+        padding-bottom: 40px;
+      }
+
+      .todayTomorrowContainer {
+        height: 1280px;
+
+        .todayTomorrowMain {
+          height: 920px;
+        }
+
+        .todayTomorrowMainTitle {
+          margin-top: 80px;
+        }
+      }
+    }
+
     h2 {
       font-family: SourceSansPro-Black, helvetica, arial, sans-serif;
       font-size: 90px;

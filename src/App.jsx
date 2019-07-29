@@ -41,7 +41,7 @@ const pageTransitions = {
 };
 
 function mapStyles(styles) {
-  return {transform: `translateX(${styles.offset}%)`};
+  return {transform: `translateY(${styles.offset}%)`};
 }
 
 class App extends Component {

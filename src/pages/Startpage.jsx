@@ -2,9 +2,12 @@ import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import {Drawer, Button} from 'antd';
 import {useSwipeable, Swipeable} from 'react-swipeable'
+import {withRouter} from 'react-router-dom';
+import {MemoryRouter as Router, Route, Link} from "react-router-dom";
 import './Startpage.scss';
 import Slider from '../components/Slider.jsx';
 import Pageslide from '../components/Pageslide.jsx';
+import Customlink from '../components/Customlink.jsx';
 
 class Startpage extends React.Component {
   constructor(props) {
@@ -17,6 +20,7 @@ class Startpage extends React.Component {
     this.onClose = this.onClose.bind(this);
     this.scrollHandler = this.scrollHandler.bind(this);
     this.tapBegin = this.tapBegin.bind(this);
+    this.linkTo = this.linkTo.bind(this);
   }
 
   tapBegin() {
@@ -34,6 +38,11 @@ class Startpage extends React.Component {
   onClose() {
     this.setState({visible: false});
   };
+
+  linkTo(link) {
+    //console.log(this.props.history.push(link));
+    this.props.history.push(link);
+  }
 
   scrollHandler(e) {}
 
@@ -111,7 +120,9 @@ class Startpage extends React.Component {
             </div>
             <div className="section2">
               <p>See how to spark some inspiration.</p>
-              <button onClick={this.exploreClick}>Explore</button>
+              <Customlink to="/inspire/" type="start">
+              <button>Explore</button>
+              </Customlink>
             </div>
           </div>
         </div>
@@ -129,7 +140,9 @@ class Startpage extends React.Component {
             </div>
             <div className="section2">
               <p>See how to spark some inspiration.</p>
-              <button>Explore</button>
+                <Customlink to="/shop/" type="start">
+                <button>Explore</button>
+                </Customlink>
             </div>
           </div>
         </div>
@@ -147,7 +160,9 @@ class Startpage extends React.Component {
             </div>
             <div className="section2">
               <p>See how to spark some inspiration.</p>
-              <button>Explore</button>
+                <Customlink to="/offer/" type="start">
+                <button>Explore</button>
+                </Customlink>
             </div>
           </div>
         </div>
@@ -165,7 +180,9 @@ class Startpage extends React.Component {
             </div>
             <div className="section2">
               <p>See how to spark some inspiration.</p>
-              <button>Explore</button>
+                <Customlink to="/purchase/" type="start">
+                <button>Explore</button>
+                </Customlink>
             </div>
           </div>
         </div>
@@ -183,7 +200,9 @@ class Startpage extends React.Component {
             </div>
             <div className="section2">
               <p>See how to spark some inspiration.</p>
-              <button>Explore</button>
+                <Customlink to="/pretrip/" type="start">
+                <button>Explore</button>
+                </Customlink>
             </div>
           </div>
         </div>
@@ -200,7 +219,9 @@ class Startpage extends React.Component {
             </div>
             <div className="section2">
               <p>See how to spark some inspiration.</p>
-              <button>Explore</button>
+                <Customlink to="/trip/" type="start">
+                <button>Explore</button>
+                </Customlink>
             </div>
           </div>
         </div>
@@ -218,7 +239,9 @@ class Startpage extends React.Component {
             </div>
             <div className="section2">
               <p>See how to spark some inspiration.</p>
-              <button>Explore</button>
+                <Customlink to="/outcome/" type="start">
+                <button>Explore</button>
+                </Customlink>
             </div>
           </div>
         </div>
@@ -227,4 +250,4 @@ class Startpage extends React.Component {
   }
 }
 
-export default Startpage;
+export default withRouter(Startpage);

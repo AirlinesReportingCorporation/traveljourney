@@ -22,9 +22,11 @@
 
     .section2 {
       background: #ffffff;
+
       p {
         color: $tripColor;
       }
+
       button {
         background: $tripColor;
       }
@@ -34,4 +36,25 @@
   .bulletSlide {}
 
   .quoteSlide {}
+
+  .textSlide {
+    .textSlideContent {
+      font-size: 90px;
+      line-height: 100px;
+    }
+  }
+
+  .todayTomorrowSlide {
+    &.tts2 {
+      h2 {
+        font-size: 65px;
+        line-height: 70px;
+      }
+    }
+
+    h2 {
+      padding-left: 120px;
+      padding-right: 160px;
+    }
+  }
 }
