@@ -157,3 +157,16 @@ button {
   -webkit-animation-duration: 6s;
   animation-duration: 6s;
 }
+
+.downArrow {
+  position: absolute;
+  height: 36px;
+  width: 56px;
+  background: "../img/downArrow.png" center center no-repeat;
+  background-size: contain;
+  bottom: 20px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  opacity: .6;
+}

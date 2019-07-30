@@ -81,7 +81,7 @@ class Navigation extends React.Component {
         <div className="navigationLink">
           <Link to={{
               pathname: '/',
-              anchor: 'offer'
+              anchor: 'wrapup'
             }}>Wrap-up</Link>
         </div>
       </div>

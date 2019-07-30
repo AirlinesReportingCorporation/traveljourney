@@ -21,6 +21,7 @@ class Startpage extends React.Component {
     this.scrollHandler = this.scrollHandler.bind(this);
     this.tapBegin = this.tapBegin.bind(this);
     this.tapGo = this.tapGo.bind(this);
+    this.tapGoX = this.tapGoX.bind(this);
     this.linkTo = this.linkTo.bind(this);
   }
 
@@ -31,6 +32,12 @@ class Startpage extends React.Component {
   }
 
   tapGo() {
+    $('.startPage').animate({
+      marginLeft: 1080 * -4 + 'px'
+    }, 400, "linear");
+  }
+
+  tapGoX(n) {
     $('.startPage').animate({
       marginLeft: 1080 * -4 + 'px'
     }, 400, "linear");
@@ -84,6 +91,9 @@ class Startpage extends React.Component {
       case "outcome":
         marginl = (n + 6) * slideWidth;
         break;
+      case "wrapup":
+        marginl = (n + 7) * slideWidth;
+        break;
       default:
         // code block
     }
@@ -92,7 +102,7 @@ class Startpage extends React.Component {
       <div className="startPage pagePaneContainer" style={{
           marginLeft: marginl
         }} ref={(e) => this.slideMenu = e}>
-        <Pageslide>
+        <Pageslide noArrow="false">
           <div className="verticalSlide slide1 ">
             <span onClick={this.tapBegin}>
               <h1 className="animated slideInLeft delay-1s">The
@@ -103,7 +113,7 @@ class Startpage extends React.Component {
               <img className="startPageArrow animated shake slowest infinite" src="img/startPageArrow.png" alt=""/></span>
           </div>
         </Pageslide>
-        <Pageslide>
+        <Pageslide noArrow="false">
           <div className="verticalSlide textSlide textSlide1">
             <h1>The travel
               <br/>journey is
@@ -114,7 +124,7 @@ class Startpage extends React.Component {
             <img src="img/startPageIcon2.png" alt=""/>
           </div>
         </Pageslide>
-        <Pageslide>
+        <Pageslide noArrow="false">
           <div className="verticalSlide textSlide textSlide2">
             <img src="img/startPageIcon3.png" alt=""/>
             <h1>It begins with
@@ -130,7 +140,7 @@ class Startpage extends React.Component {
             </h1>
           </div>
         </Pageslide>
-        <Pageslide>
+        <Pageslide noArrow="false">
           <div className="verticalSlide textSlide textSlide3">
             <div className="textSlideTop">
               <h1>See how the
@@ -222,7 +232,9 @@ class Startpage extends React.Component {
                 <img src="img/Purchase.png"/>
               </div>
               <div className="section2">
-                <p>Learn how the purchase works, <br/>and how we can enhance it. </p>
+                <p>Learn how the purchase works,
+                  <br/>and how we can enhance it.
+                </p>
                 <Link to="/purchase/">
                   <button className="animated pulse slower infinite">Explore</button>
                 </Link>
@@ -242,7 +254,8 @@ class Startpage extends React.Component {
                 <img src="img/Pretrip.png"/>
               </div>
               <div className="section2">
-                <p>See why this step of the travel journey <br/>is often underestimated.</p>
+                <p>See why this step of the travel journey
+                  <br/>is often underestimated.</p>
                 <Link to="/pretrip/">
                   <button className="animated pulse slower infinite">Explore</button>
                 </Link>
@@ -257,11 +270,13 @@ class Startpage extends React.Component {
                 <div className="stepNumber">Step 5</div>
                 <h1>Trip.</h1>
                 <div className="sep"></div>
-                <p>The traveler embarks on their journey. </p>
+                <p>The traveler embarks on their journey.
+                </p>
                 <img src="img/Trip.png"/>
               </div>
               <div className="section2">
-                <p>With dozens of touch points on the day of travel, <br/>brands have many opportunities to reduce friction.</p>
+                <p>With dozens of touch points on the day of travel,
+                  <br/>brands have many opportunities to reduce friction.</p>
                 <Link to="/trip/">
                   <button className="animated pulse slower infinite">Explore</button>
                 </Link>
@@ -270,7 +285,7 @@ class Startpage extends React.Component {
           </div>
         </Pageslide>
         <Pageslide>
-          <div className="outcomePage titleSlide">
+          <div className="outcomePage verticalSlide titleSlide">
             <div className="pagePaneContent">
               <div className="section1">
                 <div className="stepNumber">Step 6</div>
@@ -280,11 +295,24 @@ class Startpage extends React.Component {
                 <img src="img/Outcome.png"/>
               </div>
               <div className="section2">
-                <p>See how the traveler’s experience creates a ripple effect. </p>
+                <p>See how the traveler’s experience creates a ripple effect.
+                </p>
                 <Link to="/outcome/">
                   <button className="animated pulse slower infinite">Explore</button>
                 </Link>
               </div>
+            </div>
+          </div>
+        </Pageslide>
+        <Pageslide>
+          <div className="textSlide verticalSlide wrapupSlide">
+            <h2>The Journey Continues.</h2>
+            <p>The travel journey repeats with every trip and travel experience. Travel brands can build momentum &mdash; and loyalty &mdash; by continuously advancing their offerings and delivering even better customer experiences.</p>
+            <div className="wrapupArrow">
+              <Link to="/">
+                <span>Continue the Momentum</span>
+                <img src="img/startPageArrow.png" alt=""/>
+              </Link>
             </div>
           </div>
         </Pageslide>

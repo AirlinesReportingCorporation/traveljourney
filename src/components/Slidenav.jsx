@@ -11,10 +11,6 @@ class Slidenav extends React.Component {
     this.arrowClick = this.arrowClick.bind(this);
   }
 
-  homeClick() {
-    console.log("clicky-click");
-  }
-
   arrowClick(direction) {
     var slideHeight = 1920;
     var slideWidth = 1080;
@@ -45,9 +41,11 @@ class Slidenav extends React.Component {
       }
       window.scroll({top: closestTop, left: closestLeft, behavior: 'smooth'});
     } else if (direction == "right") {
-      if (curPosLeft <= ((slideCount - 1) * slideWidth)) {
+      if (curPosLeft < ((slideCount - 1) * slideWidth)) {
         var rem = Math.round(curPosLeft / slideWidth);
         closestLeft = (rem + 1) * slideWidth;
+      } else if (curPosLeft == ((slideCount - 1) * slideWidth)) {
+        closestLeft = curPosLeft;
       } else {
         closestLeft = (slideCount - 1) * slideWidth;
       }
@@ -59,7 +57,6 @@ class Slidenav extends React.Component {
       if (curPosLeft >= slideWidth) {
         var rem = Math.ceil(curPosLeft / slideWidth);
         closestLeft = (rem - 1) * slideWidth;
-        console.log(closestLeft);
       } else {
         closestLeft = 0;
       }

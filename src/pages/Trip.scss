@@ -38,14 +38,7 @@
   .bulletSlide {}
 
   .quoteSlide {}
-
-  .textSlide {
-    .textSlideContent {
-      font-size: 90px;
-      line-height: 100px;
-    }
-  }
-
+  
   .todayTomorrowSlide {
     &.tts2 {
       h2 {
@@ -79,6 +72,8 @@
     overflow:  hidden;
 
     .textSlideContent {
+      font-size: 90px;
+      line-height: 100px;
       padding-top: 120px;
     }
   }

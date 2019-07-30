@@ -125,6 +125,7 @@ class Inspire extends React.Component {
             </div>} colorClass="sliderGradientPurple"></Flipslide>
           </div>
         </div>
+
       </Pageslide>
       <Pageslide>
         <div className="quoteSlide">
@@ -154,7 +155,7 @@ class Inspire extends React.Component {
             Chief Operating Officer, ARC
           </div>
         </div>
-
+        
       </Pageslide>
       <Pageslide>
         <div className="todayTomorrowSlide">
@@ -174,15 +175,21 @@ class Inspire extends React.Component {
         </div>
       </Pageslide>
       <Pageslide>
-        <div className="dataSlide">
-          <h2>What Can Data Tell Us?</h2>
+        <div className="textSlide GradientDarkblue">
+          <div className="textSlideContent">
+            Airline products are becoming more customizable.<br/><br/>
+            Travelers are looking for more unique, one-of-a-kind experiences.<br/><br/>
+            Consumers are navigating a marketing-saturated digital world.<br/><br/>
+
+            <strong>In the right context, personalization is the most meaningful way to make your brand's voice heard.</strong>
+
+            <img src="img/allcopyInspire.png" alt=""/>
+          </div>
         </div>
       </Pageslide>
       <Pageslide>
         <div className="endSlide">
-          <h2>After much anticipation,
-            <br/>the traveler is about to
-            <br/>embark on their trip...</h2>
+          <h2>Messages that are clearly aligned with travelers' individual preferences are the ones that resonate - both today and in tomorrow's environment, which will be even more data-rich.</h2>
           <Link to={{
               pathname: '/',
               anchor: 'shop'

@@ -66,8 +66,8 @@
         p {
           color: $inspireColor;
           text-align: center;
-          font-size: 36px;
-          padding-top: 120px;
+          font-size: 34px;
+          padding-top: 100px;
           margin-bottom: 80px;
         }
       }
@@ -419,7 +419,7 @@
         box-shadow: rgba(0, 0, 0, 0.5) 0 20px 60px -10px;
 
         &.tomorrowBG {
-          background: #222222 url("img/tomorrowSecondary.png") center center no-repeat;
+          background: #222222 url("/img/tomorrowSecondary.png") center center no-repeat;
           background-size: cover;
         }
       }
@@ -452,7 +452,7 @@
       }
 
       .tomorrowBG {
-        background: #222222 url("img/tomorrowPrimary.png") center center no-repeat;
+        background: #222222 url("/img/tomorrowPrimary.png") center center no-repeat;
         background-size: cover;
       }
     }

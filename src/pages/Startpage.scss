@@ -7,7 +7,7 @@ $screenWidth: 1080px;
 }
 
 .startPage.pagePaneContainer {
-  width: $screenWidth * 11;
+  width: $screenWidth * 12;
   height: 1920px;
   max-height: 1920px;
   overflow: hidden;
@@ -338,6 +338,40 @@ $screenWidth: 1080px;
 
       button {
         background: $outcomeColor;
+      }
+    }
+  }
+
+  .wrapupSlide {
+    background: url("../img/THEEND.jpg") bottom center no-repeat;
+    background-size: contain;
+    padding: 220px 160px 0 120px;
+
+    h2 {
+      font-size: 110px;
+      font-family: SourceSansPro-Black, SourceSansPro-Regular, helvetica, arial, sans-serif;
+      line-height: 100px;
+    }
+
+    p {
+      font-size: 36px;
+      line-height: 50px;
+    }
+
+    .wrapupArrow {
+      display: block;
+      width: 100%;
+
+      span {
+        color: #000000;
+        font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
+        font-size: 50px;
+      }
+
+      img {
+        padding-left: 40px;
+        padding-top: 0;
+        display: inline-block;
       }
     }
   }
