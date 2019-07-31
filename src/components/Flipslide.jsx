@@ -12,16 +12,15 @@ class Flipslide extends React.Component {
   }
 
   componentDidUpdate() {
-    setTimeout(function(){}, 1000);
-    this.state.styles = "frontSide sliderContent " + this.props.colorClass + " animated flipOutY" ;
-    setTimeout(function(){}, 1000);
+    setTimeout(function() {}, 1000);
+    this.state.styles = "frontSide sliderContent " + this.props.colorClass + " animated flipOutY";
+    setTimeout(function() {}, 1000);
   }
 
   flipClick() {
-    if(this.state.curState == "frontSide" && this.props.backSide != "") {
+    if (this.props.noclick == "true") {} else if (this.state.curState == "frontSide" && this.props.backSide != "") {
       this.setState({curState: "backSide"});
-    }
-    else {
+    } else {
       this.setState({curState: "frontSide"});
     }
   }
@@ -29,18 +28,16 @@ class Flipslide extends React.Component {
   render() {
     let slideContent;
 
-    if(this.state.curState == "frontSide") {
+    if (this.state.curState == "frontSide") {
       slideContent = this.props.frontSide;
-      this.state.styles = "frontSide sliderContent " + this.props.colorClass + " animated flipInY" ;
-    }
-    else {
+      this.state.styles = "frontSide sliderContent " + this.props.colorClass + " animated flipInY";
+    } else {
       slideContent = this.props.backSide;
-      this.state.styles = "backSide sliderContent " + this.props.colorClass + " animated flipInY" ;
+      this.state.styles = "backSide sliderContent " + this.props.colorClass + " animated flipInY";
     }
-
 
     return (<div onClick={this.flipClick} className={this.state.styles}>
-        {slideContent}
+      {slideContent}
     </div>);
   }
 }

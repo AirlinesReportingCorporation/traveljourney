@@ -458,6 +458,36 @@
     }
   }
 
+  .blueSlide {
+    height: 100%;
+    background: #222222;
+    padding: 80px;
+
+    h2 {
+      font-size: 89px;
+      line-height: 100px;
+      color: #ffffff;
+      margin-top: 573px;
+      padding-right: 100px;
+    }
+
+    .blueContainer {
+      color: #ffffff;
+      margin-top: 80px;
+      background: #2dc1f1;
+      text-align: center;
+      padding: 100px;
+      font-size: 36px;
+      line-height: 52px;
+
+      button {
+        background: #ffffff;
+        color: $inspireColor;
+        margin-top: 80px;
+      }
+    }
+  }
+
   .dataSlide {
     background: #222222;
     height: 100%;
