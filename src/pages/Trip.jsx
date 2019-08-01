@@ -422,7 +422,16 @@ class Trip extends React.Component {
             real - time transmission of data.Opening up customer service opportunities to agencies in a channel - agnostic servicing environment alleviates strain for the airline, and it creates a more positive experience for the customer.Leveraging technologies like AI and mobile can also help speed resolution.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
-
+      <Pageslide>
+        <div className="blueSlide">
+          <h2>In the future, corporate travel programs can work with their TMCs and OBTs to create in-policy bundles for road warriors. ARC’s Road Warrior research identifies which policy changes can contribute to more productivity, retention and wellness.
+          </h2>
+          <div className="blueContainer">
+            See what road warriors identified as their top priorities.
+            <button onClick={this.showDrawerBlue}>Tap to View</button>
+          </div>
+        </div>
+      </Pageslide>
       <Pageslide>
         <div className="endSlide">
           <h2>Fast forward. The traveler has happily made it to their destination.
@@ -439,6 +448,40 @@ class Trip extends React.Component {
       <Drawer className="purchaseDrawer" placement="right" width="1080px" closable={true} onClose={this.onClose} visible={this.state.visible}>
         <div className="infoDrawer">
           {drawerContent}
+          <img className="closeIcon" onClick={this.onClose} src="img/closeIcon.png" alt="Close"/>
+        </div>
+      </Drawer>
+
+      <Drawer className="blueDrawer blueDrawerTrip" placement="right" width="1080px" closable={true} onClose={this.onClose} visible={this.state.visibleBlue}>
+        <div className="infoDrawer">
+          <h2>Maximizing Trip Success, Retention and Wellness</h2>
+
+          <div className="blueList">
+            <strong>Prioritize for:</strong><br/>
+            <ul>
+              <li>Better Sleep</li>
+              <li>Reducing personal travel time</li>
+              <li>Allowing non-stops and better cabin policies</li>
+              <li>Promoting healthier diets, more exercise</li>
+              <li>Choosing better hotels</li>
+              <li>Contracting with more punctual airlines</li>
+            </ul>
+          </div>
+
+          <div className="blueList">
+            <strong>Reimburse for:</strong> <br/>
+          <ul>
+            <li>Faster airport security lines (e.g., TSA PreCheck, Clear)</li>
+            <li>Priority boarding</li>
+            <li>Preferred seats</li>
+            <li>Wi-fi</li>
+            <li>Airport lounge access</li>
+            <li>Gyms, exercise classes</li>
+          </ul>
+          </div>
+
+          <p>Source: “Traveler Friction: Insights from U.S. Road Warriors,” 2016 ARC, American Express GBT and tClara” </p>
+
           <img className="closeIcon" onClick={this.onClose} src="img/closeIcon.png" alt="Close"/>
         </div>
       </Drawer>
