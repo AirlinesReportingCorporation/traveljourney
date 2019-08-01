@@ -402,12 +402,15 @@ class Trip extends React.Component {
           <div className="stepOrderContainer">
             <div className="stepOrder" onClick={this.showDrawer.bind(this, 'order')}>
               <strong>In a Perfect World</strong>
+              <img src="img/1.png" alt=""/>
             </div>
             <div className="stepOrder" onClick={this.showDrawer.bind(this, 'payment')}>
               <strong>Delays & Missed Connections</strong>
+              <img src="img/2.png" alt=""/>
             </div>
             <div className="stepOrder" onClick={this.showDrawer.bind(this, 'settlement')}>
               <strong>Bundles & Corporate Policy</strong>
+              <img src="img/3.png" alt=""/>
             </div>
           </div>
         </div>
