@@ -301,7 +301,7 @@ class Trip extends React.Component {
               </tbody>
             </table>
           </div>
-<p className="bottomP">Opening up customer service opportunities to agencies in a channel-agnostic servicing environment alleviates strain for the airline, and it creates a more positive experience for the customer. Technologies like AI and mobile can also speed resolution.</p>
+<p className="bottomP">Opening up customer service opportunities to agencies in a <strong>channel-agnostic servicing</strong> environment alleviates strain for the airline, and it creates a more positive experience for the customer. Technologies like AI and mobile can also speed resolution.</p>
         </div>
       </div>
     } else if (drawerContent == "settlement") {

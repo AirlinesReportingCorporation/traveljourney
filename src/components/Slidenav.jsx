@@ -90,7 +90,7 @@ class Slidenav extends React.Component {
     return (<div className="slideControls">
 
       <Link to="/navigation/">
-        <div className="animated pulse infinite arcBtn">
+        <div className="animated pulse infinite arcBtn"> 
           <img src="img/arcIcon.png" alt="ARC's Perspective"/>
         </div>
       </Link>
