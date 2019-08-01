@@ -102,13 +102,13 @@ class Inspire extends React.Component {
             <Flipslide frontSide={<div > <h2>Business Trip</h2>
               <img src="img/businessTrip.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
-            </div>} backSide={<div > <div>Corporate travelers often have urgent business needs that result in last-minute air bookings, but analysis from ARC and Egencia shows that companies can save big by booking 22 days in advance.</div> < div className = "touchBackBtnContainer" > <div className="touchBackBtn">Touch to go back</div>
+            </div>} backSide={<div > <div>Corporate travelers are as diverse as leisure travelers, with different needs and preferences. They may travel twice a year or 40 times a year. They may want to minimize their time away from home, or they may prefer extended “bleisure” trips. </div> < div className = "touchBackBtnContainer" > <div className="touchBackBtn">Touch to go back</div>
             </div>
           </div>} colorClass="sliderGradientBlue"></Flipslide>
             <Flipslide frontSide={<div > <h2>Family Vacation</h2>
               <img src="img/familyVacation.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
-            </div>} backSide={<div > <div>The 2019 Virtuoso Luxe Report identified multigenerational travel as the year’s top vacation trend.In particular, service-oriented travel, genealogy trips and family-friendly cruises are gaining popularity.
+            </div>} backSide={<div > <div>Travel advisors are getting creative when planning family vacations. The 2019 Virtuoso Luxe Report identified multigenerational travel as the year’s top vacation trend. In particular, service-oriented travel, genealogy trips and family-friendly cruises are gaining popularity.
                 <div className="touchBackBtnContainer">
                   <div className="touchBackBtn">Touch to go back</div>
                 </div>
@@ -152,10 +152,10 @@ class Inspire extends React.Component {
           </div>
           <div className="quoteMeta">
             LAURI REISHUS<br/>
-            Chief Operating Officer, ARC
+          Executive Vice President and <br/>Chief Operating Officer, ARC
           </div>
         </div>
-        
+
       </Pageslide>
       <Pageslide>
         <div className="todayTomorrowSlide">
