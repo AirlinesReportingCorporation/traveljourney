@@ -36,6 +36,15 @@
 
   .quoteSlide {}
 
+  .owl-carousel {
+    .sliderContent {
+      h2 {
+        padding-left: 120px;
+        padding-right: 120px;
+      }
+    }
+  }
+
   .endSlide {
     background: url("../img/shopEND.jpg") top center no-repeat;
     background-size: contain;
@@ -51,10 +60,6 @@
   }
 
   .quoteSlide {
-    .quotePhoto:before {
-      left: 310px;
-    }
-
     .quoteText {
       padding-right: 140px;
       font-size: 50px;

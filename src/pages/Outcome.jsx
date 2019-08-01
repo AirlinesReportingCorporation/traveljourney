@@ -93,16 +93,9 @@ class Outcome extends React.Component {
       </Pageslide>
       <Pageslide>
         <div className="todayTomorrowSlide big">
-          <h2>What resources do travel brands have to follow up with the traveler?
+          <h2>How can we follow up <br/>with the traveler?
           </h2>
-          <Todaytomorrow today={<div> Travel brands have access to their own sales and customer data,
-            and can use that information to follow up with other offers.</div>} tomorrow={<div> Travelers could opt in to create a profile of preferences,
-            which could potentially be shared with other trusted sellers of travel.For example,
-            a business traveler’s profile could be shared by the TMC and airline,
-            enabling channel - agnostic data exchange and servicing.Their travel policy could be layered with that profile,
-            informing smarter offer creation.Furthermore,
-            NDC and ONE Order will generate richer,
-            more centralized data than what exists today.</div>}></Todaytomorrow>
+          <Todaytomorrow today={<div>Travel brands have access to their own sales and customer data and can use that information to follow up with other offers. Targeted promotions can be built based on the traveler’s historical purchase data — but that data may not be comprehensive or connected to the brand’s marketing tools. </div>} tomorrow={<div> Travelers could opt in to create a profile of preferences, which could potentially be shared with other trusted sellers of travel .For example, a business traveler’s profile could be shared by the TMC and airline, enabling channel - agnostic data exchange and servicing. Their travel policy could be layered with that profile, informing smarter offer creation .Furthermore, NDC and ONE Order will generate richer, more centralized data than what exists today.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>
@@ -140,7 +133,7 @@ class Outcome extends React.Component {
           <Link to={{
               pathname: '/'
             }}>
-            <button className="animated pulse slower infinite">Next Step: Intro</button>
+            <button className="animated pulse slower infinite">Start Again</button>
           </Link>
         </div>
       </Pageslide>

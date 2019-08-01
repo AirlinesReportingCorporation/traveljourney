@@ -87,14 +87,14 @@ class Shop extends React.Component {
             traveler and
             <br/>the seller.</h1>
           <div className="owl-carousel owl-theme">
-            <Flipslide frontSide={<div > <h2>What They Shop For</h2>
+            <Flipslide frontSide={<div > <h2>What Travelers Shop For</h2>
               <img src="img/whatTheyShopFor.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
             </div>} backSide={<div > <div>Travelers’ search parameters can be incredibly detailed — factoring in dates, cost, routes, connections, timing and brand loyalty. Business travelers also need to consider their corporate travel policy.
               </div> < div className = "touchBackBtnContainer" > <div className="touchBackBtn">Touch to go back</div>
             </div>
           </div>} colorClass="sliderGradientBlue"></Flipslide>
-            <Flipslide frontSide={<div > <h2>Where They Shop</h2>
+            <Flipslide frontSide={<div > <h2>Where Travelers Shop</h2>
               <img src="img/whereTheyShop.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
             </div>} backSide={<div > <div>Travelers can shop across a variety of channels. Corporate travelers often shop through an online booking tool (OBT) or their travel management company (TMC). Loyalty customers often shop directly on the airline website. Leisure customers may shop using an online travel agency (OTA) or a trusted travel advisor.
@@ -103,7 +103,7 @@ class Shop extends React.Component {
                 </div>
               </div>
             </div>} colorClass="sliderGradientGreen"></Flipslide>
-            <Flipslide frontSide={<div > <h2>How They Shop</h2>
+            <Flipslide frontSide={<div > <h2>How Travelers Shop</h2>
               <img src="img/howTheyShop.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
             </div>} backSide={<div > <div>Travelers often shop with different combinations of search parameters to explore the options available. It’s not uncommon for a customer to shop and re-shop across the span of days or weeks — even exploring other destinations — to find the best fit.<div className="touchBackBtnContainer">
@@ -117,14 +117,14 @@ class Shop extends React.Component {
       <Pageslide>
         <div className="quoteSlide">
           <div className="quotePhoto">
-            <img src="img/otherQuote.png" alt="Lauri Reishus"/>
+            <img src="img/sarahQuote.png" alt="Lauri Reishus"/>
           </div>
           <div className="quoteText">
-            I think the ideal solution for the traveler would be that you can go online, or you can go to your agency, or whatever channel you want to shop in. You can get access to all of your discounts up front. Anything you are entitled for - maybe you're an elite flier and you get free extra-leg-room seating - that's included in your offer up front, and it works. And you don't have to go to multiple places to find that information.
+            I think the ideal solution for the traveler would be that you can go online, or you can go to your agency, or whatever channel you want to shop in. You can get access to all of your discounts up front. Anything you are entitled for — maybe you're an elite flier and you get free extra-leg-room seating — that's included in your offer up front, and it works. And you don't have to go to multiple places to find that information.
           </div>
           <div className="quoteMeta">
             SARAH BOYD<br/>
-            Senior Manager, Airline Retailing, ARC
+            Senior Manager, Airline Retailing
           </div>
         </div>
 
@@ -136,8 +136,7 @@ class Shop extends React.Component {
             <br/>the traveler?
           </h2>
           <Todaytomorrow today={<div> Different products are available in different purchase channels. Travelers may not have access to the same products through their agency or TMC as they would through the airline website.</div>} tomorrow={<div> Rich airline content,
-            available in every sales channel,
-            creates a <strong> consistent brand experience</strong>. Travelers have access to the same high-quality products, no matter where they buy.</div>}></Todaytomorrow>
+            available in every sales channel, creates a <strong> consistent brand experience</strong>. Travelers have access to the same high-quality products, no matter where they buy.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>

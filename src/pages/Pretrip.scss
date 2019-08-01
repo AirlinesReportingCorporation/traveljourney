@@ -64,7 +64,11 @@
     }
   }
 
-  .quoteSlide {}
+  .quoteSlide {
+    .quoteText {
+      padding-right: 160px;
+    }
+  }
 
   .owl-carousel {
     .sliderContent {

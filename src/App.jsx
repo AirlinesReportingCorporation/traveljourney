@@ -97,7 +97,7 @@ class App extends Component {
         </div>
         <div>
           <AnimatedSwitch {...pageTransitions} mapStyles={mapStyles} className="switch-wrapper">
-            <Route path="/" exact="exact" render={(props) => <Startpage {...props} routeUpdate={this.getRoute}/>}/>
+            <Route path="/" exact render={(props) => <Startpage {...props} routeUpdate={this.getRoute}/>}/>
             <Route path="/navigation/" render={(props) => <Navigation {...props} routeUpdate={this.getRoute}/>}/>
             <Route path="/inspire/" render={(props) => <Inspire {...props} routeUpdate={this.getRoute}/>}/>
             <Route path="/shop/" render={(props) => <Shop {...props} routeUpdate={this.getRoute}/>}/>

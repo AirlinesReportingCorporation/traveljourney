@@ -48,9 +48,9 @@ class Offer extends React.Component {
     if (drawerContent == "makeOffer") {
       drawerContent = <div>
         <div className="makeOffer drawerTitle">Making an Offer</div>
-        <p>In the travel agency channel today, the GDS creates an offer that matches the traveler’s parameters based on airlines’ availability and fares.
+        <p>In the travel agency channel today, the GDS creates an offer that matches the traveler’s parameters based on airlines’ availability and fares. This is returned to the customer in seconds. According to Sabre, more than 132,000 searches take place in its GDS every minute.
         </p>
-        <p>This is returned to the customer in seconds, with an average of X NUMBER OF OFFERS created every minute. In the future, these offers could also be created by the airline.
+        <p>While GDSs generally manage offer creation for agencies today, in the future, these offers could also be created by airlines.
         </p>
       </div>;
 
@@ -85,8 +85,7 @@ class Offer extends React.Component {
           <h2>What’s
             <br/>included<br/>in an offer?
           </h2>
-          <Todaytomorrow today={<div> In the travel agency channel,
-            offers are generally restricted to the traditional airline ticket itself. If the traveler wants to purchase a seat upgrade or add a checked bag, the travel agency may need to contact the airline directly to make a separate transaction — or the traveler may choose to add on separate transactions on the day of travel.</div>} tomorrow={<div> NDC creates (almost) infinite flexibility for what an offer can contain. Beyond the ticket itself, offers could include <strong> new products and bundles</strong>: things like airport transportation, lounge access or other products from any number of suppliers.</div>}></Todaytomorrow>
+          <Todaytomorrow today={<div> In the travel agency channel, offers are generally restricted to the ticket itself. To include a seat upgrade or checked bag, the travel agency may need to contact the airline directly to make a separate transaction — or the traveler may choose to purchase these on the day of travel.</div>} tomorrow={<div> NDC creates (almost) infinite flexibility for what an offer can contain. Beyond the ticket itself, offers could include <strong> new products and bundles</strong>: things like airport transportation, lounge access or other products from any number of suppliers.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>

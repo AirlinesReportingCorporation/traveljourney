@@ -55,14 +55,14 @@ class Pretrip extends React.Component {
     return (<div className="pretripPage pagePaneContainer" ref={(e) => this.slideMenu = e}>
       <Pageslide>
         <div className="bulletSlide">
-          <h1>The timeframe between purchase and travel is the pre-trip window. (of opportunity)</h1>
+          <h1>The timeframe between purchase and travel is the pre-trip window (of opportunity).</h1>
           <p className="bulletSub"></p>
           <div className="owl-carousel owl-theme">
-            <Flipslide noclick="true" frontSide={<div className = "firstFlipSlide" > The traveler’s attention is drawn to the trip, making this a perfect time to offer additional amenities that will create a more positive travel experience.</div>} backSide={<div className = "firstFlipSlide" > The traveler’s attention is drawn to the trip, making this a perfect time to offer additional amenities that will create a more positive travel experience.</div>} colorClass="slideTransparent"></Flipslide>
+            <Flipslide noclick="true" frontSide={<div className = "firstFlipSlide" > The traveler’s attention is drawn to the trip, making this a perfect time to offer additional amenities for a positive travel experience. Swipe to see how you can add to the solution.</div>} backSide={<div className = "firstFlipSlide" ></div>} colorClass="slideTransparent"></Flipslide>
             <Flipslide frontSide={<div > <h2>The Road Warrior</h2>
               <img src="img/roadWarrior.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
-            </div>} backSide={<div > <div>A business traveler with extremely long legs is planning his eighth trip this year from Seattle to Sydney. Given his penchant for watching cat videos on YouTube during his down time, what are the statistical odds that he will be interested in a discounted bundle with an Economy Plus upgrade and in-flight wi-fi?
+            </div>} backSide={<div > <div>A business traveler with extremely long legs is planning his eighth trip this year from Seattle to Sydney. Given his penchant for <strike>watching cat videos on YouTube</strike> catching up on email during his down time, what is the probability that he will be interested in a discounted, in-policy bundle with an Economy Plus upgrade and in-flight wi-fi? (Hint: It’s very high.)
               </div> <div className = "touchBackBtnContainer" > <div className="touchBackBtn">Touch to go back</div>
             </div>
           </div>} colorClass="sliderGradientBlue"></Flipslide>
@@ -78,7 +78,7 @@ class Pretrip extends React.Component {
             <Flipslide frontSide={<div > <h2>The Explorer</h2>
               <img src="img/theExplorer.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
-            </div>} backSide={<div > <div>Samuel is taking a solo trip to Thailand, where he will fly into Chiang Mai and depart from Bangkok. Given the fact that he has 25 stamps in his passport and often buys one-way tickets, what are the odds he might be interested in a guidebook, an international SIM card and/or a two-week train pass?
+            </div>} backSide={<div > <div>Ian is taking a solo trip to Thailand, where he will fly into Chiang Mai and depart from Bangkok. Given the fact that he has 25 stamps in his passport and often buys one-way tickets, what are the odds he might be interested in a guidebook, an international SIM card and/or a two-week train pass? (Hint: The odds are pretty good.)
                 <div className="touchBackBtnContainer">
                   <div className="touchBackBtn">Touch to go back</div>
                 </div>
@@ -102,11 +102,11 @@ class Pretrip extends React.Component {
             <img src="img/mikeQuote.png" alt="Mike Premo"/>
           </div>
           <div className="quoteText">
-            Placeholder quote from Mike on Pre-trip
+            The pre-trip window is a huge opportunity for our industry. During this time, the traveler is actively thinking about, and planning for, their trip. The traveler wants to be prepared, so they’re especially receptive to offers for products or experiences that will enhance their trip.
           </div>
           <div className="quoteMeta">
             MIKE PREMO<br/>
-            Chief Executive Officer, ARC
+            President and Chief Executive Officer, ARC
           </div>
         </div>
 

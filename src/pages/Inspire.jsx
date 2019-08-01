@@ -87,7 +87,7 @@ class Inspire extends React.Component {
     } else if (drawerContent == "oneorder") {
       drawerContent = <div>
         <div className="drawerTitle oneorder">ONE Order</div>
-        <p>Today, air travel purchases in the agency channel are fragmented. The airline ticket transaction is separate from baggage fees, in-flight wi-fi, lounge access and other ancillary purchases — all of which are systematically treated as individual tickets. ONE Order will create a consolidated order structure that brings together disparate purchase data in a centralized location.
+        <p>Today, air travel purchases in the agency channel are fragmented. The airline ticket transaction is separate from baggage fees, in-flight wi-fi, lounge access and other ancillary purchases — all of which are systematically treated as individual tickets. </p><p>ONE Order will create a consolidated order structure that brings together disparate purchase data in a centralized location.
         </p>
         <p>In the future, tickets will be replaced by orders, which can contain any number of service items: tickets for multiple people, airline ancillary purchases, and presumably third-party products (e.g., rideshare credits).</p>
       </div>;
