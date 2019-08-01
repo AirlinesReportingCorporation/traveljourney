@@ -211,6 +211,11 @@
       line-height: 46px;
     }
 
+    .bottomP {
+      font-size: 35px;
+      line-height: 45px;
+    }
+
     img.chartIMG {
       border-radius: 0;
       position: relative;
@@ -242,10 +247,12 @@
     margin-top: 200px;
   }
 
-  .blueList, ul, ul li {
+  .blueList,
+  ul,
+  ul li {
     color: #000000;
     font-family: SourceSansPro-Regular, arial, sans-serif;
-    font-size: 35px
+    font-size: 35px;
   }
 
   p {
@@ -254,18 +261,20 @@
   }
 }
 
-
 .ant-modal-content {
   .ant-modal-body {
     padding: 80px;
   }
+
   .ant-modal-footer {
     display: none;
   }
+
   h2 {
     font-family: SourceSansPro-Black, helvetica, arial, sans-serif;
     font-size: 65px;
   }
+
   p {
     font-size: 40px;
     line-height: 50px;

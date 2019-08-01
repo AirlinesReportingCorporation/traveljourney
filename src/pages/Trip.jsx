@@ -81,7 +81,7 @@ class Trip extends React.Component {
        modalContent = <div><h2>Transportation from Airport</h2> <p>If the traveler arranged a ride from the airport to their destination, with hotel check-in at a certain time, their plans need to be adjusted. In the future, <strong>real-time data transmission</strong> will be valuable. If the traveler's arrival is delayed by four hours, the airline or agency could potentially relay status updates to the car company and the hotel, making them aware of the traveler’s delay. Status updates could also be delivered to corporate travel managers, enhancing duty of care.</p></div>;
      }
      else if(modalContent == "rebook") {
-       modalContent = <div><h2>Rebook</h2> <p>If the traveler purchased their ticket through a travel agency or TMC, either that agency or the airline may make changes to the ticket. If they purchased through the airline, a travel agency or TMC is not able to service the ticket. Channel-agnostic service will enable TMCs to service all their clients’ airline tickets, regardless of the purchase channel. This will require efficient, real-time transmission of data. Opening up customer service opportunities to agencies in a <strong>channel-agnostic servicing environment</strong> alleviates strain for the airline, and it creates a more positive experience for the customer. Leveraging technologies like AI and mobile can also help speed resolution.</p></div>;
+       modalContent = <div><h2>Rebook</h2> <p>If the traveler purchased their ticket through a travel agency or TMC, either that agency or the airline may make changes to the ticket. If they purchased through the airline, a travel agency or TMC is not able to service the ticket. Channel-agnostic service will enable TMCs to service all their clients’ airline tickets, regardless of the purchase channel. This will require efficient, real-time transmission of data. </p></div>;
      }
 
 
@@ -301,7 +301,7 @@ class Trip extends React.Component {
               </tbody>
             </table>
           </div>
-
+<p className="bottomP">Opening up customer service opportunities to agencies in a channel-agnostic servicing environment alleviates strain for the airline, and it creates a more positive experience for the customer. Technologies like AI and mobile can also speed resolution.</p>
         </div>
       </div>
     } else if (drawerContent == "settlement") {
