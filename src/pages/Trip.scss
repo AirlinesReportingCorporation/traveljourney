@@ -253,3 +253,22 @@
     line-height: 30px;
   }
 }
+
+
+.ant-modal-content {
+  .ant-modal-body {
+    padding: 40px;
+  }
+  .ant-modal-footer {
+    display: none;
+  }
+  h2 {
+    font-family: SourceSansPro-Black, helvetica, arial, sans-serif;
+    font-size: 65px;
+  }
+  p {
+    font-size: 40px;
+    line-height: 50px;
+    font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
+  }
+}
