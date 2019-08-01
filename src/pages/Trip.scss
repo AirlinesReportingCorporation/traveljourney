@@ -38,7 +38,7 @@
   .bulletSlide {}
 
   .quoteSlide {}
-  
+
   .todayTomorrowSlide {
     &.tts2 {
       h2 {
@@ -69,12 +69,155 @@
 
   .textSlide {
     height: 1920px;
-    overflow:  hidden;
+    overflow: hidden;
 
     .textSlideContent {
       font-size: 90px;
       line-height: 100px;
       padding-top: 120px;
     }
+  }
+
+  .customTripSlide {
+    background: #ffffff;
+    height: 100%;
+    padding: 120px 80px;
+    color: #000000;
+
+    .customTripSlideSub {
+      color: #000000;
+      font-size: 72px;
+      line-height: 100px;
+      font-family: SourceSansPro-Black, helvetica, arial, sans-serif;
+    }
+
+    h1 {
+      color: #000000;
+      font-size: 100px;
+      line-height: 110px;
+    }
+
+    p {
+      font-family: SourceSansPro-Regular, helvetica, arial, sans-serif;
+      font-size: 70px;
+      line-height: 80px;
+      margin-bottom: 80px;
+      margin-top: 80px;
+      padding-right: 80px;
+    }
+
+    .stepOrderContainer {
+      padding-top: 80px;
+    }
+
+    .stepOrder {
+      background: #1a9bd1;
+      background: -webkit-linear-gradient(to bottom, #1a9bd1 25%, #26b4e6 50%, #2cc1f1 75%);
+      background: -o-linear-gradient(to bottom, #1a9bd1 25%, #26b4e6 50%, #2cc1f1 75%);
+      background: -moz-linear-gradient(to bottom, #1a9bd1 25%, #26b4e6 50%, #2cc1f1 75%);
+      background: linear-gradient(to bottom, #1a9bd1 25%, #26b4e6 50%, #2cc1f1 75%);
+      padding: 80px 60px;
+      box-shadow: rgba(0, 0, 0, 0.5) 0 20px 60px -10px;
+      font-size: 36px;
+      margin-bottom: 40px;
+      position: relative;
+      font-family: SourceSansPro-Black, helvetica, arial, sans-serif;
+      text-align: center;
+
+      img {
+        position: absolute;
+        right: 80px;
+        top: 30px;
+      }
+    }
+  }
+}
+
+.infoDrawer {
+  .tableContainer {
+    background: #ffffff;
+    padding: 40px 0;
+  }
+
+  .tableHalf {
+    width: 350px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 40px;
+  }
+
+  .tableLong {
+    table tr td {
+      padding: 10px;
+    }
+  }
+
+  .tableBundles {
+    table {
+      width: 800px;
+    }
+    table tr td {
+      padding: 10px;
+    }
+  }
+
+  table {
+    width: 300px;
+    font-size: 26px;
+    line-height: 28px;
+    font-family: SourceSansPro-SemiBold, SourceSansPro-Regular, arial , sans-serif;
+
+    img {
+      position: relative;
+      top: auto;
+      left: auto;
+      width: 39px;
+      max-width: 39px;
+      border: none;
+      border-radius: 0;
+    }
+
+    tr {
+      background: none !important;
+
+      td {
+        padding: 15px 10px;
+      }
+    }
+  }
+}
+
+.purchaseDrawer.ant-drawer {
+  .ant-drawer-wrapper-body {
+    background: #ffffff;
+  }
+
+  .infoDrawer {
+    .bundlesP {
+      font-size:36px;
+      line-height: 46px;
+    }
+
+    img.chartIMG {
+      border-radius: 0;
+      position: relative;
+      border: none;
+      top: auto;
+      left: auto;
+      padding-top: 120px;
+    }
+
+    img.closeIcon {
+      border-color: #ffffff;
+    }
+  }
+
+  .order,
+  .payment,
+  .settlement {
+    font-family: SourceSansPro-Black, helvetica, arial, sans-serif;
+    font-size: 100px;
+    line-height: 110px;
+    padding-bottom: 40px;
   }
 }

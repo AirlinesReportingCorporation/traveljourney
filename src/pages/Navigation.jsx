@@ -78,12 +78,6 @@ class Navigation extends React.Component {
               }}>Outcome</Link>
 
         </div>
-        <div className="navigationLink">
-          <Link to={{
-              pathname: '/',
-              anchor: 'wrapup'
-            }}>Wrap-up</Link>
-        </div>
       </div>
     </div>);
   }
