@@ -74,13 +74,13 @@ class Trip extends React.Component {
     let modalContent = this.state.modalContent;
 
     if(modalContent == "firstdeparture") {
-      modalContent = <div><h2>Flight 1 Departure</h2> <p>Things don't always go according to plan. Flight delays are often inevitable, whether caused by inclement weather or an operational or technology issue.</p></div>;
+      modalContent = <div><h2>First Flight Departure</h2> <p>Things don't always go according to plan. Flight delays are often inevitable, whether caused by inclement weather or an operational or technology issue.</p></div>;
      }
      else if(modalContent == "missed") {
        modalContent = <div><h2>Missed Connection</h2> <p>Delays push back the rest of the traveler's itinerary and can result in a missed connection. When a traveler needs to rebook, their options for changing their ticket vary depending on where the ticket was purchased.</p></div>;
      }
      else if (modalContent == "transportation") {
-       modalContent = <div><h2>Transportation from Airport</h2> <p>If the traveler arranged a ride from the airport to their destination, with hotel check-in at a certain time, their plans need to be adjusted. In the future, <strong>real-time data transmission</strong> will be valuable. If the traveler's arrival is delayed by four hours, the airline or agency could potentially relay status updates to the car company and the hotel, making them aware of the traveler’s delay. Status updates could also be delivered to corporate travel managers, enhancing duty of care.</p></div>;
+       modalContent = <div><h2>Transportation from Airport</h2> <p>If the traveler arranged a ride from the airport to their destination, their plans need to be adjusted. In the future, <strong>real-time data transmission</strong> will be valuable. If the traveler's arrival is delayed by four hours, the airline or agency could potentially relay status updates to the car company, making them aware of the traveler’s delay. Status updates could also be delivered to corporate travel managers, enhancing duty of care, and to the hotel, which may see an opportunity to enhance the traveler’s stay.</p></div>;
      }
      else if(modalContent == "rebook") {
        modalContent = <div><h2>Rebook</h2> <p>If the traveler purchased their ticket through a travel agency or TMC, either that agency or the airline may make changes to the ticket. If they purchased through the airline, a travel agency or TMC is not able to service the ticket. Channel-agnostic service will enable TMCs to service all their clients’ airline tickets, regardless of the purchase channel. This will require efficient, real-time transmission of data. </p></div>;
@@ -305,12 +305,12 @@ class Trip extends React.Component {
           </div>
 
         </div>
-        <p className="bottomP">Opening up customer service opportunities to agencies in a <strong>channel-agnostic servicing</strong> environment alleviates strain for the airline, and it creates a more positive experience for the customer. Technologies like AI and mobile can also speed resolution.</p>
+        <p className="bottomP">Opening up service opportunities to agencies in a channel-agnostic environment alleviates strain for the airline, and it creates a more positive experience for the traveler. Brands can also speed resolution by maximizing the existing benefits of mobile technology and exploring emerging technologies, such as AI.</p>
       </div>
     } else if (drawerContent == "settlement") {
       drawerContent = <div>
         <div className="payment">Bundles & Corporate Policy</div>
-        <p className="bundlesP">Purchasing bundles ahead of time can reduce friction on the day of travel. Corporate travel programs can reduce friction by creating flexible travel policies for frequent travelers. Amenities like in-flight wi-fi and TSA PreCheck can create a more seamless and more productive experience for business travelers.</p>
+        <p className="bundlesP">Purchasing bundles ahead of time can reduce friction on the day of travel. Corporate travel programs can reduce friction by creating flexible travel policies for frequent travelers. Amenities like in-flight wi-fi and TSA PreCheck&#10003;&reg; can create a more seamless and more productive experience for business travelers.</p>
         <div className="tableContainer tableBundles">
           <div className="tableHalf">
             <table>
@@ -323,7 +323,7 @@ class Trip extends React.Component {
                 <tr>
                   <td>Seat Selection</td>
                   <td><img src="img/checkmark.png"/></td>
-                  <td>Economy Plus</td>
+                  <td className="checkMarkExtra">Economy Plus</td>
                 </tr>
                 <tr>
                   <td>Boarding Pass</td>
@@ -333,22 +333,22 @@ class Trip extends React.Component {
                 <tr>
                   <td>Airport Transportation</td>
                   <td><img src="img/checkmark.png"/></td>
-                  <td>Pre-arranged</td>
+                  <td className="checkMarkExtra">Pre-arranged</td>
                 </tr>
                 <tr>
                   <td>Checked Bags</td>
                   <td><img src="img/checkmark.png"/></td>
-                  <td>Pre-arranged</td>
+                  <td className="checkMarkExtra">Pre-arranged</td>
                 </tr>
                 <tr>
                   <td>TSA</td>
                   <td><img src="img/checkmark.png"/></td>
-                  <td>TSA PreCheck</td>
+                  <td className="checkMarkExtra">TSA PreCheck&#10003;&reg;</td>
                 </tr>
                 <tr>
                   <td>Lounge Access</td>
                   <td><img src="img/checkmark.png"/></td>
-                  <td>Pre-arranged</td>
+                  <td className="checkMarkExtra">Pre-arranged</td>
                 </tr>
                 <tr>
                   <td>Find the Gate</td>
@@ -358,7 +358,7 @@ class Trip extends React.Component {
                 <tr>
                   <td>Board the Flight</td>
                   <td><img src="img/checkmark.png"/></td>
-                  <td>Priority Boarding</td>
+                  <td className="checkMarkExtra">Priority Boarding</td>
                 </tr>
                 <tr>
                   <td>Departure</td>
@@ -368,12 +368,12 @@ class Trip extends React.Component {
                 <tr>
                   <td>In-Flight Food and Beverage</td>
                   <td><img src="img/checkmark.png"/></td>
-                  <td>Pre-purchase</td>
+                  <td className="checkMarkExtra">Pre-purchase</td>
                 </tr>
                 <tr>
                   <td>In-Flight Wi-Fi</td>
                   <td><img src="img/checkmark.png"/></td>
-                  <td>Pre-purchase</td>
+                  <td className="checkMarkExtra">Pre-purchase</td>
                 </tr>
                 <tr>
                   <td>In-Flight Entertainment</td>
@@ -398,7 +398,7 @@ class Trip extends React.Component {
                 <tr>
                   <td>Transportation from Airport</td>
                   <td><img src="img/checkmark.png"/></td>
-                  <td>Pre-arranged</td>
+                  <td className="checkMarkExtra">Pre-arranged</td>
                 </tr>
                 <tr>
                   <td>Arrive at Destination</td>
@@ -411,6 +411,16 @@ class Trip extends React.Component {
 
         </div>
       </div>;
+    } else if (drawerContent == "oneorder") {
+      drawerContent = <div>
+        <div className="drawerTitle oneorder">ONE Order</div>
+        <p>Today, air travel purchases in the agency channel are fragmented. The airline ticket transaction is separate from baggage fees, in-flight wi-fi, lounge access and other ancillary purchases — all of which are systematically treated as individual tickets.
+        </p>
+        <p>ONE Order will create a consolidated order structure that brings together disparate purchase data in a centralized location.
+        </p>
+        <p>In the future, tickets will be replaced by orders, which can contain any number of service items: tickets for multiple people, airline ancillary purchases, and presumably third-party products (e.g., rideshare credits).</p>
+      </div>;
+
     }
 
     return (<div className="tripPage pagePaneContainer" ref={(e) => this.slideMenu = e}>
@@ -419,7 +429,6 @@ class Trip extends React.Component {
 
           <div className="textSlideContent">
             The trip experience begins with mobile check-in 24 hours in advance and spans the traveler’s journey to and through the airport, as well as boarding, flight and transport to their destination.
-
           </div>
           <img src="img/allcopyTrip.png" alt=""/>
         </div>
@@ -428,12 +437,10 @@ class Trip extends React.Component {
         <div className="todayTomorrowSlide">
           <h2>What if the traveler needs to make a last-minute change to their trip?</h2>
           <Todaytomorrow today={<div> Air travel is becoming more streamlined,
-            but it is still fragmented in many ways.The customer expects an easy,
-            seamless and customizable buying experience — yet making changes to a ticket can be challenging,
-            and add - on purchases(checked bag, wi - fi, in - flight meal)are each made on a separate transaction.</div>} tomorrow={<div> Because personalized products have already been purchased at the point of sale,
-            the traveler can enjoy a < strong > frictionless experience</strong>,
-            which has been customized to their personal preferences.In a ONE Order environment,
-            ancillary purchases will be connected to the traveler’s order,
+            but it is still fragmented in many ways. The customer expects an easy,
+            seamless and customizable buying experience — yet making changes to a ticket can be challenging, and add - on purchases (checked bag, wi-fi, in-flight meal) are each made on a separate transaction.</div>} tomorrow={<div> Because personalized products have already been purchased at the point of sale,
+            the traveler can enjoy a <strong> frictionless experience</strong>,
+            which has been customized to their personal preferences. In a <span onClick = {this.showDrawer.bind(this, 'oneorder')} >ONE Order</span> environment, ancillary purchases will be connected to the traveler’s order,
             so all their data will be centralized in one location.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
@@ -459,27 +466,24 @@ class Trip extends React.Component {
       </Pageslide>
       <Pageslide>
         <div className="todayTomorrowSlide tts2 big">
-          <h2>What happens if the flight is cancelled or delayed, and there’s a missed connection?
+          <h2>What could a channel-agnostic servicing environment look like?
           </h2>
-          <Todaytomorrow today={<div> In cases of irregular operations(such as inclement weather, delays and cancellations),
-            a traveler’s options for changing their ticket vary depending on where they purchased their ticket.If they purchased through a travel agency or TMC, either that agency or the airline may make changes to the ticket.If they purchased through the airline, a travel agency or TMC is not able to service the ticket.</div>} tomorrow={<div><strong> Channel - agnostic service</strong> will enable TMCs to service all their clients’ airline tickets,
-            regardless of the purchase channel.This will require efficient,
-            real - time transmission of data.Opening up customer service opportunities to agencies in a channel - agnostic servicing environment alleviates strain for the airline, and it creates a more positive experience for the customer.Leveraging technologies like AI and mobile can also help speed resolution.</div>}></Todaytomorrow>
+          <Todaytomorrow today={<div> In cases of irregular operations (such as inclement weather, delays and cancellations), a traveler’s options for changing their ticket vary depending on where they purchased their ticket. If they purchased through a travel agency or TMC, either that agency or the airline may make changes to the ticket. If they purchased through the airline, a travel agency or TMC is not able to service the ticket.</div>} tomorrow={<div><strong>Channel-agnostic service</strong> will enable TMCs to service all their clients’ airline tickets, regardless of the purchase channel. This will require efficient, real-time transmission of data. Opening up customer service opportunities to agencies in a channel-agnostic environment alleviates strain for the airline, and it creates a more positive traveler experience. </div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>
         <div className="blueSlide">
-          <h2>In the future, corporate travel programs can work with their TMCs and OBTs to create in-policy bundles for road warriors. ARC’s Road Warrior research identifies which policy changes can contribute to more productivity, retention and wellness.
+          <h2>In the future, corporate travel programs can work with their TMCs and online booking tools to create in-policy bundles for road warriors. ARC’s research identifies which policy changes can contribute to more productivity, retention, wellness and trip success.
           </h2>
           <div className="blueContainer">
-            See what road warriors identified as their top priorities.
+            See top priorities of road warriors.
             <button onClick={this.showDrawerBlue}>Tap to View</button>
           </div>
         </div>
       </Pageslide>
       <Pageslide>
         <div className="endSlide">
-          <h2>Fast forward. The traveler has happily made it to their destination.
+          <h2>The traveler has happily made it to their destination.
             <br/><br/>After enjoying their trip, the traveler ventures back home. (But the journey’s not over yet!)
           </h2>
           <Link to={{
@@ -500,7 +504,7 @@ class Trip extends React.Component {
       <Drawer className="blueDrawer blueDrawerTrip" placement="right" width="1080px" closable={true} onClose={this.onClose} visible={this.state.visibleBlue}>
         <div className="infoDrawer">
           <h2>Maximizing Trip Success, Retention and Wellness</h2>
-
+          <p >To maximize trip success, travel program managers can start making small, conscious decisions that shift their policies from a cost-focused model to a more traveler-focused model.</p>
           <div className="blueList">
             <strong>Prioritize for:</strong><br/>
             <ul>
@@ -516,7 +520,7 @@ class Trip extends React.Component {
           <div className="blueList">
             <strong>Reimburse for:</strong> <br/>
           <ul>
-            <li>Faster airport security lines (e.g., TSA PreCheck, Clear)</li>
+            <li>Faster airport security lines (e.g., TSA PreCheck&#10003;&reg;, Clear)</li>
             <li>Priority boarding</li>
             <li>Preferred seats</li>
             <li>Wi-fi</li>
@@ -525,7 +529,7 @@ class Trip extends React.Component {
           </ul>
           </div>
 
-          <p>Source: “Traveler Friction: Insights from U.S. Road Warriors,” 2016 ARC, American Express GBT and tClara” </p>
+          <p className="roadSource">Source: “Traveler Friction: Insights from U.S. Road Warriors,” 2016 ARC, American Express GBT and tClara” </p>
 
           <img className="closeIcon" onClick={this.onClose} src="img/closeIcon.png" alt="Close"/>
         </div>

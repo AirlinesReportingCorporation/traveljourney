@@ -141,6 +141,10 @@
         right: 80px;
         top: 60px;
       }
+
+      strong {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -245,6 +249,7 @@
     font-size: 60px;
     font-family: SourceSansPro-Black, arial, sans-serif;
     margin-top: 200px;
+    margin-bottom: 0;
   }
 
   .blueList,
@@ -255,7 +260,7 @@
     font-size: 35px;
   }
 
-  p {
+  p.roadSource {
     font-size: 25px;
     line-height: 30px;
   }
