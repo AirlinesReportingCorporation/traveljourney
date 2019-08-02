@@ -303,7 +303,7 @@ class Trip extends React.Component {
           </div>
 
         </div>
-        <p className="bottomP">Opening up customer service opportunities to agencies in a <strong>channel-agnostic servicing</strong> environment alleviates strain for the airline, and it creates a more positive experience for the customer. Technologies like AI and mobile can also speed resolution.</p> 
+        <p className="bottomP">Opening up customer service opportunities to agencies in a <strong>channel-agnostic servicing</strong> environment alleviates strain for the airline, and it creates a more positive experience for the customer. Technologies like AI and mobile can also speed resolution.</p>
       </div>
     } else if (drawerContent == "settlement") {
       drawerContent = <div>
@@ -488,7 +488,7 @@ class Trip extends React.Component {
           </Link>
         </div>
       </Pageslide>
-      <Drawer className="purchaseDrawer" placement="right" width="1080px" closable={true} onClose={this.onClose} visible={this.state.visible}>
+      <Drawer className="tripDrawer" placement="right" width="1080px" closable={true} onClose={this.onClose} visible={this.state.visible}>
         <div className="infoDrawer">
           {drawerContent}
           <img className="closeIcon" onClick={this.onClose} src="img/closeIcon.png" alt="Close"/>

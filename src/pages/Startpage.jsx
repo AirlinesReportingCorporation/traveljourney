@@ -308,15 +308,15 @@ class Startpage extends React.Component {
             </div>
           </div>
         </Pageslide>
-        <Pageslide>
+        <Pageslide noArrow="false">
           <div className="textSlide verticalSlide wrapupSlide">
             <h2>The Journey Continues.</h2>
             <p>The travel journey repeats with every trip and travel experience. Travel brands can build momentum &mdash; and loyalty &mdash; by continuously advancing their offerings and delivering even better customer experiences.</p>
-            <div className="wrapupArrow">
-              <Link to="/">
-                <span>Continue the Momentum</span>
+            <div className="wrapupArrow" onClick={this.tapGoX.bind(this, 0)}>
+
+                <span >Continue the Momentum</span>
                 <img src="img/startPageArrow.png" alt=""/>
-              </Link>
+
             </div>
           </div>
         </Pageslide>

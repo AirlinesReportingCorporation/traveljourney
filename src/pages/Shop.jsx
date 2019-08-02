@@ -77,6 +77,26 @@ class Shop extends React.Component {
       }
     });
 
+    let drawerContent = this.state.drawerContent;
+
+    if (drawerContent == "NDC") {
+      drawerContent = <div>
+        <div className="drawerTitle ndc">NDC</div>
+        <p>New Distribution Capability (NDC) is a schema — a means of communicating information. Today, airlines and travel agencies are limited in the information they can send and receive regarding airline tickets. This is because they use a legacy schema built on the traditional, 1950s-era handwritten airline ticket. It’s been adapted slightly over the years, but it provides very little flexibility.</p>
+        <p>Air travel retailing has significantly advanced, and it has become far more customizable. The NDC schema enables airlines and travel agencies to communicate with far more flexibility, including with photos, customized bundles and/or personalized offers.
+        </p>
+      </div>;
+
+    } else if (drawerContent == "oneorder") {
+      drawerContent = <div>
+        <div className="drawerTitle oneorder">ONE Order</div>
+        <p>Today, air travel purchases in the agency channel are fragmented. The airline ticket transaction is separate from baggage fees, in-flight wi-fi, lounge access and other ancillary purchases — all of which are systematically treated as individual tickets. </p><p>ONE Order will create a consolidated order structure that brings together disparate purchase data in a centralized location.
+        </p>
+        <p>In the future, tickets will be replaced by orders, which can contain any number of service items: tickets for multiple people, airline ancillary purchases, and presumably third-party products (e.g., rideshare credits).</p>
+      </div>;
+
+    }
+
     return (<div className="shopPage pagePaneContainer" ref={(e) => this.slideMenu = e}>
       <Pageslide>
         <div className="bulletSlide">
@@ -144,7 +164,7 @@ class Shop extends React.Component {
           <h2>How can we
             <br/>make shopping <br/>easier?
           </h2>
-          <Todaytomorrow today={<div> A lack of transparency makes it challenging for travelers to accurately compare fares. Some fares may include a checked bag or reserved seat, whereas others may upcharge for these amenities.</div>} tomorrow={<div> With NDC, the traveler has <strong> increased transparency</strong> and knows exactly what they’re getting for the price, which enables them to make more informed decisions about their purchase.</div>}></Todaytomorrow>
+          <Todaytomorrow today={<div> A lack of transparency makes it challenging for travelers to accurately compare fares. Some fares may include a checked bag or reserved seat, whereas others may upcharge for these amenities.</div>} tomorrow={<div> With <span onClick={this.showDrawer.bind(this, 'NDC')}>NDC</span>, the traveler has <strong> increased transparency</strong> and knows exactly what they’re getting for the price, which enables them to make more informed decisions about their purchase.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>
@@ -158,6 +178,12 @@ class Shop extends React.Component {
           </Link>
         </div>
       </Pageslide>
+      <Drawer placement="right" width="960px" closable={true} onClose={this.onClose} visible={this.state.visible}>
+        <div className="infoDrawer">
+          {drawerContent}
+          <img onClick={this.onClose} src="img/closeIcon.png" alt="Close"/>
+        </div>
+      </Drawer>
     </div>);
   }
 }

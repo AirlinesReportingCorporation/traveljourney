@@ -64,6 +64,14 @@ class Offer extends React.Component {
         </p>
       </div>;
 
+    }else if (drawerContent == "NDC") {
+      drawerContent = <div>
+        <div className="drawerTitle ndc">NDC</div>
+        <p>New Distribution Capability (NDC) is a schema — a means of communicating information. Today, airlines and travel agencies are limited in the information they can send and receive regarding airline tickets. This is because they use a legacy schema built on the traditional, 1950s-era handwritten airline ticket. It’s been adapted slightly over the years, but it provides very little flexibility.</p>
+        <p>Air travel retailing has significantly advanced, and it has become far more customizable. The NDC schema enables airlines and travel agencies to communicate with far more flexibility, including with photos, customized bundles and/or personalized offers.
+        </p>
+      </div>;
+
     }
 
     return (<div className="offerPage pagePaneContainer" ref={(e) => this.slideMenu = e}>
@@ -85,7 +93,7 @@ class Offer extends React.Component {
           <h2>What’s
             <br/>included<br/>in an offer?
           </h2>
-          <Todaytomorrow today={<div> In the travel agency channel, offers are generally restricted to the ticket itself. To include a seat upgrade or checked bag, the travel agency may need to contact the airline directly to make a separate transaction — or the traveler may choose to purchase these on the day of travel.</div>} tomorrow={<div> NDC creates (almost) infinite flexibility for what an offer can contain. Beyond the ticket itself, offers could include <strong> new products and bundles</strong>: things like airport transportation, lounge access or other products from any number of suppliers.</div>}></Todaytomorrow>
+          <Todaytomorrow today={<div> In the travel agency channel, offers are generally restricted to the ticket itself. To include a seat upgrade or checked bag, the travel agency may need to contact the airline directly to make a separate transaction — or the traveler may choose to purchase these on the day of travel.</div>} tomorrow={<div> <span onClick={this.showDrawer.bind(this, 'NDC')}>NDC</span> creates (almost) infinite flexibility for what an offer can contain. Beyond the ticket itself, offers could include <strong> new products and bundles</strong>: things like airport transportation, lounge access or other products from any number of suppliers.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>
@@ -97,7 +105,7 @@ class Offer extends React.Component {
           <Todaytomorrow today={<div> In today’s travel agency channel,
             the GDS constructs an offer based on airline availability,
             schedules and fares. While offers can fluctuate depending on those factors,
-            they’re not customizable to the agency or traveler.</div>} tomorrow={<div> NDC creates the possibility of <strong> dynamic offers</strong>, which can be customized based on agency-airline relationship,
+            they’re not customizable to the agency or traveler.</div>} tomorrow={<div> <span onClick={this.showDrawer.bind(this, 'NDC')}>NDC</span> creates the possibility of <strong> dynamic offers</strong>, which can be customized based on agency-airline relationship,
             loyalty or established traveler preferences. This will make it easier for the traveler to view content that is likely to be the best fit — and enables agencies to receive rates based on partnership agreements.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
@@ -116,7 +124,7 @@ class Offer extends React.Component {
         <div className="textSlide GradientPurple">
 
           <div className="textSlideContent">
-            While NDC presents vast opportunities, it will take a few years to fully come to fruition at scale. In the meantime, we are living in a <strong>hybrid environment</strong>, where existing processes need to reliably function in tandem with new capabilities.<br/><br/> Ultimately, an evolved retailing environment will deliver the right content to the right person at the right time.
+            While <span onClick={this.showDrawer.bind(this, 'NDC')}>NDC</span> presents vast opportunities, it will take a few years to fully come to fruition at scale. In the meantime, we are living in a <strong>hybrid environment</strong>, where existing processes need to reliably function in tandem with new capabilities.<br/><br/> Ultimately, an evolved retailing environment will deliver the right content to the right person at the right time.
             <img src="img/allcopyOfferBOTTOM.png" alt=""/>
 
           </div>

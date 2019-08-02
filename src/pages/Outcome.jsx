@@ -118,9 +118,7 @@ class Outcome extends React.Component {
             <br/><br/>
             Today’s twentysomething budget traveler may become an occasional business traveler in her late twenties, a frequent business traveler in her thirties, taking the occasional family vacation with her kids, followed by high-value international business travel in her forties and fifties, and the occasional family vacation with her kids and their kids.<br/>
             <br/>
-            Maybe her decades-long loyalty will be with
-            <strong>your</strong>
-            brand.
+            Maybe her decades-long loyalty will be with <strong>your</strong> brand.
 
           </div>
         </div>
