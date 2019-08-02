@@ -16,10 +16,12 @@ class Purchase extends React.Component {
     this.state = {
       visible: false,
       visibleBlue: false,
+      visibleOne: false,
       drawerContent: " "
     };
 
     this.showDrawer = this.showDrawer.bind(this);
+    this.showDrawerOne = this.showDrawerOne.bind(this);
     this.showDrawerBlue = this.showDrawerBlue.bind(this);
     this.onClose = this.onClose.bind(this);
   }
@@ -29,6 +31,11 @@ class Purchase extends React.Component {
     this.setState({visible: true});
   };
 
+  showDrawerOne(content) {
+    this.setState({drawerContent: content});
+    this.setState({visibleOne: true});
+  }
+
   showDrawerBlue() {
     this.setState({visibleBlue: true});
   }
@@ -36,10 +43,13 @@ class Purchase extends React.Component {
   onClose() {
     this.setState({visible: false});
     this.setState({visibleBlue: false});
+    this.setState({visibleOne: false});
   };
 
   componentDidMount() {
     this.props.routeUpdate(this.props.location.pathname, this.slideMenu.children.length);
+    ga('set', 'page', '/purchase');
+    ga('send', 'pageview');
   }
 
   render() {
@@ -68,6 +78,16 @@ class Purchase extends React.Component {
         <p>ARC’s position as an industry connector gives it a unique, industrywide view of payment, pricing and travel trends. The global travel community relies on this data to effectively benchmark their performance, create new travel routes and build better relationships with industry partners.</p>
         <div><img className="chartIMG" src="img/settlementChartBIG.png" alt="Order Creation"/></div>
       </div>;
+    } else if (drawerContent == "oneorder") {
+      drawerContent = <div>
+        <div className="drawerTitle oneorder">ONE Order</div>
+        <p>Today, air travel purchases in the agency channel are fragmented. The airline ticket transaction is separate from baggage fees, in-flight wi-fi, lounge access and other ancillary purchases — all of which are systematically treated as individual tickets.
+        </p>
+        <p>ONE Order will create a consolidated order structure that brings together disparate purchase data in a centralized location.
+        </p>
+        <p>In the future, tickets will be replaced by orders, which can contain any number of service items: tickets for multiple people, airline ancillary purchases, and presumably third-party products (e.g., rideshare credits).</p>
+      </div>;
+
     }
 
     return (<div className="purchasePage pagePaneContainer" ref={(e) => this.slideMenu = e}>
@@ -113,12 +133,14 @@ class Purchase extends React.Component {
         <div className="todayTomorrowSlide">
           <h2>Why aren’t the traveler’s airline ticket, baggage fee and in-flight wi-fi on one transaction?
           </h2>
-          <Todaytomorrow today={<div>Legacy technology limits what can be considered a “ticket,” but airline products have since evolved to become more customizable. Systematically, the traveler’s baggage fee is treated like a separate ticket, otherwise known as an electronic miscellaneous document (EMD).</div>} tomorrow={<div> E-commerce platforms have furthered the concept of a <strong>single, unified order</strong> that can contain a variety of different items. ONE Order will create a similar environment, wrapping disparate data together in one centralized, manageable place — reflecting any updates or status changes that may arise. This could include multiple travelers and numerous products beyond air.</div>}></Todaytomorrow>
+          <Todaytomorrow today={<div>Legacy technology limits what can be considered a “ticket,” but airline products have since evolved to become more customizable. Systematically, the traveler’s baggage fee is treated like a separate ticket, otherwise known as an electronic miscellaneous document (EMD).</div>} tomorrow={<div> E-commerce platforms have furthered the concept of a <strong>single, unified order</strong> that can contain a variety of different items. <span onClick = {
+            this.showDrawerOne.bind(this, 'oneorder')
+          } > ONE Order</span> will create a similar environment, wrapping disparate data together in one centralized, manageable place — reflecting any updates or status changes that may arise. This could include multiple travelers and numerous products beyond air.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>
         <div className="todayTomorrowSlide">
-          <h2>How do
+          <h2 className="ttP">How do
             <br/>travel agencies<br/>
             receive commission?
           </h2>
@@ -127,21 +149,21 @@ class Purchase extends React.Component {
       </Pageslide>
       <Pageslide>
         <div className="todayTomorrowSlide">
-          <h2>Why can't the traveler pay with a combination of airline miles and credit card through their travel agency?
+          <h2 className="ttP">Why don’t travelers have more flexible payment options?
           </h2>
-          <Todaytomorrow today={<div> Travelers don't have access to the same form-of-payment options in every sales channel. When booking through a travel agency, they can only use cash or credit card form of payment (and not a combination, unless the agency is able to facilitate this on their end).  </div>} tomorrow={<div> <strong> Multiple forms of payment</strong> will be available in every sales channel. The customer can use a combination of airline miles, credit cards, cash, mobile wallet or alternative forms of payment in a single order.</div>}></Todaytomorrow>
+          <Todaytomorrow today={<div> Travelers don’t have the same form-of-payment options in every channel. Support is often limited for emerging forms of payment (mobile wallets, peer-to-peer payment platforms, etc.) and multiple forms of payment for different passengers — both in direct and indirect sales channels. Even airline miles, now ubiquitous, are limited in their usage outside of the direct channel.  </div>} tomorrow={<div> <strong> Multiple forms of payment</strong> will be available in every sales channel. The customer can use a combination of airline miles, credit cards, cash, mobile wallet or alternative forms of payment in a single order.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>
         <div className="todayTomorrowSlide">
           <h2>Could emerging technologies, such as blockchain, streamline the payment, settlement and reporting process?
           </h2>
-          <Todaytomorrow today={<div> Entities throughout the industry are closely connected through various technology platforms, critical file exchanges and detailed processes that take place at a massive scale. We need to transform our technology to create a more flexible future, but this evolution takes time.</div>} tomorrow={<div> ARC and its industry partners are researching and piloting <strong>emerging technology</strong>, such as blockchain, to increase efficiency and transparency. ARC is working closely with United Airlines on a blockchain pilot for corporate travel. </div>}></Todaytomorrow>
+          <Todaytomorrow today={<div> Entities throughout the industry are closely connected through various technology platforms, critical file exchanges and detailed processes that take place at a massive scale. We need to transform our technology to create a more flexible future, but evolution takes time.</div>} tomorrow={<div> ARC and its industry partners are researching and piloting <strong>emerging technology</strong>, such as blockchain, to increase efficiency and transparency. ARC is working closely with United Airlines on a blockchain pilot for corporate travel. </div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>
         <div className="blueSlide">
-          <h2>Long story short, the travel industry needs to transform its data and technology capabilities.
+          <h2>To create a better traveler experience, the industry needs to transform its data and technology capabilities.
           </h2>
           <div className="blueContainer">
             Here are some critical considerations for the global air travel community.
@@ -161,7 +183,15 @@ class Purchase extends React.Component {
           </Link>
         </div>
       </Pageslide>
+
       <Drawer className="purchaseDrawer" placement="right" width="1080px" closable={true} onClose={this.onClose} visible={this.state.visible}>
+        <div className="infoDrawer">
+          {drawerContent}
+          <img className="closeIcon" onClick={this.onClose} src="img/closeIcon.png" alt="Close"/>
+        </div>
+      </Drawer>
+
+      <Drawer className="oneorderDrawer" placement="right" width="1080px" closable={true} onClose={this.onClose} visible={this.state.visibleOne}>
         <div className="infoDrawer">
           {drawerContent}
           <img className="closeIcon" onClick={this.onClose} src="img/closeIcon.png" alt="Close"/>
@@ -170,15 +200,14 @@ class Purchase extends React.Component {
 
       <Drawer className="blueDrawer" placement="right" width="1080px" closable={true} onClose={this.onClose} visible={this.state.visibleBlue}>
         <div className="infoDrawer">
-          <h2>Here are some critical considerations for the global air travel community:</h2>
+          <h2>ARC is actively addressing the following concerns to help airlines, travel agencies and technology companies navigate an increasingly complex landscape.<br/><br/> Here are some critical considerations for the global air travel community: </h2>
 
           <p><strong>Updated technology infrastructure</strong><br/>Modernize technology platforms industrywide and phase out inefficient, limiting, legacy systems.</p>
           <p><strong>Enhanced payment platforms</strong><br/>Align buying travel with other retail experiences.</p>
-          <p><strong>Updated technology infrastructure</strong><br/>Modernize technology platforms industrywide and phase out inefficient, limiting, legacy systems.</p>
           <p><strong>Real-time data</strong><br/>Data needs to flow between parties in real time, including status updates and order changes. </p>
           <p><strong>Order structure</strong><br/>ONE Order will completely transform the structure of today’s airline ticket. </p>
           <p><strong>Hybrid environment</strong><br/>Organizations throughout the industry will move forward at different paces. Technology and data systems need to be in place to accommodate a wide range of capabilities, translating among many versions to ensure seamless communication at scale.</p>
-          <p>ARC is actively addressing the following concerns to help airlines, travel agencies and technology companies navigate an increasingly complex landscape.</p>
+          <p></p>
           <img className="closeIcon" onClick={this.onClose} src="img/closeIcon.png" alt="Close"/>
         </div>
       </Drawer>

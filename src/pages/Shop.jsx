@@ -45,7 +45,6 @@ class Shop extends React.Component {
 
   componentDidMount() {
     this.props.routeUpdate(this.props.location.pathname, this.slideMenu.children.length);
-
     ga('set', 'page', '/shop');
     ga('send', 'pageview');
   }

@@ -82,6 +82,11 @@
         right: 80px;
         top: 30px;
       }
+
+      strong {
+        font-family: SourceSansPro-Black, SourceSansPro-Regular, helvetica, sans-serif;
+        text-decoration: underline;
+      }
     }
   }
 
@@ -112,6 +117,11 @@
       padding-left: 120px;
       padding-right: 120px;
       padding-bottom: 80px;
+    }
+
+    h2.ttP {
+      font-size: 80px;
+      line-height: 90px;
     }
 
     .todayTomorrowContainer {
@@ -199,7 +209,6 @@
 
   h2 {
     color: #ffffff;
-    text-align: center;
     padding-bottom: 80px;
     font-size: 45px;
   }
