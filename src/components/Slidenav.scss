@@ -67,3 +67,44 @@
     img {};
   }
 }
+
+.arctake.ant-drawer {
+  .ant-drawer-wrapper-body {
+    background: #189bb0;
+  }
+
+  .ant-drawer-content {
+    background: #189bb0;
+  }
+
+  .infoDrawer {
+    img.closeIcon {
+      border-color: #189bb0;
+    }
+
+    img.homepageLogo {
+      position: relative;
+      border: none;
+      top: auto;
+      left: auto;
+      border-radius: 0;
+      padding-bottom: 40px;
+    }
+  }
+
+  h1 {
+    color: #ffffff;
+    padding-bottom: 80px;
+    font-size: 100px;
+    line-height: 110px;
+    margin-bottom: 0;
+  }
+
+  p {
+    color: #ffffff;
+  }
+
+  strong {
+    font-family: SourceSansPro-Black, helvetica, arial, sans-serif;
+  }
+}

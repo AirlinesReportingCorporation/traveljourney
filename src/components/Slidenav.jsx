@@ -48,7 +48,7 @@ class Slidenav extends React.Component {
 
     if(path == "/inspire/"){
       if((scrollTop >= 5500 && scrollTop <= 7400)){
-        var dContent = <div><h1>Managing Complex Global Data</h1><p>ARC has the world’s most comprehensive air travel data, which organizations across the travel industry use to make more informed decisions about retailing strategy.</p>
+        var dContent = <div><img className="homepageLogo" src=" img/homepage_logo.png" alt=""/><h1>Managing Complex Global Data</h1><p>ARC has the world’s most comprehensive air travel data, which organizations across the travel industry use to make more informed decisions about retailing strategy.</p>
 
         <p>As airline retailing continues to evolve and grow more complex, ARC will help organizations across the travel industry manage and analyze their data, helping them hone their retailing strategies. This could include the management of traveler profiles, where business travelers could opt in to share their preferences. This could enable even more personalized marketing efforts to inspire travel. </p></div>;
 
@@ -158,10 +158,10 @@ class Slidenav extends React.Component {
 
       </div>
       {this.state.arcButton}
-      <Drawer placement="right" width="960px" closable={true} onClose={this.onClose} visible={this.state.visible}>
+      <Drawer className="arctake" placement="right" width="960px" closable={true} onClose={this.onClose} visible={this.state.visible}>
         <div className="infoDrawer">
           {this.state.arcContent}
-          <img onClick={this.onClose} src="img/closeIcon.png" alt="Close"/>
+          <img className="closeIcon" onClick={this.onClose} src="img/closeIcon.png" alt="Close"/>
         </div>
       </Drawer>
     </div>);
