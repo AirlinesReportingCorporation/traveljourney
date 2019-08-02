@@ -39,7 +39,7 @@ class Startpage extends React.Component {
 
   tapGoX(n) {
     $('.startPage').animate({
-      marginLeft: 1080 * -4 + 'px'
+      marginLeft: 1080 * -n + 'px'
     }, 400, "linear");
   }
 
@@ -114,18 +114,20 @@ class Startpage extends React.Component {
           </div>
         </Pageslide>
         <Pageslide noArrow="false">
-          <div className="verticalSlide textSlide textSlide1">
+          <div className="verticalSlide textSlide textSlide1" onClick={this.tapGoX.bind(this, 2)}>
             <h1>The travel
               <br/>journey is
               <br/>complex, and
               <br/>it is becoming
               <br/>increasingly
               <br/>personalized.</h1>
+              <p>Continue</p>
+              <img className="textSlideArrow animated shake slowest infinite" src="img/textSlideArrow.png" alt=""/>
             <img src="img/startPageIcon2.png" alt=""/>
           </div>
         </Pageslide>
         <Pageslide noArrow="false">
-          <div className="verticalSlide textSlide textSlide2">
+          <div className="verticalSlide textSlide textSlide2" onClick={this.tapGoX.bind(this, 3)}>
             <img src="img/startPageIcon3.png" alt=""/>
             <h1>It begins with
               <br/>a spark of
@@ -138,6 +140,8 @@ class Startpage extends React.Component {
               <br/>through the
               <br/>trip itself.
             </h1>
+            <p>Continue</p>
+            <img className="textSlideArrow animated shake slowest infinite" src="img/textSlideArrow.png" alt=""/>
           </div>
         </Pageslide>
         <Pageslide noArrow="false">

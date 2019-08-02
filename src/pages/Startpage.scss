@@ -23,6 +23,26 @@ $screenWidth: 1080px;
     height: 100%;
   }
 
+  .textSlide1,
+  .textSlide.textSlide2 {
+    p {
+      vertical-align: top;
+      padding-top: 0;
+      margin-bottom: 0;
+      color: #ffffff;
+      display: inline-block;
+      font-size: 50px;
+      padding-left: 120px;
+      font-family: SourceSansPro-Bold, helvetica, arial, sans-serif;
+    }
+
+    .textSlideArrow {
+      display: inline-block;
+      vertical-align: top;
+      padding: 17px 0 0 30px;
+    }
+  }
+
   .slide1 {
     background: url("../img/startpage1.png") bottom center no-repeat;
     background-size: contain;
