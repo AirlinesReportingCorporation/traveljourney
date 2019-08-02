@@ -45,6 +45,9 @@ class Startpage extends React.Component {
 
   componentDidMount() {
     this.props.routeUpdate(this.props.location.pathname, this.slideMenu.children.length);
+
+    ga('set', 'page', '/');
+    ga('send', 'pageview');
   }
 
   showDrawer() {
