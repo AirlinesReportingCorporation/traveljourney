@@ -126,7 +126,7 @@ class Inspire extends React.Component {
                 <br/>Getaway</h2>
               <img src="img/longAwaitedGetaway.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
-            </div>} backSide={<div > <div>Travel agencies specializing in luxury travel are on the rise. More than half of agency respondents in a recent Phocuswright study, co-sponsored by ARC, indicated that they specialize in river cruises, and 16 % specialize in selling bespoke, a highly customized segment of luxury travel.<div className="touchBackBtnContainer">
+            </div>} backSide={<div > <div>Travel agencies specializing in luxury travel are on the rise. More than half of agency respondents in a recent Phocuswright study, co-sponsored by ARC, indicated that they specialize in river cruises, and 16% specialize in selling bespoke, a highly customized segment of luxury travel.<div className="touchBackBtnContainer">
                   <div className="touchBackBtn">Touch to go back</div>
                 </div>
               </div>
@@ -179,7 +179,7 @@ class Inspire extends React.Component {
               this.showDrawer.bind(this, 'NDC')
             } > NDC</span> and < span onClick = {
               this.showDrawer.bind(this, 'oneorder')
-            } > ONE Order</span> will generate richer data for <strong>smarter marketing</strong>.By leveraging historical purchase data,
+            } > ONE Order</span> will generate richer data for <strong>smarter marketing</strong>. By leveraging historical purchase data,
             travel brands will be able to create more meaningful personalization.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
