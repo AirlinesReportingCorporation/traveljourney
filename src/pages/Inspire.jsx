@@ -42,6 +42,9 @@ class Inspire extends React.Component {
 
   componentDidMount() {
     this.props.routeUpdate(this.props.location.pathname, this.slideMenu.children.length);
+
+    ga('set', 'page', '/inspire');
+    ga('send', 'pageview');
   }
 
   render() {
@@ -74,6 +77,8 @@ class Inspire extends React.Component {
       }
     });
 
+
+
     let drawerContent = this.state.drawerContent;
 
     if (drawerContent == "NDC") {
@@ -87,7 +92,9 @@ class Inspire extends React.Component {
     } else if (drawerContent == "oneorder") {
       drawerContent = <div>
         <div className="drawerTitle oneorder">ONE Order</div>
-        <p>Today, air travel purchases in the agency channel are fragmented. The airline ticket transaction is separate from baggage fees, in-flight wi-fi, lounge access and other ancillary purchases — all of which are systematically treated as individual tickets. </p><p>ONE Order will create a consolidated order structure that brings together disparate purchase data in a centralized location.
+        <p>Today, air travel purchases in the agency channel are fragmented. The airline ticket transaction is separate from baggage fees, in-flight wi-fi, lounge access and other ancillary purchases — all of which are systematically treated as individual tickets.
+        </p>
+        <p>ONE Order will create a consolidated order structure that brings together disparate purchase data in a centralized location.
         </p>
         <p>In the future, tickets will be replaced by orders, which can contain any number of service items: tickets for multiple people, airline ancillary purchases, and presumably third-party products (e.g., rideshare credits).</p>
       </div>;
@@ -102,7 +109,8 @@ class Inspire extends React.Component {
             <Flipslide frontSide={<div > <h2>Business Trip</h2>
               <img src="img/businessTrip.png" alt="Business Trip"/>
               <div className="touchText">Touch to see more</div>
-            </div>} backSide={<div > <div>Corporate travelers are as diverse as leisure travelers, with different needs and preferences. They may travel twice a year or 40 times a year. They may want to minimize their time away from home, or they may prefer extended “bleisure” trips. </div> < div className = "touchBackBtnContainer" > <div className="touchBackBtn">Touch to go back</div>
+            </div>} backSide={<div > <div>Corporate travelers are as diverse as leisure travelers, with different needs and preferences. They may travel twice a year or 40 times a year. They may want to minimize their time away from home, or they may prefer extended “bleisure” trips.
+              </div> < div className = "touchBackBtnContainer" > <div className="touchBackBtn">Touch to go back</div>
             </div>
           </div>} colorClass="sliderGradientBlue"></Flipslide>
             <Flipslide frontSide={<div > <h2>Family Vacation</h2>
@@ -152,7 +160,8 @@ class Inspire extends React.Component {
           </div>
           <div className="quoteMeta">
             LAURI REISHUS<br/>
-          Executive Vice President and <br/>Chief Operating Officer, ARC
+            Executive Vice President and
+            <br/>Chief Operating Officer, ARC
           </div>
         </div>
 
@@ -204,6 +213,7 @@ class Inspire extends React.Component {
           <img onClick={this.onClose} src="img/closeIcon.png" alt="Close"/>
         </div>
       </Drawer>
+
     </div>);
   }
 }

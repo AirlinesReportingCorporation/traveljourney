@@ -39,6 +39,9 @@ class Offer extends React.Component {
 
   componentDidMount() {
     this.props.routeUpdate(this.props.location.pathname, this.slideMenu.children.length);
+
+    ga('set', 'page', '/offer');
+    ga('send', 'pageview');
   }
 
   render() {
@@ -105,8 +108,7 @@ class Offer extends React.Component {
           <Todaytomorrow today={<div> In today’s travel agency channel,
             the GDS constructs an offer based on airline availability,
             schedules and fares. While offers can fluctuate depending on those factors,
-            they’re not customizable to the agency or traveler.</div>} tomorrow={<div> <span onClick={this.showDrawer.bind(this, 'NDC')}>NDC</span> creates the possibility of <strong> dynamic offers</strong>, which can be customized based on agency-airline relationship,
-            loyalty or established traveler preferences. This will make it easier for the traveler to view content that is likely to be the best fit — and enables agencies to receive rates based on partnership agreements.</div>}></Todaytomorrow>
+            they’re not customizable to the agency or traveler.</div>} tomorrow={<div> <span onClick={this.showDrawer.bind(this, 'NDC')}>NDC</span> creates the possibility of <strong> dynamic offers</strong>, which can be customized based on agency-airline relationships, loyalty or established traveler preferences. This will make it easier for the traveler to view content that is likely to be the best fit — and enables agencies to receive rates based on partnership agreements.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>
@@ -117,7 +119,7 @@ class Offer extends React.Component {
             a headache?
           </h2>
           <Todaytomorrow today={<div> The terms of corporate contracts are generally applied manually,
-            after the transaction — which creates room for error.</div>} tomorrow={<div> <strong> Smart contracts</strong> will integrate contract terms up front, increasing accuracy and alignment while reducing room for error. This could also extend to corporate program policies, which could filter offers to display only those within corporate policy.</div>}></Todaytomorrow>
+            after the transaction — which creates room for error.</div>} tomorrow={<div> <strong> Smart contracts</strong> will integrate contract terms up front, increasing accuracy and alignment while reducing room for error. This could also extend to corporate program policies, which could filter offers to display only those within policy.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>
@@ -125,7 +127,7 @@ class Offer extends React.Component {
 
           <div className="textSlideContent">
             While <span onClick={this.showDrawer.bind(this, 'NDC')}>NDC</span> presents vast opportunities, it will take a few years to fully come to fruition at scale. In the meantime, we are living in a <strong>hybrid environment</strong>, where existing processes need to reliably function in tandem with new capabilities.<br/><br/> Ultimately, an evolved retailing environment will deliver the right content to the right person at the right time.
-            <img src="img/allcopyOfferBOTTOM.png" alt=""/>
+            <img className="offerBottom" src="img/allcopyOfferBOTTOM.png" alt=""/>
 
           </div>
         </div>

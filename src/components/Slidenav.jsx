@@ -1,14 +1,66 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
+import {withRouter} from "react-router";
 import ReactDOM from "react-dom";
 import './Slidenav.scss';
 import Customlink from './Customlink.jsx';
+import {Drawer} from 'antd';
 
 class Slidenav extends React.Component {
   constructor(props) {
     super(props);
-
+    this.state = {
+      arcContent: "",
+      visible: false,
+      arcButton: ""
+    }
+    this.showDrawer = this.showDrawer.bind(this);
+    this.onClose = this.onClose.bind(this);
     this.arrowClick = this.arrowClick.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  showDrawer() {
+    this.setState({visible: true});
+  };
+
+  onClose() {
+    this.setState({visible: false});
+  };
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll(event) {
+    let scrollTop = window.scrollY;
+
+    var path = this.props.location.pathname;
+
+    var content = <div className="animated pulse infinite arcBtn" onClick={this.showDrawer}>
+      <img src="img/arcIcon.png" alt="ARC's Perspective"/>
+    </div>;
+
+
+    if(path == "/inspire/"){
+      if((scrollTop >= 5500 && scrollTop <= 7400)){
+        var dContent = <div><h1>Managing Complex Global Data</h1><p>ARC has the world’s most comprehensive air travel data, which organizations across the travel industry use to make more informed decisions about retailing strategy.</p>
+
+        <p>As airline retailing continues to evolve and grow more complex, ARC will help organizations across the travel industry manage and analyze their data, helping them hone their retailing strategies. This could include the management of traveler profiles, where business travelers could opt in to share their preferences. This could enable even more personalized marketing efforts to inspire travel. </p></div>;
+
+
+        this.setState({arcContent: dContent});
+        this.setState({arcButton: content});
+
+      }
+      else {
+        this.setState({arcButton: ""});
+      }
+    }
   }
 
   arrowClick(direction) {
@@ -87,30 +139,33 @@ class Slidenav extends React.Component {
 
     }
 
-    return (<div className="slideControls">
+    return (<div>
+      <div className="slideControls">
 
-      <Link to="/navigation/">
-        <div className="animated pulse infinite arcBtn"> 
-          <img src="img/arcIcon.png" alt="ARC's Perspective"/>
+        <Customlink to="/">
+          <div className="navBtn">
+            <img src="img/homeIcon.png" alt="Home Icon"/>
+          </div>
+        </Customlink>
+
+        {controls}
+
+        <Customlink to="/navigation/">
+          <div className="navBtn">
+            <img src="img/ellipsisIcon.png" alt="More"/>
+          </div>
+        </Customlink>
+
+      </div>
+      {this.state.arcButton}
+      <Drawer placement="right" width="960px" closable={true} onClose={this.onClose} visible={this.state.visible}>
+        <div className="infoDrawer">
+          {this.state.arcContent}
+          <img onClick={this.onClose} src="img/closeIcon.png" alt="Close"/>
         </div>
-      </Link>
-
-      <Customlink to="/">
-        <div className="navBtn">
-          <img src="img/homeIcon.png" alt="Home Icon"/>
-        </div>
-      </Customlink>
-
-      {controls}
-
-      <Customlink to="/navigation/">
-        <div className="navBtn">
-          <img src="img/ellipsisIcon.png" alt="More"/>
-        </div>
-      </Customlink>
-
+      </Drawer>
     </div>);
   }
 }
 
-export default Slidenav;
+export default withRouter(Slidenav);

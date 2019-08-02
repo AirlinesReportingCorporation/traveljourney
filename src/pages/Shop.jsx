@@ -144,7 +144,7 @@ class Shop extends React.Component {
           </div>
           <div className="quoteMeta">
             SARAH BOYD<br/>
-            Senior Manager, Airline Retailing
+          Senior Manager, Airline Retailing, ARC
           </div>
         </div>
 

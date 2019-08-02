@@ -45,7 +45,6 @@ class Startpage extends React.Component {
 
   componentDidMount() {
     this.props.routeUpdate(this.props.location.pathname, this.slideMenu.children.length);
-
   }
 
   showDrawer() {
@@ -111,6 +110,7 @@ class Startpage extends React.Component {
               <img className="animated tada delay-1s" src="img/startPageIcon1.png" alt=""/>
               <p>Tap Here to Begin</p>
               <img className="startPageArrow animated shake slowest infinite" src="img/startPageArrow.png" alt=""/></span>
+              <img className="homepageLogo" src=" img/homepage_logo.png" alt=""/>
           </div>
         </Pageslide>
         <Pageslide noArrow="false">

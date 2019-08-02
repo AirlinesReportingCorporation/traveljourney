@@ -111,7 +111,7 @@ class Purchase extends React.Component {
       </Pageslide>
       <Pageslide>
         <div className="todayTomorrowSlide">
-          <h2>Why aren’t the traveler’s airline ticket, baggage fee and in-flight Wi-Fi on one transaction?
+          <h2>Why aren’t the traveler’s airline ticket, baggage fee and in-flight wi-fi on one transaction?
           </h2>
           <Todaytomorrow today={<div>Legacy technology limits what can be considered a “ticket,” but airline products have since evolved to become more customizable. Systematically, the traveler’s baggage fee is treated like a separate ticket, otherwise known as an electronic miscellaneous document (EMD).</div>} tomorrow={<div> E-commerce platforms have furthered the concept of a <strong>single, unified order</strong> that can contain a variety of different items. ONE Order will create a similar environment, wrapping disparate data together in one centralized, manageable place — reflecting any updates or status changes that may arise. This could include multiple travelers and numerous products beyond air.</div>}></Todaytomorrow>
         </div>
@@ -122,17 +122,14 @@ class Purchase extends React.Component {
             <br/>travel agencies<br/>
             receive commission?
           </h2>
-          <Todaytomorrow today={<div> Commissions are generally applied by the travel agency at time of purchase. To determine the accurate commission amount, agents use a GDS tool, or they have to calculate commission based on complex contracts and fare rules.  If the agency calculates an incorrect commission amount, they will later receive a debit memo from the airline.</div>} tomorrow={<div><strong>Smart contracts</strong> will integrate contract terms in the purchase process, up front, increasing accuracy and reducing room for error(and potentially eliminating debit memos).The industry will throw a huge party celebrating the elimination of debit memos and all the resources spent managing them.</div>}></Todaytomorrow>
+          <Todaytomorrow today={<div> Commissions are generally applied by the travel agency at time of purchase. To determine the accurate commission amount, agents use a GDS tool, or they have to calculate commission based on complex contracts and fare rules.  If the agency calculates an incorrect commission amount, they will later receive a debit memo from the airline.</div>} tomorrow={<div><strong>Smart contracts</strong> will integrate contract terms in the purchase process, up front, increasing accuracy and reducing room for error (and potentially eliminating debit memos). The industry will throw a huge party celebrating the elimination of debit memos and all the resources spent managing them.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>
         <div className="todayTomorrowSlide">
           <h2>Why can't the traveler pay with a combination of airline miles and credit card through their travel agency?
           </h2>
-          <Todaytomorrow today={<div> Travelers don't have access to the same form-of-payment options in every sales channel. When booking through a travel agency, they can only use cash or credit card form of payment (and not a combination, unless the agency is able to facilitate this on their end).  </div>} tomorrow={<div> < strong > Multiple forms of payment</strong> will be available in every sales channel.The customer can use a combination of airline miles,
-            credit cards,
-            cash,
-            mobile wallet or alternative forms of payment in a single order.</div>}></Todaytomorrow>
+          <Todaytomorrow today={<div> Travelers don't have access to the same form-of-payment options in every sales channel. When booking through a travel agency, they can only use cash or credit card form of payment (and not a combination, unless the agency is able to facilitate this on their end).  </div>} tomorrow={<div> <strong> Multiple forms of payment</strong> will be available in every sales channel. The customer can use a combination of airline miles, credit cards, cash, mobile wallet or alternative forms of payment in a single order.</div>}></Todaytomorrow>
         </div>
       </Pageslide>
       <Pageslide>
