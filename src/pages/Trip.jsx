@@ -438,7 +438,7 @@ class Trip extends React.Component {
           <h2>What if the traveler needs to make a last-minute change to their trip?</h2>
           <Todaytomorrow today={<div> Air travel is becoming more streamlined,
             but it is still fragmented in many ways. The customer expects an easy,
-            seamless and customizable buying experience — yet making changes to a ticket can be challenging, and add - on purchases (checked bag, wi-fi, in-flight meal) are each made on a separate transaction.</div>} tomorrow={<div> Because personalized products have already been purchased at the point of sale,
+            seamless and customizable buying experience — yet making changes to a ticket can be challenging, and add-on purchases (checked bag, wi-fi, in-flight meal) are each made on a separate transaction.</div>} tomorrow={<div> Because personalized products have already been purchased at the point of sale,
             the traveler can enjoy a <strong> frictionless experience</strong>,
             which has been customized to their personal preferences. In a <span onClick = {this.showDrawer.bind(this, 'oneorder')} >ONE Order</span> environment, ancillary purchases will be connected to the traveler’s order,
             so all their data will be centralized in one location.</div>}></Todaytomorrow>
