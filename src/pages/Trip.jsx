@@ -310,7 +310,7 @@ class Trip extends React.Component {
     } else if (drawerContent == "settlement") {
       drawerContent = <div>
         <div className="payment">Bundles & Corporate Policy</div>
-        <p className="bundlesP">Purchasing bundles ahead of time can reduce friction on the day of travel. Corporate travel programs can reduce friction by creating flexible travel policies for frequent travelers. Amenities like in-flight wi-fi and TSA PreCheck&#10003;&reg; can create a more seamless and more productive experience for business travelers.</p>
+        <p className="bundlesP">Purchasing bundles ahead of time can reduce friction on the day of travel. Corporate travel programs can reduce friction by creating flexible travel policies for frequent travelers. Amenities like in-flight wi-fi and lounge access can create a more seamless travel experience.</p>
         <div className="tableContainer tableBundles">
           <div className="tableHalf">
             <table>
@@ -343,7 +343,7 @@ class Trip extends React.Component {
                 <tr>
                   <td>TSA</td>
                   <td><img src="img/checkmark.png"/></td>
-                  <td className="checkMarkExtra">TSA PreCheck&#10003;&reg;</td>
+                  <td className="checkMarkExtra">TSA Pre&#10003;&reg;</td>
                 </tr>
                 <tr>
                   <td>Lounge Access</td>
@@ -483,7 +483,7 @@ class Trip extends React.Component {
       </Pageslide>
       <Pageslide>
         <div className="endSlide">
-          <h2>The traveler has happily made it to their destination.
+          <h2>The traveler has happily arrived at their destination.
             <br/><br/>After enjoying their trip, the traveler ventures back home. (But the journey’s not over yet!)
           </h2>
           <Link to={{
@@ -520,7 +520,7 @@ class Trip extends React.Component {
           <div className="blueList">
             <strong>Reimburse for:</strong> <br/>
           <ul>
-            <li>Faster airport security lines (e.g., TSA PreCheck&#10003;&reg;, Clear)</li>
+            <li>Faster airport security lines (e.g., TSA Pre&#10003;&reg;, Clear)</li>
             <li>Priority boarding</li>
             <li>Preferred seats</li>
             <li>Wi-fi</li>
