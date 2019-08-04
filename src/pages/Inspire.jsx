@@ -140,6 +140,11 @@ class Inspire extends React.Component {
           <div className="quotePhoto">
             <img src="img/lauriQuote.png" alt="Lauri Reishus"/>
           </div>
+          <div className="quoteMeta">
+            LAURI REISHUS<br/>
+            Executive Vice President and
+            <br/>Chief Operating Officer, ARC
+          </div>
           <div className="quoteText">
             Personalization is the next
             <br/>
@@ -158,11 +163,7 @@ class Inspire extends React.Component {
             <br/>
             right customer.
           </div>
-          <div className="quoteMeta">
-            LAURI REISHUS<br/>
-            Executive Vice President and
-            <br/>Chief Operating Officer, ARC
-          </div>
+
         </div>
 
       </Pageslide>

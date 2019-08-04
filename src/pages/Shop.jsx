@@ -139,15 +139,16 @@ class Shop extends React.Component {
       <Pageslide>
         <div className="quoteSlide">
           <div className="quotePhoto">
-            <img src="img/sarahQuote.png" alt="Lauri Reishus"/>
-          </div>
-          <div className="quoteText">
-            I think the ideal solution for the traveler would be that you can go online, or you can go to your agency, or whatever channel you want to shop in. You can get access to all of your discounts up front. Anything you are entitled for — maybe you're an elite flier and you get free extra-leg-room seating — that's included in your offer up front, and it works. And you don't have to go to multiple places to find that information.
+            <img src="img/sarahQuote.png" alt="Sarah Boyd"/>
           </div>
           <div className="quoteMeta">
             SARAH BOYD<br/>
           Senior Manager, Airline Retailing, ARC
           </div>
+          <div className="quoteText">
+            I think the ideal solution for the traveler would be that you can go online, or you can go to your agency, or whatever channel you want to shop in. You can get access to all of your discounts up front. Anything you are entitled for — maybe you're an elite flier and you get free extra-leg-room seating — that's included in your offer up front, and it works. And you don't have to go to multiple places to find that information.
+          </div>
+
         </div>
 
       </Pageslide>

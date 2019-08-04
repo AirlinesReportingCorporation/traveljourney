@@ -141,13 +141,14 @@ class Pretrip extends React.Component {
           <div className="quotePhoto">
             <img src="img/mikeQuote.png" alt="Mike Premo"/>
           </div>
-          <div className="quoteText">
-            The pre-trip window is a huge opportunity for our industry. During this time, the traveler is actively thinking about, and planning for, their trip. The traveler wants to be prepared, so they’re especially receptive to offers for products or experiences that will enhance their trip.
-          </div>
           <div className="quoteMeta">
             MIKE PREMO<br/>
             President and Chief Executive Officer, ARC
           </div>
+          <div className="quoteText">
+            The pre-trip window is a huge opportunity for our industry. During this time, the traveler is actively thinking about, and planning for, their trip. The traveler wants to be prepared, so they’re especially receptive to offers for products or experiences that will enhance their trip.
+          </div>
+
         </div>
 
       </Pageslide>

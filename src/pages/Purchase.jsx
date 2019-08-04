@@ -130,6 +130,22 @@ class Purchase extends React.Component {
         </div>
       </Pageslide>
       <Pageslide>
+        <div className="quoteSlide">
+          <div className="quotePhoto">
+            <img src="img/shellyQuote.png" alt="Shelly Younger"/>
+          </div>
+          <div className="quoteMeta">
+            SHELLY YOUNGER<br/>
+          Senior Manager<br/>Airline Retailing Strategy and Head of NDC, ARC
+          </div>
+          <div className="quoteText">
+            The easier it looks to the customer, the harder it is behind the scenes - and the more parties you need to get together to make that happen. There's not just one entity that can be the expert at all of those pieces of technology, nor do they want to be. They have businesses to run with different focuses. So, how do you make it look easy to the customer? You've got to collaborate with people.
+          </div>
+
+        </div>
+
+      </Pageslide>
+      <Pageslide>
         <div className="todayTomorrowSlide">
           <h2>Why aren’t the traveler’s airline ticket, baggage fee and in-flight wi-fi on one transaction?
           </h2>
